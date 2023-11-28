@@ -1,0 +1,46 @@
+.cajaListado{
+    border: red solid 2px;
+    margin: 30px 80px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+.cajaProducto{
+    position: relative;
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;  
+    object-fit: cover; /* no achica la imagen, sino que la pasa por arriba */
+    justify-content: space-around; /*centra la imagen y el contenido */
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+.cajaProducto img{
+    width: 250px;
+    height: 400px;
+    object-fit: cover; /* no achica la imagen, sino que la pasa por arriba */
+}
+.cajaProducto:hover img{
+    filter: blur(5px);
+}
+.textoConHover{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: crimson;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    transition: 1s;
+  }
+  .textoConHover:hover{
+    opacity: 1;
+  }

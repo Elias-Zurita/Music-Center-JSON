@@ -1,0 +1,13 @@
+.promoHeader{
+    text-align:center;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    font-weight: bold;
+
+}
+.navbar{
+    background: black;
+}
+.navbar a {
+    color: white;
+}

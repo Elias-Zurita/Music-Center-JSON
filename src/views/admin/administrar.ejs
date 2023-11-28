@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <%- include('../partials/head.ejs') %>  
+  </head>
+
+  <header>
+      <%- include('../partials/header.ejs') %>
+  </header>
+  
+  <body>
+
+    <h1>ADMINISTRADOR DE PRODUCTOS</h1>
+
+    <a href="/administrar/crear"><i class="fa-solid fa-circle-plus"></i> CREAR PRODUCTO</a>
+
+    <table>
+        <tr>
+          <th>ID</th>
+          <th>NOMBRE</th>
+          <th>MODELO</th>
+          <th>MARCA</th>
+          <th>PRECIO</th>
+          <th>IMAGEN</th>
+          <th>EDITAR</th>
+          <th>ELIMINAR</th>
+        </tr>
+        <% productos.forEach(producto => { %>
+          <tr>
+            <td><%= producto.id %></td>
+            <td><%= producto.nombre %></td>
+            <td><%= producto.modelo %></td>
+            <td><%= producto.marca %></td>
+            <td><%= producto.precio %></td>
+            <td><img src="/images/productos/<%= producto.imagen %>"></td>
+            <td><a href="/administrar/editar/<%= producto.id %>"><i class="fa-solid fa-pen-to-square"></i></a></td>
+            <td><i class="fa-solid fa-trash"></i></td>
+          </tr>
+        <% }) %>
+      </table>
+
+  </body>
+  
+  <footer>
+    <%- include('../partials/footer.ejs') %>
+  </footer>
+
+</html>

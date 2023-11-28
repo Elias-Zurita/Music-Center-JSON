@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  
+    <head>
+        <%- include('../partials/head.ejs') %>  
+    </head>
+
+    <header>
+        <%- include('../partials/header.ejs') %>
+    </header>
+  
+    <body>
+
+        <h1>CREAR PRODUCTO</h1>
+
+        <form action="/administrar/crear" method="POST" enctype="multipart/form-data">
+
+            <div class="formularioCreacionProducto">
+                <input type="text" placeholder="NOMBRE" name="nombre" required>
+                <input type="text" placeholder="MODELO" name="modelo" required>
+                <input type="text" placeholder="MARCA" name="marca" required>
+                <input type="text" placeholder="CATEGORIA" name="categoria" required>
+                <input type="number" placeholder="PRECIO" name="precio" required max="1000000" min="1">
+                <input type="text" placeholder="DESCRIPCION" name="descripcion" required>
+                <input type="file" placeholder="IMAGEN" name="imagen" required>
+            </div>
+
+            <div class="botonCrear">
+                <button type="submit">SUBIR PRODUCTO</button>
+            </div>
+        
+        </form>
+        
+        <div class="botonCrear">
+            <a href="/administrar"><button>VOLVER</button></a>
+        </div>
+        
+    </body>
+  
+    <footer>
+        <%- include('../partials/footer.ejs') %>
+    </footer>
+
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  
+    <head>
+        <%- include('../partials/head.ejs') %>  
+    </head>
+
+    <header>
+        <%- include('../partials/header.ejs') %>
+    </header>
+  
+    <body>
+
+        <h1>EDITAR PRODUCTO</h1>
+
+        <form action="/administrar/editar/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <div class="imagenEdicion">
+                <img src="/images/productos/<%= producto.imagen %>">
+            </div>
+
+            <div class="formularioCreacionProducto">
+                <input type="text" placeholder="NOMBRE NUEVO" name="nombre" value="<%= producto.nombre %>" required>
+                <input type="text" placeholder="MODELO NUEVO" name="modelo" value="<%= producto.modelo %>" required>
+                <input type="text" placeholder="MARCA NUEVA" name="marca" value="<%= producto.marca %>" required>
+                <input type="text" placeholder="CATEGORIA NUEVA" name="categoria" value="<%= producto.categoria %>" required>
+                <input type="text" placeholder="PRECIO NUEVO" name="precio" required value="<%= producto.precio %>">
+                <input type="text" placeholder="DESCRIPCION NUEVA" name="descripcion" value="<%= producto.descripcion %>" required>
+                <input type="file" placeholder="IMAGEN NUEVA" name="imagen" id="imagen">
+            </div>
+
+            <div class="botonCrear">
+                <button type="submit">GUARDAR PRODUCTO</button>
+            </div>
+        
+        </form>
+        
+        <div class="botonCrear">
+            <a href="/administrar"><button>VOLVER</button></a>
+        </div>
+        
+    </body>
+  
+    <footer>
+        <%- include('../partials/footer.ejs') %>
+    </footer>
+
+</html>
+

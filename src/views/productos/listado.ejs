@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  
+    <head>
+        <%- include('../partials/head.ejs') %>  
+    </head>
+
+    <header>
+        <%- include('../partials/header.ejs') %>
+    </header>
+  
+    <body>
+
+        <h1>NUESTROS PRODUCTOS</h1>
+        
+        <div class="cajaListado">
+            <% productos.forEach(producto => { %>
+                <a href="/productos/detalle/<%= producto.id %>"><div class="cajaProducto">
+                    <img src="/images/productos/<%= producto.imagen %>">
+                    <div class="textoConHover">
+                        <%= producto.nombre %>
+                        <%= producto.modelo %>
+                        <%= producto.marca %>
+                    </div>
+                </div></a>
+                <div class="precioProducto">
+                    <%= producto.precio %>
+                </div>
+            <% }) %>
+        </div>
+
+    </body>
+  
+    <footer>
+        <%- include('../partials/footer.ejs') %>
+    </footer>
+
+</html>
+

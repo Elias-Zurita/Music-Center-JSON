@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  
+    <head>
+        <%- include('../partials/head.ejs') %>  
+    </head>
+
+    <header>
+        <%- include('../partials/header.ejs') %>
+    </header>
+  
+    <body>
+
+        <h1>DETALLE DE PRODUCTO</h1>
+        
+        <div class="padreDetalle">
+            <div class="imagenDetalle">
+                <img src="/images/productos/<%= producto.imagen %>">
+            </div>
+            <div class="infodetalle">
+                <%= producto.nombre %>
+                <%= producto.modelo %>
+                <%= producto.marca %>
+                <%= producto.descripcion %>
+                <%= producto.precio %>
+            </div>
+        </div>
+
+    </body>
+  
+    <footer>
+        <%- include('../partials/footer.ejs') %>
+    </footer>
+
+</html>
+
