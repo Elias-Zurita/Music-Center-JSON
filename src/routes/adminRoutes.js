@@ -13,5 +13,6 @@ router.get('/crear', controllerAdmin.crear) // Renderizado de Vista Crear
 router.post('/crear', uploadFile.single("imagen"), controllerAdmin.crearProceso) // Proceso de creacion
 router.get('/editar/:id', controllerAdmin.editar) // Renderizado de Vista Editar
 router.put('/editar/:id', uploadFile.single("imagen"), controllerAdmin.editarProceso) // Proceso de edicion
+router.delete('/eliminar/:id', controllerAdmin.eliminar) // Proceso de eliminacion
 
 module.exports = router;

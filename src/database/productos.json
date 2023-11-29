@@ -7,7 +7,7 @@
   "precio": "$24.000",
   "descripcion": "knaslkaskasnlkaslknas",
   "id": "1",
-  "imagen": "imagen1701201488868.png"
+  "imagen": "imagen1701201488868s.png"
  },
  {
   "nombre": "Guitarra Electroacíustica",
@@ -26,24 +26,5 @@
   "precio": "55000",
   "descripcion": "svds",
   "id": "3"
- },
- {
-  "id": 4,
-  "nombre": "www",
-  "modelo": "www",
-  "marca": "www",
-  "categoria": "www",
-  "precio": "7777",
-  "descripcion": "www",
-  "imagen": "imagen1701185405921.jpg"
- },
- {
-  "nombre": "rr",
-  "modelo": "rr",
-  "marca": "rr",
-  "categoria": "rr",
-  "precio": "55",
-  "descripcion": "rr",
-  "id": "5"
  }
 ]

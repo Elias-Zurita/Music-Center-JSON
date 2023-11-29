@@ -14,11 +14,11 @@ function writeJson(array){   // Sobreescribe info al JSON data
 module.exports = {
     listado: (req, res) => {
         let productos = findAll();
-        res.render("admin/administrar", {productos}) 
+        res.render("administrador/administrar", {productos}) 
     },
     crear: (req, res) => {
         let productos = findAll();
-        res.render("admin/crear", {productos})
+        res.render("administrador/crear", {productos})
     },
     crearProceso: (req, res) => {
         let productos = findAll();
@@ -42,7 +42,7 @@ module.exports = {
         let productoAEditar = productos.find(producto => // Encuentro un producto
             producto.id == req.params.id); // Renderiza el producto que se pide por id
 
-        res.render("admin/editar", {producto: productoAEditar})
+        res.render("administrador/editar", {producto: productoAEditar})
     },
     editarProceso: (req, res) => {
         let productos = findAll();
@@ -61,6 +61,16 @@ module.exports = {
         writeJson(productosActualizados); // modifica el producto //
 
         res.redirect("/productos/detalle/"+req.params.id) // redirecciona a la pagina de detalle del producto editado //
+    },
+    eliminar: (req, res) => {
+        let productos = findAll();
+        let dataNueva = productos.filter(function(productos){ // Filtro los productos para excluir el que se debe eliminar
+            return productos.id != req.params.id // Todos los productos distintos del seleccionado que vino por id
+        })
+
+        writeJson(dataNueva)  // Escribo el nuevo conjunto de productos al archivo JSON sin el producto eliminado
+
+        res.redirect("/administrar");
     }
 }
 

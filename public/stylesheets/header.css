@@ -3,11 +3,27 @@
     background-color: rgb(66, 66, 66);
     color: white;
     font-weight: bold;
-
 }
 .navbar{
     background: black;
 }
 .navbar a {
     color: white;
+}
+.navbar-brand {
+    width: 40px;
+    border: blue solid 1px;
+    
+}
+.navbar-brand img{
+    width: 100%;
+}
+.navbar-nav{
+    border: red solid;
+    width: 60%;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.navbar-nav :hover{
+    color:  #3effcc!important;
 }
