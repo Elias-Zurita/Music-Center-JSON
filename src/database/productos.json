@@ -26,5 +26,15 @@
   "precio": "55000",
   "descripcion": "svds",
   "id": "3"
+ },
+ {
+  "id": 4,
+  "nombre": "Silver Sky",
+  "modelo": "John Mayer Custom",
+  "marca": "PRS Guitars SE",
+  "categoria": "Guitarra Electrica",
+  "precio": "1650000",
+  "descripcion": "La Guitarra eléctrica PRS SE Silver Sky John Mayer es el instrumento perfecto para aquellos que buscan un sonido excepcional y una apariencia elegante. Diseñada en colaboración con el reconocido guitarrista John Mayer, esta guitarra solidbody de álamo ofrece una resonancia y sustain increíbles. El diapasón de palo de rosa y el mástil de arce proporcionan una experiencia de interpretación suave y cómoda, ideal para cualquier estilo musical.  Con sus 6 cuerdas y una escala de 25.5 pulgadas, esta guitarra ofrece una amplia gama de tonos y posibilidades creativas. Los 22 trastes permiten una gran versatilidad en la ejecución de solos y acordes, mientras que los 3 micrófonos 635JM “S” y el selector de 5 posiciones brindan una amplia variedad de opciones de sonido para adaptarse a cualquier género.  El puente tipo tremolo y la construcción bolt-on del mástil garantizan una estabilidad y afinación excepcionales, permitiéndote explorar diferentes técnicas y estilos sin preocuparte por la afinación. Los controles de selector de micrófonos, tono y volumen te permiten ajustar fácilmente el sonido de la guitarra a tu gusto.  Además, esta guitarra incluye un estuche para protegerla y transportarla con facilidad. No dejes pasar la oportunidad de experimentar la calidad y versatilidad que ofrece la PRS SE Silver Sky John Mayer, una guitarra que te acompañará en tus aventuras musicales y te permitirá expresar tu talento al máximo.",
+  "imagen": "imagen1701367288322.jpg"
  }
 ]

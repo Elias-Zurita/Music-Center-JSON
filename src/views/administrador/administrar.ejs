@@ -13,29 +13,33 @@
 
     <h1>ADMINISTRADOR DE PRODUCTOS</h1>
     
-    <a href="/administrar/crear"><i class="fa-solid fa-circle-plus"></i> CREAR PRODUCTO</a>
+    <div class="accesoCrear">
+      <button>
+        <a href="/administrar/crear"><i class="fa-solid fa-circle-plus"></i> CREAR PRODUCTO</a>
+      </button>
+    </div>
 
-    <table>
+    <table class="tablaAdministrar">
         <tr>
-          <th>ID</th>
-          <th>NOMBRE</th>
-          <th>MODELO</th>
-          <th>MARCA</th>
-          <th>PRECIO</th>
-          <th>IMAGEN</th>
-          <th>EDITAR</th>
-          <th>ELIMINAR</th>
+          <th style="width:50px">ID</th>
+          <th style="width:300px">NOMBRE</th>
+          <th style="width:400px">MODELO</th>
+          <th style="width:200px">MARCA</th>
+          <th style="width:120px">PRECIO</th>
+          <th style="width:120px;">IMAGEN</th>
+          <th style="width:120px;">EDITAR</th>
+          <th style="width:120px;">ELIMINAR</th>
         </tr>
         <% productos.forEach(producto => { %>
           <tr>
-            <td><%= producto.id %></td>
+            <td style="text-align:center;padding-left:0"><%= producto.id %></td>
             <td><%= producto.nombre %></td>
             <td><%= producto.modelo %></td>
             <td><%= producto.marca %></td>
             <td><%= producto.precio %></td>
-            <td><img src="/images/productos/<%= producto.imagen %>"></td>
-            <td><a href="/administrar/editar/<%= producto.id %>"><i class="fa-solid fa-pen-to-square"></i></a></td>
-            <td>
+            <td style="text-align:center;padding-left:0"><img src="/images/productos/<%= producto.imagen %>"></td>
+            <td style="text-align:center;padding-left:0"><a href="/administrar/editar/<%= producto.id %>"><i class="fa-solid fa-pen-to-square"></i></a></td>
+            <td style="text-align:center;padding-left:0">
               <form action="/administrar/eliminar/<%= producto.id %>?_method=DELETE" method="POST">
                 <button type="submit"><i class="fa-solid fa-trash"></i></button>
               </form>

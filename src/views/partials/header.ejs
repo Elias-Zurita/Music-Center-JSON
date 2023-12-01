@@ -36,9 +36,17 @@
                             <i class="fa-solid fa-user"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
-                            <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                            <% if (locals.isLogged){ %> <!-- Si el usuario esta logueado muestra lo siguiente -->
+                                <ul type="None">
+                                    <li><img src="/images/usuarios/<%= locals.userLogged.avatar %>"></li>
+                                    <li><a href="/usuarios/profile"><%= locals.userLogged.nombre %><%= locals.userLogged.apellido %></a></li>
+                                    <li><a href="/usuarios/logout">Cerrar sesión</a></li>
+                                </ul>
+                            <% } else { %>    <!-- Si no esta logueado muestra lo siguiente -->
+                            <li><a class="dropdown-item" href="/usuarios/login">Iniciar Sesión</a></li>
+                            <li><a class="dropdown-item" href="/usuarios/register">Registrarse</a></li>
                             <li><a class="dropdown-item" href="/administrar">Administrar</a></li>
+                            <% } %>
                         </ul>
                     </li>
                 </ul>

@@ -1,6 +1,6 @@
 .promoHeader{
     text-align:center;
-    background-color: rgb(66, 66, 66);
+    background-color: #252A2E;
     color: white;
     font-weight: bold;
 }
@@ -25,5 +25,13 @@
     font-size: 18px;
 }
 .navbar-nav :hover{
-    color:  #3effcc!important;
+    color:  var(--color-primario)!important;
+}
+.dropdown-menu{
+    background: black!important;
+    font-style: normal
+}
+.dropdown-item:hover{
+    background: var(--color-primario)!important;
+    color: white!important;
 }

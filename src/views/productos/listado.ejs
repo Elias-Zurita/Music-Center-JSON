@@ -12,19 +12,28 @@
     <body>
 
         <h1>NUESTROS PRODUCTOS</h1>
-        
-        <div class="cajaListado">
+        <div class="listadoPadre">
             <% productos.forEach(producto => { %>
-                <a href="/productos/detalle/<%= producto.id %>"><div class="cajaProducto">
-                    <img src="/images/productos/<%= producto.imagen %>">
-                    <div class="textoConHover">
-                        <%= producto.nombre %>
-                        <%= producto.modelo %>
-                        <%= producto.marca %>
+                <div class="cajaProducto">
+                    <a href="/productos/detalle/<%= producto.id %>">
+                        <div class="cajaImagenProducto">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <img src="/images/productos/<%= producto.imagen %>">
+                            <div class="textoConHover">
+                                <%= producto.nombre %>
+                                <br>
+                                <%= producto.modelo %>
+                                <br>
+                                <%= producto.marca %>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="precioProducto">
+                        $ <%= producto.precio %>
                     </div>
-                </div></a>
-                <div class="precioProducto">
-                    <%= producto.precio %>
                 </div>
             <% }) %>
         </div>

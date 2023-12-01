@@ -9,10 +9,12 @@ const cookieParser = require('cookie-parser');  // Es una libreria que se usa pa
 // Routers
 const indexRouter = require('./src/routes/mainRoutes.js');
 const productosRouter = require('./src/routes/productosRoutes');
-//const usuariosRouter = require('./src/routes/usuariosRoutes');
+const usuariosRouter = require('./src/routes/usuariosRoutes');
 const adminRouter = require('./src/routes/adminRoutes.js');
 
 const app = express();
+
+const userLoggedMiddleware = require('./src/middlewares/userLoggedMiddleware')
 
 app.use(session({                 // Inicializacion de sesion
   secret:"Shh, es un secreto",
@@ -20,23 +22,24 @@ app.use(session({                 // Inicializacion de sesion
   saveUninitialized: false,       // Propiedades de session que se deben setear como false
 }))
 
+app.use(cookieParser());
+app.use(userLoggedMiddleware) // Es importante que vaya despues de la inicializacion de la sesion
+
 // view engine setup
 app.set('views', path.join(__dirname, 'src/views'));
 app.set('view engine', 'ejs'); // Motor de vistas EJS
 app.use(methodOverride('_method')); // Permite utilizar otros metodos ademas de GET y POST
-app.use(cookieParser());
 
 app.use(logger('dev')); // Permite que llegue info del formulario al req.body
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); // Ubicacion de archivos estaticos
 
 
 // Rutas a utilizar
 app.use('/', indexRouter);
 app.use('/productos', productosRouter);
-//app.use('/usuarios', usuariosRouter);
+app.use('/usuarios', usuariosRouter);
 app.use('/administrar', adminRouter);
 
 

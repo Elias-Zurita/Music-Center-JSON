@@ -1,0 +1,81 @@
+.formularioLogin{
+    margin: 50px auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0, 0.2);
+    align-items: center;
+}
+.formularioLogin input{
+    width: 90%;
+    margin: 15px auto;
+    font-size: 18px;
+    padding: 10px;
+    border: black solid 2px;
+}
+.formularioLogin input:hover{
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+.campoContrasenia{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.campoContrasenia input{
+    width: 100%; 
+}
+.campoContrasenia span {  /* ojo de password */
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);  /* centra el ojo sobre el eje Y */
+    cursor: pointer;  /* el mouse se pone en modo hipervinculo al pasar sobre el ojo */
+    display: none;/* asi no se ve a menos que escriba la contraseña */
+}
+.campoContrasenia span i.hide-eye:before{
+    content: "\f070";            /* aplica la cruz al ojo */
+}
+.campoContrasenia input:valid ~ span{   
+    display: block;         /* Hace que aparezca el span (el ojo) al ingresar password */
+}
+.loginButton{
+    margin-top: 15px;
+    background: var(--color-primario);
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    width: 180px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+}
+.loginButton span {
+    display: inline-block;
+    transform: skew(21deg);
+}
+.loginButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+} 
+.loginButton:hover {
+    color: #fff;
+}
+.loginButton:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}

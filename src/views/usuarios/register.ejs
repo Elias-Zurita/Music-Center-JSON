@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <%- include('../partials/head.ejs') %>  
+  </head>
+
+  <header>
+      <%- include('../partials/header.ejs') %>
+  </header>
+  
+  <body>
+ 
+    <h1>REGISTRARSE</h1>
+    
+    <div class="formularioRegister">
+      <input type="text" placeholder="NOMBRE" name="nombre" required>
+      <div class="campoContrasenia">
+          <input type="password" placeholder="CONTRASEÑA" name="contraseña" id="contraseña" required style="width:100%">
+          <span><i class="fas fa-eye" id="Eye"></i></span>
+      </div>
+      <input type="text" placeholder="APELLIDO" name="apellidos" id="apellido" required>
+      <input type="text" placeholder="TELEFONO" name="telefono" id="telefono" required>
+      <input type="text" placeholder="EMAIL" name="email" id="email" required>
+      <label>Sube tu imagen de perfil: </label>
+                    <input 
+                      type="file"
+                      name= "avatar"
+                      class="form-control"> 
+      <button class="loginButton">
+          INGRESAR <i class="fa-solid fa-right-to-bracket"></i>
+      </button>
+      <label class="recordarUsuario">
+          <div class="recordarme">
+              <input type="checkbox" name="recordarUsuario"  id="recordarUsuario"> Recordarme
+          </div>
+      </label>
+  </div>
+
+    </div>
+
+  </body>
+    
+    <footer>
+        <%- include('../partials/footer.ejs') %>
+    </footer>
+
+</html>

@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Leandro",
+        "apellido": "sanchez",
+        "telefono": "1122003399",
+        "email": "pepe@gmail.com",
+        "contraseña": "ssssoo",
+        "categoria": "1",
+        "avatar": "swww.jpg"
+    },
+    {
+        "nombre": "Elias",
+        "apellido": "zurita",
+        "telefono": "1122443399",
+        "email": "elias@gmail.com",
+        "contraseña": "ssssoo",
+        "categoria": "2",
+        "avatar": "sss.jpg"
+    }
+   ]

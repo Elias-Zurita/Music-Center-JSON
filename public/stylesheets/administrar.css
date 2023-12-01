@@ -1,3 +1,48 @@
-table td{
-    border: black solid 2px
+.accesoCrear button{
+    border: none;
+    width: 100%;
+    border-radius:20px;
+    padding: 8px;
+    transition: transform 0.3s ease-in-out; 
+    color: navy;
+}
+.accesoCrear{
+    width: 300px;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    
+
+
+    border-radius:20px;
+    margin: 50px auto;
+}
+.accesoCrear button:hover{
+    color: var(--color-primario);
+    transform: scale(1.05); 
+}
+.tablaAdministrar{
+    margin: 0 auto
+}
+.tablaAdministrar img{
+    width: 80%;
+}
+.tablaAdministrar th{
+    text-align: center;
+    font-size:20px
+}
+.tablaAdministrar td{
+    border: black solid 2px;
+    padding-left: 10px;
+    font-size:17px;
+}
+.tablaAdministrar tr:hover{
+    background: rgb(178, 178, 178);
+}
+.tablaAdministrar td i{
+    font-size: 25px;
+}
+.tablaAdministrar td button{
+    border: none;
+    background: transparent;
 }
