@@ -11,12 +11,12 @@
     color: white;
 }
 .navbar-brand {
-    width: 40px;
+    height: 70px;
     border: blue solid 1px;
     
 }
 .navbar-brand img{
-    width: 100%;
+    height: 100%;
 }
 .navbar-nav{
     border: red solid;

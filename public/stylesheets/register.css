@@ -1,0 +1,21 @@
+.formularioRegister{
+    margin: 50px auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0, 0.2);
+    align-items: center;
+}
+.formularioRegister input{
+    width: 90%;
+    margin: 15px auto;
+    font-size: 18px;
+    padding: 10px;
+    border: black solid 2px;
+}
+.formularioRegister input:hover{
+    background-color: gainsboro;
+    border-radius: 10px;
+}

@@ -13,31 +13,117 @@
  
     <h1>REGISTRARSE</h1>
     
-    <div class="formularioRegister">
-      <input type="text" placeholder="NOMBRE" name="nombre" required>
-      <div class="campoContrasenia">
-          <input type="password" placeholder="CONTRASEÑA" name="contraseña" id="contraseña" required style="width:100%">
-          <span><i class="fas fa-eye" id="Eye"></i></span>
-      </div>
-      <input type="text" placeholder="APELLIDO" name="apellidos" id="apellido" required>
-      <input type="text" placeholder="TELEFONO" name="telefono" id="telefono" required>
-      <input type="text" placeholder="EMAIL" name="email" id="email" required>
-      <label>Sube tu imagen de perfil: </label>
-                    <input 
-                      type="file"
-                      name= "avatar"
-                      class="form-control"> 
-      <button class="loginButton">
-          INGRESAR <i class="fa-solid fa-right-to-bracket"></i>
-      </button>
-      <label class="recordarUsuario">
-          <div class="recordarme">
-              <input type="checkbox" name="recordarUsuario"  id="recordarUsuario"> Recordarme
+    <form method="POST" action="/usuarios/register" enctype="multipart/form-data">
+      <div class="row">
+        <div class="col-md-6 my-1">
+          <div class="form-group">
+            <label><b>Nombre:</b></label>
+            <input 
+              type="text" 
+              name="nombre" 
+              class="form-control <%= locals.errors && errors.nombre ? 'is-invalid' : null %>"
+              value="<%= locals.oldData ? oldData.nombre : null %>"
+            >
+            <% if (locals.errors && errors.nombre) { %>
+              <div class="text-danger">
+                <%= errors.nombre.msg %> 
+              </div>
+            <% } %>
           </div>
-      </label>
-  </div>
-
-    </div>
+        </div>
+        <div class="col-md-6 my-1">
+          <div class="form-group">
+            <label><b>Apellido:</b></label>
+            <input 
+              type="text" 
+              name="apellido" 
+              class="form-control <%= locals.errors && errors.apellido ? 'is-invalid' : null %>"
+              value="<%= locals.oldData ? oldData.apellido : null %>"
+            >
+            <% if (locals.errors && errors.apellido) { %>
+              <div class="text-danger">
+                <%= errors.apellido.msg %> 
+              </div>
+            <% } %>
+          </div>
+        </div>
+        <div class="col-md-6 my-1">
+          <div class="form-group">
+            <label><b>Correo electrónico:</b></label>
+            <input 
+              type="text" 
+              name="email" 
+              class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>"
+              value="<%= locals.oldData ? oldData.email : null %>"
+            >
+            <% if (locals.errors && errors.email) { %>
+              <div class="text-danger">
+                <%= errors.email.msg %>
+              </div>
+            <% } %>
+          </div>
+        </div>
+        <div class="col-md-6 my-1">
+          <div class="form-group">
+            <label><b>Password:</b></label>
+            <input 
+              type="password" 
+              name="password" 
+              class="form-control <%= locals.errors && errors.password ? 'is-invalid' : null %>"
+            >
+            <% if (locals.errors && errors.password) { %>
+              <div class="text-danger">
+                <%= errors.password.msg %>
+              </div>
+            <% } %>
+          </div>
+        </div>
+        <div class="col-md-6 my-1">
+          <div class="form-group">
+            <label><b>País de nacimiento:</b></label>
+            <select 
+              name="country" 
+              class="form-select <%= locals.errors && errors.country ? 'is-invalid' : null %>"
+            >
+              <option value="">Elegí un país</option>
+              <%  
+                let countries = ['Argentina', 'Bolivia', 'Brasil', 'Colombia', 'Chile', 'Ecuador', 'Paraguay', 'Perú', 'Uruguay', 'Venezuela'];
+              %>
+              <% for (const oneCountry of countries) { %>
+                <option 
+                  value="<%= oneCountry %>"
+                  <%= locals.oldData && (oneCountry === oldData.country) ? 'selected' : null %> 
+                > <%= oneCountry %> </option>
+              <% } %>
+            </select>
+            <% if (locals.errors && errors.country) { %>
+              <div class="text-danger">
+                <%= errors.country.msg %>
+              </div>
+            <% } %>
+          </div>
+        </div>
+        <div class="col-md-6 my-1">
+          <div class="form-group">
+            <label><b>Imagen de perfil:</b></label>
+            <input 
+              type="file" 
+              name="avatar"
+              class="form-control <%= locals.errors && errors.avatar ? 'is-invalid' : null %>"
+            >
+            <% if (locals.errors && errors.avatar) { %>
+              <div class="text-danger">
+                <%= errors.avatar.msg %>
+              </div>
+            <% } %>
+          </div>
+        </div>
+        <div class="col-12 my-3">
+          <button type="submit" class="btn btn-primary">Registrarse</button>
+        </div>
+      </div>
+    </form>
+  
 
   </body>
     

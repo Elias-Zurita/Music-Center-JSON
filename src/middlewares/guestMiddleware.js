@@ -1,8 +1,8 @@
-function guestMiddleware (req,res,next){
-    if (req.session.userLogged){              // Si hay alguien logueado
-        return res.redirect("/usuarios/perfil") // Redirecciona al perfil
-    }
-    next();   //  Sino el request sigue 
+function guestMiddleware(req, res, next) {
+	if (req.session.userLogged) {
+		return res.redirect('/user/profile');
+	}
+	next();
 }
-    
-module.exports = guestMiddleware
+
+module.exports = guestMiddleware;

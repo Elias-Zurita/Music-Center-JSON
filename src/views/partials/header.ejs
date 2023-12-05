@@ -31,32 +31,42 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> Carrito</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-user"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <% if (locals.isLogged){ %> <!-- Si el usuario esta logueado muestra lo siguiente -->
-                                <ul type="None">
-                                    <li><img src="/images/usuarios/<%= locals.userLogged.avatar %>"></li>
-                                    <li><a href="/usuarios/profile"><%= locals.userLogged.nombre %><%= locals.userLogged.apellido %></a></li>
-                                    <li><a href="/usuarios/logout">Cerrar sesión</a></li>
-                                </ul>
-                            <% } else { %>    <!-- Si no esta logueado muestra lo siguiente -->
-                            <li><a class="dropdown-item" href="/usuarios/login">Iniciar Sesión</a></li>
-                            <li><a class="dropdown-item" href="/usuarios/register">Registrarse</a></li>
-                            <li><a class="dropdown-item" href="/administrar">Administrar</a></li>
-                            <% } %>
-                        </ul>
-                    </li>
+                    <% if (locals.isLogged) { %>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="/images/avatars/<%= locals.userLogged.avatar %>" width="40" style="border-radius: 100%;">
+                                Hi <%= locals.userLogged.fullName %> 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/usuarios/profile">My profile</a>
+                                <li><hr class="dropdown-divider"></li>
+                                <a class="dropdown-item" href="/usuarios/logout">Logout</a>
+                            </ul>
+                        </li>
+                        <% if (locals.userLogged.category == "admin") { %>
+                            <div style="color: white!important"><a href="/administrar">Administrar</a></div>
+                        <% } %>
+                    <% } else { %>    <!-- Si no esta logueado muestra lo siguiente -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/usuarios/login">Iniciar Sesión</a></li>
+                                <li><a class="dropdown-item" href="/usuarios/register">Registrarse</a></li>
+                                <li><a class="dropdown-item" href="/administrar">Administrar</a></li>
+                            </ul>
+                        </li>
+                    <% } %>
                 </ul>
+           
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
-      </nav>
+    </nav>
       
 
     

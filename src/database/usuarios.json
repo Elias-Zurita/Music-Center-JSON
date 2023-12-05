@@ -1,20 +1,31 @@
 [
-    {
-        "nombre": "Leandro",
-        "apellido": "sanchez",
-        "telefono": "1122003399",
-        "email": "pepe@gmail.com",
-        "contraseña": "ssssoo",
-        "categoria": "1",
-        "avatar": "swww.jpg"
-    },
-    {
-        "nombre": "Elias",
-        "apellido": "zurita",
-        "telefono": "1122443399",
-        "email": "elias@gmail.com",
-        "contraseña": "ssssoo",
-        "categoria": "2",
-        "avatar": "sss.jpg"
-    }
-   ]
+ {
+  "id": 1,
+  "nombre": "Elias",
+  "apellido": "Zurita",
+  "email": "elias@dev.com",
+  "password": "$2a$10$biX7h3DYppazYqn7qSn3re7FPQi/iybky4ZNnQ23pVoydFsworHLC",
+  "country": "Argentina",
+  "avatar": "avatar1701704207693.jpg",
+  "category": "admin"
+ },
+ {
+  "id": 2,
+  "category": "user",
+  "fullName": "choto",
+  "email": "choto@gmail.com",
+  "password": "$2a$10$biX7h3DYppazYqn7qSn3re7FPQi/iybky4ZNnQ23pVoydFsworHLC",
+  "country": "Chile",
+  "avatar": "1701786827416_img.jpg"
+ },
+ {
+  "id": 3,
+  "category": "user",
+  "nombre": "anto",
+  "apellido": "perlotti",
+  "email": "anto@gmail.com",
+  "password": "$2a$10$Lxjo4ZOwe02kQEN8GGSL4uq2nQym7wnqzmdDeze6jEqw2striNsum",
+  "country": "Perú",
+  "avatar": "1701789281724_img.jpg"
+ }
+]

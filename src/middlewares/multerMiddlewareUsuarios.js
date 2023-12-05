@@ -1,16 +1,16 @@
-const path = require ('path')
-const multer = require('multer'); // Libreria para subir archivos al sitio
+const path = require('path');
+const multer = require('multer');
 
-const storage = multer.diskStorage({   // Alojamiento de archivos
-    destination: (req, file, cb) => {  
-        cb (null, path.join(__dirname, "../../public/images/usuarios"))
-    }, 
-    filename: (req, file, cb) => { // Propiedad que guarda el nombre de la imagen // 
-        const newFilename = "avatar" + Date.now() + path.extname (file.originalname); // El nombre del archivo va a ser "imagen + el horario en mili segundos (Datenow) + extension (extname)" 
-        cb (null, newFilename); 
-    } 
-}); 
+const storage = multer.diskStorage({
+	destination: (req, file, cb) => {
+		cb(null, './public/images/avatars');
+	},
+	filename: (req, file, cb) => {
+		let fileName = `${Date.now()}_img${path.extname(file.originalname)}`;
+		cb(null, fileName);
+	}
+})
 
-const uploadFile = multer ({storage}) // Ejecucion de multer (para subir archivos)
+const uploadFile = multer({ storage });
 
-module.exports = uploadFile
+module.exports = uploadFile;

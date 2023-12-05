@@ -4,7 +4,7 @@ const path = require('path');
 const logger = require('morgan');
 const methodOverride = require('method-override'); // Es una libreria que permite utilizar PUT y DELETE
 const session = require('express-session');  // Es una libreria que se usa para las sesiones  
-const cookieParser = require('cookie-parser');  // Es una libreria que se usa para guardar en el navegador usado y en el servidor (en este caso lo uso para dejar logueado por un tiempo "X" al usuario)
+const cookies = require('cookie-parser');  // Es una libreria que se usa para guardar en el navegador usado y en el servidor (en este caso lo uso para dejar logueado por un tiempo "X" al usuario)
 
 // Routers
 const indexRouter = require('./src/routes/mainRoutes.js');
@@ -22,7 +22,7 @@ app.use(session({                 // Inicializacion de sesion
   saveUninitialized: false,       // Propiedades de session que se deben setear como false
 }))
 
-app.use(cookieParser());
+app.use(cookies());
 app.use(userLoggedMiddleware) // Es importante que vaya despues de la inicializacion de la sesion
 
 // view engine setup
