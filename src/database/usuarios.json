@@ -24,8 +24,18 @@
   "nombre": "anto",
   "apellido": "perlotti",
   "email": "anto@gmail.com",
-  "password": "$2a$10$Lxjo4ZOwe02kQEN8GGSL4uq2nQym7wnqzmdDeze6jEqw2striNsum",
+  "password": "$2a$10$biX7h3DYppazYqn7qSn3re7FPQi/iybky4ZNnQ23pVoydFsworHLC",
   "country": "Perú",
   "avatar": "1701789281724_img.jpg"
+ },
+ {
+  "id": 4,
+  "category": "user",
+  "nombre": "PEDRO",
+  "apellido": "eee",
+  "email": "pedrito@gmail.com",
+  "password": "$2a$10$rFpRVXx27sx2OQ5ZDX.OouhlLSdekPGu5RYw0fGWKDRiXlljuioVC",
+  "country": "Bolivia",
+  "avatar": "1701803646766_img.jpg"
  }
 ]

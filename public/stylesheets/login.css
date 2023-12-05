@@ -7,13 +7,14 @@
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0, 0.2);
     align-items: center;
+    background: teal;
 }
 .formularioLogin input{
     width: 90%;
     margin: 15px auto;
     font-size: 18px;
     padding: 10px;
-    border: black solid 2px;
+    border: none
 }
 .formularioLogin input:hover{
     background-color: gainsboro;
@@ -39,8 +40,23 @@
 .campoContrasenia span i.hide-eye:before{
     content: "\f070";            /* aplica la cruz al ojo */
 }
-.campoContrasenia input:valid ~ span{   
-    display: block;         /* Hace que aparezca el span (el ojo) al ingresar password */
+.campoContrasenia input:not(:placeholder-shown) ~ span { /* Muestra el ojo al ingresar el password */
+    display: block;         
+}
+.cajaCheckBox{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bolder; 
+}
+.cajaCheckBox input{
+    width: 20px;
+    cursor: pointer;
+}
+.cajaCheckBox label:hover{
+    color: #2554f0; 
+    cursor: pointer;
 }
 .loginButton{
     margin-top: 15px;
@@ -54,6 +70,8 @@
     text-transform: uppercase;
     cursor: pointer;
     transform: skew(-21deg);
+    color: black;
+    background-color:white
 }
 .loginButton span {
     display: inline-block;
@@ -66,13 +84,13 @@
     bottom: 0;
     right: 100%;
     left: 0;
-    background: rgb(20, 20, 20);
+    background: black;
     opacity: 0;
     z-index: -1;
-    transition: all 0.5s;
+    transition: all .8s;
 } 
 .loginButton:hover {
-    color: #fff;
+    color: white;
 }
 .loginButton:hover::before {
     left: 0;

@@ -7,15 +7,23 @@
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0, 0.2);
     align-items: center;
+    background: teal;
 }
 .formularioRegister input{
     width: 90%;
     margin: 15px auto;
     font-size: 18px;
     padding: 10px;
-    border: black solid 2px;
+    border: none;
 }
 .formularioRegister input:hover{
     background-color: gainsboro;
     border-radius: 10px;
+}
+.formularioRegister select{
+    width: 90%;
+    margin: 15px auto;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
 }
