@@ -34,6 +34,9 @@
                     <div class="precioProducto">
                         $ <%= producto.precio %>
                     </div>
+                    <form action="/carrito/agregar/<%= producto.id %>" method="post">
+                        <button type="submit">Agregar al carrito</button>
+                    </form>
                 </div>
             <% }) %>
         </div>

@@ -19,7 +19,19 @@
                 <input type="text" placeholder="NOMBRE" name="nombre" required>
                 <input type="text" placeholder="MODELO" name="modelo" required>
                 <input type="text" placeholder="MARCA" name="marca" required>
-                <input type="text" placeholder="CATEGORIA" name="categoria" required>
+                <select name="categoria" id="">
+                    <option value="">Elegí una categoria</option>
+                        <%  
+                            let categorias = ['Guitarras electricas', 'Guitarras acusticas', 'Guitarras españolas', 'Bajos', 'Microfonos', 'Amplificadores', 'Pedales'];
+                        %>
+                        <% for (const unaCategoria of categorias) { %>
+                            <option 
+                            value="<%= unaCategoria %>"
+                                <%= locals.oldData && (unaCategoria === oldData.categoria) ? 'selected' : null %>> 
+                                <%= unaCategoria %> 
+                            </option>
+                        <% } %>
+                </select>
                 <input type="number" placeholder="PRECIO" name="precio" required max="5000000" min="1">
                 <input type="text" placeholder="DESCRIPCION" name="descripcion" required>
                 <input type="file" placeholder="IMAGEN" name="imagen" required>

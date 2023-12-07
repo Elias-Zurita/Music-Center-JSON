@@ -23,6 +23,7 @@
     width: 60%;
     justify-content: space-between;
     font-size: 18px;
+    align-items: center;
 }
 .navbar-nav :hover{
     color:  var(--color-primario)!important;
