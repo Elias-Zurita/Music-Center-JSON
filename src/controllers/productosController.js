@@ -21,7 +21,21 @@ module.exports = {
         let productoEncontrado = productos.find(function(producto){
             return producto.id == req.params.id //renderiza el producto que se pida por id //            
         })
-
         res.render("productos/detalle", {producto: productoEncontrado}) // renderiza el detalle del producto pedido por id //
+    },
+    buscar: (req, res) => {
+        let terminoDeBusqueda = req.query.buscar.toLowerCase(); // toma el texto ingresado al campo de busqueda y aplica toLowerCase asi la busqueda cubre mayusculas y minusculas
+        let productos = findAll();
+        let productosFiltrados = productos.filter(producto =>
+            producto.nombre.toLowerCase().includes(terminoDeBusqueda) // filtro los productos que contengan en su nombre un match con el termino de busqueda ingresado
+        );
+        res.render('productos/listado', { productos: productosFiltrados, terminoDeBusqueda });
+    },
+    categoria: (req, res) => {
+        let productos = findAll();
+        let categoriaSeleccionada = productos.filter(function(productos){ // filtra las categorias de los productos
+            return productos.categoria == req.params.categoria // devuelve la categoria del producto pedida por params(seleccionada en el navegador)
+        })
+        res.render("productos/listado", {productos: categoriaSeleccionada}) 
     }
 }

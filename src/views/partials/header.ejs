@@ -19,13 +19,13 @@
                             CATEGORIAS
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Guitarras eléctricas</a></li>
-                            <li><a class="dropdown-item" href="#">Guitarras acústicas</a></li>
-                            <li><a class="dropdown-item" href="#">Guitarras españolas</a></li>
-                            <li><a class="dropdown-item" href="#">Bajos eléctricos</a></li>
-                            <li><a class="dropdown-item" href="#">Micrófonos</a></li>
-                            <li><a class="dropdown-item" href="#">Amplificadores</a></li>
-                            <li><a class="dropdown-item" href="#">Pedales</a></li>
+                            <li><a class="dropdown-item" href="/productos/guitarrasElectricas">Guitarras eléctricas</a></li>
+                            <li><a class="dropdown-item" href="/productos/guitarrasAcusticas">Guitarras acústicas</a></li>
+                            <li><a class="dropdown-item" href="/productos/guitarrasEspañolas">Guitarras españolas</a></li>
+                            <li><a class="dropdown-item" href="/productos/bajos">Bajos eléctricos</a></li>
+                            <li><a class="dropdown-item" href="/productos/microfonos">Micrófonos</a></li>
+                            <li><a class="dropdown-item" href="/productos/amplificadores">Amplificadores</a></li>
+                            <li><a class="dropdown-item" href="/productos/pedales">Pedales</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -60,8 +60,8 @@
                     <% } %>
                 </ul>
            
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                <form class="d-flex" role="search" method="GET" action="/productos/buscar">
+                    <input class="form-control me-2" type="search" name="buscar" placeholder="¿Qué estás buscando?" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
