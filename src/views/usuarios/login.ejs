@@ -39,30 +39,17 @@
                 <div class="invalid-feedback">
                 </div>
                 <div class="cajaCheckBox">
-                    <div><input type="checkbox" name="remember_user" id="checkRecordarme"></div>
+                    <div><input type="checkbox" name="remember_user" id="checkRecordarme" style="box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);"></div>
                     <label for="checkRecordarme" >Recordar mi usuario</label>
                 </div>
                 <button type="submit" class="loginButton">INGRESAR <i class="fa-solid fa-right-to-bracket"></i></button>
             </div>
-        </form>
-        
-        <!-- Campo para funcionalidad de Ojo (visualizador de contraseña) -->
-        <script>
-            var eye = document.getElementById('Eye');
-            var contraseña = document.getElementById('contraseña');
-            eye.addEventListener("click", function(){   /* al hacer click en el ojo acciona */
-                if (contraseña.type === "password") {  
-                    contraseña.type = "text";       /* transforma el tipo password (encriptado) a texto */
-                    eye.classList.add ("hide-eye"); /* tacha el ojo */
-                } else {
-                    contraseña.type = "password";    /* vuelve al formato encriptado */
-                    eye.classList.remove ("hide-eye"); /* tilda y destilda el ojo tachado */
-                }
-            })
-        </script>
+        </form>       
 
     </body>
         
+    <script src="../javascripts/hideEye.js"></script>
+
     <footer>
         <%- include('../partials/footer.ejs') %>
     </footer>

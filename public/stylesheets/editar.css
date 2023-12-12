@@ -1,0 +1,65 @@
+
+.formularioEdicionProducto{
+    display:flex;
+    flex-direction:column;
+    width: 600px;
+    margin: 10px auto 10px auto;
+}
+.formularioEdicionProducto div{
+    font-weight: bold;
+    margin: 5px 0 0 15px;
+    font-size:18px
+}
+.formularioEdicionProducto input{
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.34);
+}
+.formularioEdicionProducto select{
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.34);
+}
+.imagenYEdicion{
+    display:flex;
+    border: blue solid 2px;
+    justify-content: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+.imagenEdicion{
+    height: 550px;
+    margin: 10px 40px;
+}
+.imagenEdicion img{
+    height: 100%;
+}
+.botonesEdicion{
+    display:flex;
+    border: blue solid 2px;
+    width: 370px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+@media (max-width:1000px){ 
+    .imagenYEdicion{
+        flex-direction:column;
+        align-items: center;
+        width: 100%;
+    }
+    .formularioEdicionProducto{
+        width: 80%;
+    }
+    .botonesEdicion{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+@media (max-width:480px){ 
+    .formularioEdicionProducto{
+        width: 90%;
+    }
+}

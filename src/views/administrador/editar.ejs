@@ -14,29 +14,36 @@
         <h1>EDITAR PRODUCTO</h1>
 
         <form action="/administrar/editar/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
-            <div class="imagenEdicion">
-                <img src="/images/productos/<%= producto.imagen %>">
+            <div class="imagenYEdicion">
+                <div class="imagenEdicion">
+                    <img src="/images/productos/<%= producto.imagen %>">
+                </div>
+                <div class="formularioEdicionProducto">
+                    <div>NOMBRE:</div>
+                    <input type="text" placeholder="NOMBRE NUEVO" name="nombre" value="<%= producto.nombre %>" required>
+                    <div>MODELO:</div>
+                    <input type="text" placeholder="MODELO NUEVO" name="modelo" value="<%= producto.modelo %>" required>
+                    <div>MARCA:</div>
+                    <input type="text" placeholder="MARCA NUEVA" name="marca" value="<%= producto.marca %>" required>
+                    <div>CATEGORIA:</div>
+                    <input type="text" placeholder="CATEGORIA NUEVA" name="categoria" value="<%= producto.categoria %>" required>
+                    <div>PRECIO:</div>
+                    <input type="text" placeholder="PRECIO NUEVO" name="precio" required value="<%= producto.precio %>">
+                    <div>DESCRIPCIÓN:</div>
+                    <input type="text" placeholder="DESCRIPCION NUEVA" name="descripcion" value="<%= producto.descripcion %>" required>
+                    <div>IMAGEN:</div>
+                    <input type="file" placeholder="IMAGEN NUEVA" name="imagen" id="imagen">
+                </div>
             </div>
-
-            <div class="formularioCreacionProducto">
-                <input type="text" placeholder="NOMBRE NUEVO" name="nombre" value="<%= producto.nombre %>" required>
-                <input type="text" placeholder="MODELO NUEVO" name="modelo" value="<%= producto.modelo %>" required>
-                <input type="text" placeholder="MARCA NUEVA" name="marca" value="<%= producto.marca %>" required>
-                <input type="text" placeholder="CATEGORIA NUEVA" name="categoria" value="<%= producto.categoria %>" required>
-                <input type="text" placeholder="PRECIO NUEVO" name="precio" required value="<%= producto.precio %>">
-                <input type="text" placeholder="DESCRIPCION NUEVA" name="descripcion" value="<%= producto.descripcion %>" required>
-                <input type="file" placeholder="IMAGEN NUEVA" name="imagen" id="imagen">
+            <div class="botonesEdicion">
+                <div>
+                    <button class="loginButton" type="submit">GUARDAR</button>
+                </div>
+                <div>
+                    <a href="/administrar"><button class="loginButton">VOLVER</button></a>
+                </div>
             </div>
-
-            <div class="botonCrear">
-                <button type="submit">GUARDAR PRODUCTO</button>
-            </div>
-        
         </form>
-        
-        <div class="botonCrear">
-            <a href="/administrar"><button>VOLVER</button></a>
-        </div>
         
     </body>
   

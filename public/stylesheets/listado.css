@@ -3,6 +3,7 @@
   margin: 30px 80px;
   display: flex;
   flex-wrap: wrap;  
+  justify-content: center;
 }
 .cajaProducto{
   display: flex;
