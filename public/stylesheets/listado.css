@@ -99,3 +99,17 @@
   font-size: 20px;
   margin-top: 12px;
 }
+@media (max-width:1300px){
+  .listadoPadre{
+    margin: 30px 0px;
+  }
+} 
+@media (max-width:480px){
+  .cajaProducto{
+    width: 150px;
+    margin: 10px;
+  }
+  .cajaImagenProducto{
+    width: 150px;
+  }
+} 

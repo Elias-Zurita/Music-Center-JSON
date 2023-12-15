@@ -4,35 +4,88 @@
     color: white;
     font-weight: bold;
 }
+
 .navbar{
     background: black;
 }
 .navbar a {
     color: white;
 }
+
 .navbar-brand {
-    height: 70px;
+    height: 50px;
     border: blue solid 1px;
-    
 }
 .navbar-brand img{
     height: 100%;
 }
-.navbar-nav{
-    border: red solid;
-    width: 60%;
-    justify-content: space-between;
+.nav-item {
+    margin-right: 26px;
     font-size: 18px;
-    align-items: center;
+    font-weight: bold;
+    font-family: "Poppins";
 }
-.navbar-nav :hover{
-    color:  var(--color-primario)!important;
+.nav-item a:hover{
+    color: var(--color-primario);
 }
-.dropdown-menu{
-    background: black!important;
-    font-style: normal
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show { /* Despues de hacer click en el dropdownmenu */
+    color: var(--color-primario)!important;
+}
+.dropdown-item{
+    color: black!important;
 }
 .dropdown-item:hover{
     background: var(--color-primario)!important;
-    color: white!important;
+}
+/* Burger menu */
+.navbar-toggler:focus { /* quita el recuadro al hacer click en el burgermenu */
+    outline: none;
+    box-shadow: none!important;
+}
+.navbar-toggler{ 
+    border: none;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s ;
+}
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+.navbar-toggler:focus { /* quita el recuadro al hacer click en el burgermenu */
+    outline: none;
+    box-shadow: none;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { /* distancia lateral burgermenu logo */
+    --bs-gutter-x: 12px;
+}
+.btn-outline-success { /* Boton de busqueda */
+    --bs-btn-color: white!important;
+    --bs-btn-border-color: var(--color-primario)!important;
+}
+#busqueda{
+    width: 280px;
+}
+@media (max-width: 1000px){
+    .navbar-nav .dropdown-menu {  /* Dropdown menu cuando es mobile */
+        width: 250px;
+    }
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl { /* Menu negro desplegable en mobile*/
+        padding-bottom: 10px;
+    }
+    #busqueda{
+        width: 250px;
+    }
+    .navbar .container{ /* Desplazamiento burger menu */
+        --bs-gutter-x: 0rem;
+    }
 }
