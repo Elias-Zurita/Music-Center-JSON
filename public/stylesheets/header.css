@@ -1,3 +1,17 @@
+/* Boton Arriba */
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 60px;
+    bottom: 100px;
+    z-index: 11;
+    cursor: pointer;
+    animation: action 1s infinite alternate;
+}
+.back-to-top:hover{
+    background-color: violet!important;
+    color: #9b1c43!important;
+}
 .promoHeader{
     text-align:center;
     background-color: #252A2E;
@@ -87,5 +101,11 @@
     }
     .navbar .container{ /* Desplazamiento burger menu */
         --bs-gutter-x: 0rem;
+    }
+}
+@media (max-width:625px){ 
+    .back-to-top {
+        right: 25px;
+        bottom: 140px;
     }
 }

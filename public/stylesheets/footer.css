@@ -1,0 +1,86 @@
+.padreColumnasFooter{
+    background: black;
+    padding: 3% 5% 2% 8%;
+    display: flex;
+}
+.columnaFooter{
+    width: 30%;
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+.logoFooter{
+    color: #9b1c43;
+    font-family: 'Tomorrow', sans-serif;
+    text-shadow: -1px 4px 3px rgba(155, 28, 67, 0.48);
+    font-size: 45px;
+    font-weight:bold
+}
+.columnaFooter a:hover{
+    color: white;
+}
+.tituloFooter{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #9b1c43;
+    font-size: 25px;
+}
+.redesFooter{
+    margin-right: 2px;
+    background-color: #9b1c43;
+    color: white;
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.redesFooter:hover{
+    background-color: white;
+}
+.redesFooter:hover i{
+    color: black;
+    font-weight: bold;
+}
+.cajaDesarrollador{
+    background: #292b33;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.cajaDesarrollador span{
+    font-family: 'Tomorrow', sans-serif;
+    text-shadow: -1px 4px 3px rgba(155, 28, 67, 0.48);
+    font-weight:bold
+}
+.cajaDesarrollador a{
+  color: white;
+}
+.cajaDesarrollador strong:hover{
+    color: rgb(18, 224, 187);
+}
+@media (max-width:1200px){ 
+    .padreColumnasFooter{
+        padding: 3% 5% 2% 3%;
+        display: flex;
+    }
+    .columnaFooter{
+        width: 25%;
+        color: rgba(255, 255, 255, 0.6) !important;
+    }
+}
+@media (max-width:1200px){ 
+    .padreColumnasFooter{
+        flex-direction: column;
+    }
+    .columnaFooter{
+        width: 100%;
+        padding-left: 20px;
+    }
+}
+@media (max-width:800px){ 
+  .padreColumnasFooter {
+    padding-left: 7%;
+  }
+}
