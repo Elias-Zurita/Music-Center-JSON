@@ -1,0 +1,206 @@
+.bannerVideoIndex{
+    border: blue solid 3px;
+}
+.bannerVideoIndex video{
+    height: 200px;
+    width: 100%;
+    object-fit: cover; /* no achica la imagen, sino que la pasa por arriba */
+}
+.categoriasIndex{
+    width: 100%;
+    border: green solid 3px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto 70px auto;
+}
+.categoria{
+    width: 220px;
+    height:170px;
+    border: blue solid 2px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.imagenCategoria{
+    width: 100%;
+    height: 170px;
+    border: crimson solid 2px;
+    border-radius: 5px;
+}
+.nombreCategoria{
+    font-size: 13px;
+    border: violet solid 2px;
+}
+.cajaCuentaRegresiva{
+    border: black solid 2px;
+    text-align:center;
+    margin-bottom: 80px;
+}
+.tituloRegresiva{
+    font-size: 40px;
+    font-weight:bold;
+    margin-bottom: 30px;
+    animation: colorChange 3s ease-in-out infinite;
+}
+@keyframes  colorChange {
+  0% { color: #fff71c; }
+  25% { color: #ff2912; }
+  50% { color: #127fec; }
+  75% { color: #ff2912; }
+  100% { color: #fff71c; }
+}
+.countdown{
+    display: flex;
+    justify-content:center;
+    font-size:30px;
+    height: 100%;
+    align-items: center;
+}
+.time{
+    margin: 0 20px;
+    width: 80px;
+    text-align: center;
+    margin: 0 2% 0 2%;
+}
+.unidadDeMedida{
+    font-size:40px;
+    color: crimson;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-left: auto;
+    margin-right: auto;
+    border: crimson solid 2px;
+    border-radius:5px
+}
+.unidadEscrita{
+    color: black;
+    font-size:17px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* CAROUSEL flickity */
+.cajaCarouselFlickity{
+    width: 93%;
+    margin: 0 auto 120px auto;
+    border: violet solid 2px;
+    overflow: hidden;
+    position: relative;
+}
+.guitarraCarouselFlickity {
+    width: 25%;  /* Determina la cantidad de cajas que se van a ver del carrousel */
+    height: 450px;
+    border-radius: 5px;
+    border: red solid 2px;
+    counter-increment: carousel-cell;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imagenGuitarraCarousel{
+    height: 350px;
+    margin: 0;
+    border: blue solid 2px;
+}
+.guitarraCarouselFlickity img{
+    height: 350px;
+    margin: 0;
+    border: blue solid 2px;
+}
+.nombreGuitarraIndex{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto 0 auto;  
+    transform: skew(-15deg);
+}
+.flickity-prev-next-button.previous {
+    position: absolute;
+    left: 0% !important;
+    color: red!important;
+    background: transparent;
+    border: black solid 3px;
+    top: 50%;
+    width: 45px;
+    z-index: 50;
+}
+.flickity-prev-next-button.next {
+    position: absolute;
+    right: 0% !important;
+    color: red!important;
+    background: transparent;
+    border: black solid 3px;
+    top: 50%;
+    width: 45px;
+    z-index: 50;
+}
+.flickity-page-dots {  /* Pelotitas inferiores de navegacion */
+    display: none;
+}
+@media (max-width:800px){
+    .autoCarouselFlickity {
+        width: 50%;
+    }
+}
+
+.iconosIndex{
+    border: black solid 3px;
+    margin: 50px auto 80px auto;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cajaIconoIndex{
+    border: violet solid 2px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size:15px;
+    font-weight: bold;
+    margin: 15px;
+    position: relative;
+    cursor: crosshair;
+}
+.cajaIconoIndex div{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: .6s ease-in-out;
+    padding: 20px;
+}
+.cajaIconoIndex img{
+    height: 130px;
+    object-fit: cover; /* no achica la imagen, sino que la pasa por arriba */
+}
+.cajaIconoIndex .front{
+    transform: perspective(500px) rotateY(0deg);
+    border: blue solid 1px;
+}
+  /* en la propiedad Transform si quiero modificar el giro (vertircal, horizontal, izq a der, der a izq tengo que modificar rotateY a rotateX y los grados + a - */
+.cajaIconoIndex .back{
+    background-color: black;
+    color: white;
+    transform: perspective(500px) rotateY(180deg); 
+    border: goldenrod solid 1px;
+}
+.cajaIconoIndex:hover .front{
+    transform: perspective(500px) rotateY(180deg);
+}
+.cajaIconoIndex:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+}

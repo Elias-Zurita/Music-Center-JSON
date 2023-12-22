@@ -20,13 +20,15 @@
   flex-wrap: wrap;  
   justify-content: space-around; /*centra la imagen y el contenido */
   text-align: center;
-  box-shadow: 0 0 20px rgba(0,0,0, 0.2);
+  box-shadow: 0 0 20px #f7ca47;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   padding: 5px;
+  background-color: white;
 }
 .cajaImagenProducto img{
   height: 100%;
+  
 }
 .cajaImagenProducto:hover img{
   filter: blur(5px);
