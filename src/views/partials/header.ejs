@@ -37,9 +37,6 @@
                             <li><a class="dropdown-item" href="/productos/Pedales">Pedales</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/carrito"><i class="fa-solid fa-cart-shopping"></i> Carrito</a>
-                    </li>
                     <% if (locals.isLogged) { %>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -66,6 +63,12 @@
                             </ul>
                         </li>
                     <% } %>
+                    <li class="nav-item">
+                        <div class="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div id="count">0</div>
+                        </div>
+                    </li>
                 </ul>
            
                 <form class="d-flex" role="search" method="GET" action="/productos/buscar">

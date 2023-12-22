@@ -1,3 +1,8 @@
+.productosCarrito{
+  border: violet solid 3px;
+  width: 100%;
+  display: flex;
+}
 .listadoPadre{
   border: blue solid 2px;
   margin: 30px 80px;
@@ -101,6 +106,45 @@
   font-size: 20px;
   margin-top: 12px;
 }
+
+/* ====== CARRITO DE COMPRAS ====== */
+
+.container{
+  display: flex;
+  width: 30%;
+  margin-bottom: 30px;
+  border: red solid 3px;
+}
+#root{
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.sidebar{
+  width: 40%;
+  border-radius: 5px;
+  background-color: #eee;
+  margin-left: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:1300px){
   .listadoPadre{
     margin: 30px 0px;

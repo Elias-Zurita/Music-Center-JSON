@@ -51,6 +51,28 @@
 .dropdown-item:hover{
     background: var(--color-primario)!important;
 }
+.cart{
+    border: violet solid 2px!important;
+    width: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 7px 5px;
+}
+.cart div{
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: yellow solid 2px;
+    border-radius: 50%;
+    background-color: #9b1c43;
+}
+
 /* Burger menu */
 .navbar-toggler:focus { /* quita el recuadro al hacer click en el burgermenu */
     outline: none;

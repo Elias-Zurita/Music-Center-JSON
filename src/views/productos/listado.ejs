@@ -12,33 +12,50 @@
     <body>
 
         <h1>NUESTROS PRODUCTOS</h1>
-        <div class="listadoPadre">
-            <% productos.forEach(producto => { %>
-                <div class="cajaProducto">
-                    <a href="/productos/detalle/<%= producto.id %>">
-                        <div class="cajaImagenProducto">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <img src="/images/productos/<%= producto.imagen %>">
-                            <div class="textoConHover">
-                                <%= producto.nombre %>
-                                <br>
-                                <%= producto.modelo %>
-                                <br>
-                                <%= producto.marca %>
+
+        <div class="productosCarrito">
+
+            <div class="listadoPadre">
+                <% productos.forEach(producto => { %>
+                    <div class="cajaProducto">
+                        <a href="/productos/detalle/<%= producto.id %>">
+                            <div class="cajaImagenProducto">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <img src="/images/productos/<%= producto.imagen %>">
+                                <div class="textoConHover">
+                                    <%= producto.nombre %>
+                                    <br>
+                                    <%= producto.modelo %>
+                                    <br>
+                                    <%= producto.marca %>
+                                </div>
                             </div>
+                        </a>
+                        <div class="precioProducto">
+                            $ <%= producto.precio %>
                         </div>
-                    </a>
-                    <div class="precioProducto">
-                        $ <%= producto.precio %>
+                        <form action="/carrito/agregar/<%= producto.id %>" method="post">
+                            <button type="submit">Agregar al carrito</button>
+                        </form>
                     </div>
-                    <form action="/carrito/agregar/<%= producto.id %>" method="post">
-                        <button type="submit">Agregar al carrito</button>
-                    </form>
+                <% }) %>
+            </div>
+
+            <div class="container">
+                <div id="root"></div>
+                <div class="sidebar">
+                    <div class="head"><p>My Cart</p></div>
+                    <div id="cartItem">Your cart is empty</div>
+                    <div class="foot">
+                        <h3>Total:</h3>
+                        <h4 id="total">$ 0.00</h4>
+                    </div>
                 </div>
-            <% }) %>
+            </div>
+            
         </div>
 
     </body>
