@@ -14,85 +14,62 @@ closeCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 })
 
+/* const categories = [...new Set(product.map((item)=>
+    {return item}))]
+    let i=0;
+document.getElementById('root').innerHTML = categories.map((item)=>
+{
+    var {image, title, price} = item;
+    return(
+        `<div class='box'>
+            <div class='img-box'>
+                <img class='images' src=${image}></img>
+            </div>
+        <div class='bottom'>
+        <p>${title}</p>
+        <h2>$ ${price}.00</h2>`+
+        "<button onclick='addtocart("+(i++)+")'>Add to cart</button>"+
+        `</div>
+        </div>`
+    )
+}).join('')
 
-/* ESTO ES PARA CREAR EL LISTADO DE PRODUCTOS ME PARECE */
-const addDataToHTML = () => {
-    if(products.length > 0){  // si hay productos
-        products.forEach(product => {
-            let newProduct = document.createElement('div'); // creo un div para el nuevo producto
-            newProduct.dataset.id = product.id; // el div obtendra el id del producto
-            newProduct.classList.add('item'); // al nuevo div le pongo la clase "item"
-            newProduct.innerHTML = // le agrego al producto la siguiente info con sus etiquetas
-            `<img src="${product.imagen}" alt="">
-            <h2>${product.nombre}</h2>
-            <div class="price">$${product.precio}</div>
-            <button class="addCart">Add To Cart</button>`;
-            listProductHTML.appendChild(newProduct); // agrega un elemento hijo (un nuevo producto) al listado de productos
-        });
-    }
+var cart =[];
+
+function addtocart(a){
+    cart.push({...categories[a]});
+    displaycart();
 }
-
-// 
-listProductHTML.addEventListener('click', (event) => {
-    let positionClick = event.target;
-    if(positionClick.classList.contains('addCart')){
-        let id_product = positionClick.parentElement.dataset.id;
-        addToCart(id_product);
-    }
-})
-
-
-const addToCart = (product_id) => {
-    let positionThisProductInCart = cart.findIndex((value) => value.product_id == product_id);
-    if(cart.length <= 0){
-        cart = [{
-            product_id: product_id,
-            quantity: 1
-        }];
-    }else if(positionThisProductInCart < 0){
-        cart.push({
-            product_id: product_id,
-            quantity: 1
-        });
-    }else{
-        cart[positionThisProductInCart].quantity = cart[positionThisProductInCart].quantity + 1;
-    }
-    addCartToHTML();
-    addCartToMemory();
+function delElement(a){
+    cart.splice(a, 1);
+    displaycart();
 }
+ */
 
-const addCartToMemory = () => {
-    localStorage.setItem('cart', JSON.stringify(cart));
-}
-
-const addCartToHTML = () => {
-    listCartHTML.innerHTML = '';
-    let totalQuantity = 0;
-    if(cart.length > 0){
-        cart.forEach(item => {
-            totalQuantity = totalQuantity +  item.quantity;
-            let newItem = document.createElement('div');
-            newItem.classList.add('item');
-            newItem.dataset.id = item.product_id;
-
-            let positionProduct = products.findIndex((value) => value.id == item.product_id);
-            let info = products[positionProduct];
-            listCartHTML.appendChild(newItem);
-            newItem.innerHTML = `
-            <div class="image">
-                    <img src="${info.image}">
-                </div>
-                <div class="name">
-                ${info.name}
-                </div>
-                <div class="totalPrice">$${info.price * item.quantity}</div>
-                <div class="quantity">
-                    <span class="minus"><</span>
-                    <span>${item.quantity}</span>
-                    <span class="plus">></span>
-                </div>
-            `;
-        })
+function displaycart(){
+    let j = 0, total=0;
+    document.getElementById("count").innerHTML=cart.length;
+    if(cart.length==0){
+        document.getElementById('cartItem').innerHTML = "Your cart is empty";
+        document.getElementById("total").innerHTML = "$ "+0+".00";
     }
-    iconCartSpan.innerText = totalQuantity;
+    else{
+        document.getElementById("cartItem").innerHTML = cart.map((items)=>
+        {
+            var {image, title, price} = items;
+            total=total+price;
+            document.getElementById("total").innerHTML = "$ "+total+".00";
+            return(
+                `<div class='cart-item'>
+                <div class='row-img'>
+                    <img class='rowimg' src=${image}>
+                </div>
+                <p style='font-size:12px;'>${title}</p>
+                <h2 style='font-size: 15px;'>$ ${price}.00</h2>`+
+                "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i></div>"
+            );
+        }).join('');
+    }
+
+    
 }

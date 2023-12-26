@@ -124,14 +124,18 @@
 
 .cartTab{ /* en youtube lo pone como container */
   display: flex;
-  width: 500px;
+  width: 400px;
   margin-bottom: 30px;
   border: red solid 3px;
   position: fixed;
   top: 72px;
-  right: -500px;
+  right: -400px;
   bottom: 0;
   transition: .5s;
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 15px;
+  text-align: center;
 }
 body.showCart .cartTab{
   right: 0;
@@ -141,8 +145,31 @@ body.showCart .listadoPadre{
   transform: translateX(-250px);
 }
 */
-
-
+.sidebar{
+  width: 90%;
+  border-radius: 5px;
+  background-color: #eee;
+  margin-left: 20px;
+  padding: 15px;
+  text-align: center;
+}
+.head{
+  background-color: goldenrod;
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.foot{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid #333;
+}
 
 
 
