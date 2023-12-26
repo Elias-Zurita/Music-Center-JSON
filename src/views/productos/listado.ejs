@@ -37,26 +37,25 @@
                         <div class="precioProducto">
                             $ <%= producto.precio %>
                         </div>
-                        <form action="/carrito/agregar/<%= producto.id %>" method="post">
-                            <button type="submit">Agregar al carrito</button>
-                        </form>
+                        <button class="addCart">Agregar al carrito</button>
                     </div>
                 <% }) %>
             </div>
 
-            <div class="container">
-                <div id="root"></div>
-                <div class="sidebar">
-                    <div class="head"><p>My Cart</p></div>
-                    <div id="cartItem">Your cart is empty</div>
-                    <div class="foot">
-                        <h3>Total:</h3>
-                        <h4 id="total">$ 0.00</h4>
-                    </div>
+            <div class="cartTab">
+                <h1>Shopping Cart</h1>
+                <div class="listCart">
+                    
+                </div>
+                <div class="btn">
+                    <button class="close">CLOSE</button>
+                    <button class="checkOut">Check Out</button>
                 </div>
             </div>
             
         </div>
+        
+        <script src="../javascripts/addtocart.js"></script>
 
     </body>
   

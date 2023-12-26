@@ -45,13 +45,17 @@
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show { /* Despues de hacer click en el dropdownmenu */
     color: var(--color-primario)!important;
 }
+.dropdown{
+    display: flex;
+    align-items: center;
+}
 .dropdown-item{
     color: black!important;
 }
 .dropdown-item:hover{
     background: var(--color-primario)!important;
 }
-.cart{
+.icon-cart{
     border: violet solid 2px!important;
     width: 80px;
     height: 100%;
@@ -62,7 +66,7 @@
     color: white;
     padding: 7px 5px;
 }
-.cart div{
+.icon-cart span{
     height: 28px;
     width: 28px;
     display: flex;
@@ -123,6 +127,10 @@
     }
     .navbar .container{ /* Desplazamiento burger menu */
         --bs-gutter-x: 0rem;
+    }
+    .dropdown{
+        display: block;
+        align-items: none;
     }
 }
 @media (max-width:625px){ 

@@ -2,6 +2,7 @@
   border: violet solid 3px;
   width: 100%;
   display: flex;
+  justify-content: center;
 }
 .listadoPadre{
   border: blue solid 2px;
@@ -9,6 +10,7 @@
   display: flex;
   flex-wrap: wrap;  
   justify-content: center;
+  width: 90%;
 }
 .cajaProducto{
   display: flex;
@@ -79,6 +81,17 @@
 .cajaImagenProducto:hover span:nth-child(4){
   top: 0;
 }
+.cajaProducto button{
+  border: none;
+  border-radius: 5px;
+  background-color: goldenrod;
+  padding: 10px;
+  cursor: pointer;
+}
+.cajaProducto button:hover{
+  background-color: #333;
+  color:white;
+}
 .textoConHover{
   opacity: 0;
   position: absolute;
@@ -107,28 +120,27 @@
   margin-top: 12px;
 }
 
-/* ====== CARRITO DE COMPRAS ====== */
+/* ======================================== INICIO DEL CARRITO DE COMPRAS ======================================== */
 
-.container{
+.cartTab{ /* en youtube lo pone como container */
   display: flex;
-  width: 30%;
+  width: 500px;
   margin-bottom: 30px;
   border: red solid 3px;
+  position: fixed;
+  top: 72px;
+  right: -500px;
+  bottom: 0;
+  transition: .5s;
 }
-#root{
-  width: 60%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+body.showCart .cartTab{
+  right: 0;
 }
-.sidebar{
-  width: 40%;
-  border-radius: 5px;
-  background-color: #eee;
-  margin-left: 20px;
-  padding: 15px;
-  text-align: center;
+/* TRASLADA TODO, SINO ESTA SOLO LO PASA POR ARRIBA CUANDO APARECE
+body.showCart .listadoPadre{
+  transform: translateX(-250px);
 }
+*/
 
 
 
@@ -142,8 +154,7 @@
 
 
 
-
-
+/* ======================================== FIN DEL CARRITO DE COMPRAS ======================================== */
 
 @media (max-width:1300px){
   .listadoPadre{
