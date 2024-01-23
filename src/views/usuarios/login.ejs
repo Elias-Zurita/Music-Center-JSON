@@ -19,6 +19,7 @@
                     type="text" 
                     name="email" 
                     class="form-control"
+                    required
                     placeholder="✉️ Correo electrónico">
                 <% if (locals.errors && errors.email) { %>
                     <div class="text-danger">
@@ -31,6 +32,7 @@
                         name="password" 
                         class="form-control"
                         id="contraseña"
+                        required
                         placeholder="🔑 Contraseña">
                         <span>
                             <i class="fas fa-eye" id="Eye"></i>

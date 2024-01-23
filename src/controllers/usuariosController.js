@@ -51,7 +51,7 @@ const controller = {
 		if(userToLogin) {
 			let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
 			if (isOkThePassword) {
-				delete userToLogin.password;
+				delete userToLogin.password; // elimina la contraseña de lo que se visualiza en la consola o en inspeccionar  
 				req.session.userLogged = userToLogin;
 
 				if(req.body.remember_user) {

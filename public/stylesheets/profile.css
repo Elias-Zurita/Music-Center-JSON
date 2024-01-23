@@ -1,0 +1,22 @@
+.padrePerfil{
+    border: violet solid 3px;
+    display: flex;
+    width: 40%;
+    margin: 0 auto 70px auto;
+}
+.imagenPefil{
+    border: red solid 3px;
+    width: 50%;
+    text-align:center;
+}
+.avatarProfile{
+    width:300px;
+    border-radius: 10px;
+}
+.infoPerfil{
+    border: blue solid 3px;
+    padding-top: 30px;
+    width: 50%;
+    font-family: "Poppins";
+    font-size: 20px;
+}

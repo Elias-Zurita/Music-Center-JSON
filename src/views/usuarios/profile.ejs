@@ -13,9 +13,18 @@
  
     <h1>PERFIL</h1>
 
-    <%= locals.userLogged.country %>
-    <%= locals.userLogged.category %>
-    <%= locals.userLogged.fullName %>
+    <div class="padrePerfil">
+      <div class="imagenPefil">
+        <img src="/images/avatars/<%= locals.userLogged.avatar %>" alt="" class="avatarProfile">
+      </div>
+      <div class="infoPerfil">
+        <p><strong>Nombre:</strong> <%= locals.userLogged.nombre %></p>
+        <p><strong>Apellido:</strong> <%= locals.userLogged.apellido %></p>
+        <p><strong>Email:</strong> <%= locals.userLogged.email %></p>
+        <p><strong>Pais:</strong> <%= locals.userLogged.country %></p>
+        <p><strong>Categoria:</strong> "<%= locals.userLogged.category %>"</p>
+      </div>
+    </div>
 
   </body>
     
