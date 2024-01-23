@@ -1,0 +1,231 @@
+.cajasFormulariosContacto{
+    display: flex;
+    font-family: "Poppins";
+    justify-content: center;
+    margin-top: 100px;
+}
+.hijoFormularioContacto{
+    width: 550px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+.tituloContacto{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.textoContacto{
+    font-size: 17px;
+    text-align: justify;
+}
+.formularioContacto form{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    margin-top: 15px;
+}
+.formularioContacto input{
+    margin: 7px 0;
+    padding: 7px;
+    border-radius: 0;
+    border: black solid 2px;
+}
+.formularioContacto textarea{
+    margin: 7px 0;
+    padding: 7px;
+    resize: none;
+    border: black solid 2px;
+}
+.formularioContacto textarea:hover, .formularioContacto input:hover{
+    border: red solid 2px;
+    cursor: pointer;
+}
+.formularioContacto button{
+    width: 250px;
+    font-size: 17px;
+    margin: 10px auto 0 auto;
+    padding: 7px 0;
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    background:red;
+    color: white;
+    font-weight: bold;
+}
+.formularioContacto button .relleno{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    height: 100%;
+    width: 0;
+    color: black;
+    transition: 0.3s;
+    z-index: -1;
+    background: #25D366;
+    color: black;
+}
+.formularioContacto button:hover .relleno{
+    width: 100%;
+}
+.aceptoBases:hover{
+    color: red;
+    cursor: pointer;
+}
+.cajaRedesContacto{
+    background: rgb(198, 198, 198);
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 20px 10px;
+}
+.cajaRedesContacto p{
+    display:flex;
+    margin-bottom: 10px;
+}
+.cajaRedesContacto i{
+    font-size: 25px;
+    color: black!important;
+    width: 50px;
+    text-align: center;
+}
+.tituloRedesContacto{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+.textoRedesContacto{
+    font-size: 17px;
+}
+.textoRedesContacto p:hover, .textoRedesContacto p:hover i, .textoRedesContacto a:hover{
+    color: white!important;
+    font-weight: bold;
+}
+
+.tituloSucursales{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "poppins";
+    margin-top: 70px;
+    background: #229acd;
+    color: white;
+}
+.cajaSucursales{
+    margin: 40px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+}
+.sucursal{
+    border-bottom: #d7d7d7 solid 1px;
+    display: flex;
+    width: 600px;
+    margin: 20px;
+    padding-bottom: 40px;
+}
+.mapaSucursal{
+    border: none!important;
+}
+.mapaSucursal iframe{
+    width:250px;
+    height: 200px;
+    border: none;
+}
+.infoSucursal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    
+}
+.localidadSucursal{
+    font-size: 20px;
+    font-weight: bold;
+    color: #858585;
+}
+@media (max-width: 1360px){ 
+    .ultimaSucursal{
+        border-bottom: none;
+    }
+    .sucursal{
+        flex-direction: column;
+        width: 300px;
+    }
+    .mapaSucursal iframe{
+        width:200px;
+        height: 150px;
+    }
+}
+@media (max-width: 1000px){ 
+    .cajasFormulariosContacto{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hijoFormularioContacto{
+        width: 80%;
+        padding: 20px;
+        margin-top: 40px;
+    }
+    .formularioContacto form{
+        padding-right: 0px;
+    }
+    .tituloContacto{
+        text-align: center;
+    }
+    .tituloSucursales{
+        font-size: 30px;
+        padding: 0 10px;
+    }
+    .cajaRedesContacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        margin: 50px auto 0px auto;
+    }
+    .mapaSucursal iframe{
+        width: 300px;
+        height: 200px;
+    }
+}
+@media (max-width:800px){
+    .cajaSucursales{
+        justify-content: center;
+        margin: 40px 20px;
+    }
+    .sucursal{
+        width: 80%;
+        text-align: center;
+    }
+} 
+@media (max-width:600px){ 
+    .tituloContacto{
+        font-size:20px;
+    }
+    .cajaRedesContacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media (max-width:480px){ 
+    .tituloContacto{
+        padding: 0;
+    }
+    .hijoFormularioContacto{
+        width: 100%;
+        padding: 20px;
+    }
+    .mapaSucursal iframe{
+        width: 100%;
+    }
+}

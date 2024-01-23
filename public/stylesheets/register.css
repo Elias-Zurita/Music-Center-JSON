@@ -1,6 +1,5 @@
 .formularioRegister{
-    margin: 50px auto;
-    padding: 40px 20px;
+    margin: 0px auto 50px auto;
     display: flex;
     flex-direction: column;
     width: 550px;

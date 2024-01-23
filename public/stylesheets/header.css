@@ -1,3 +1,11 @@
+.inicioHeader{
+    color: white !important;
+    font-family: 'Oleo Script', system-ui;
+    font-size: 25px;
+    margin-top: 13px;
+    display: none;
+}
+
 /* Boton Arriba */
 .back-to-top {
     position: fixed;
@@ -55,27 +63,6 @@
 .dropdown-item:hover{
     background: var(--color-primario)!important;
 }
-.icon-cart{
-    border: violet solid 2px!important;
-    width: 80px;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    padding: 7px 5px;
-}
-.icon-cart span{
-    height: 28px;
-    width: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: yellow solid 2px;
-    border-radius: 50%;
-    background-color: #9b1c43;
-}
 
 /* Burger menu */
 .navbar-toggler:focus { /* quita el recuadro al hacer click en el burgermenu */
@@ -115,6 +102,11 @@
 #busqueda{
     width: 280px;
 }
+@media (max-width: 990px){
+    .inicioHeader{
+        display: block;
+    }
+}
 @media (max-width: 1000px){
     .navbar-nav .dropdown-menu {  /* Dropdown menu cuando es mobile */
         width: 250px;
@@ -136,6 +128,6 @@
 @media (max-width:625px){ 
     .back-to-top {
         right: 25px;
-        bottom: 140px;
+        bottom: 85px;
     }
 }

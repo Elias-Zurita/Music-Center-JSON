@@ -9,10 +9,10 @@
 }
 .logoFooter{
     color: #9b1c43;
-    font-family: 'Tomorrow', sans-serif;
+    font-family: 'Oleo Script', system-ui;
+    
     text-shadow: -1px 4px 3px rgba(155, 28, 67, 0.48);
-    font-size: 45px;
-    font-weight:bold
+    font-size: 35px;
 }
 .columnaFooter a:hover{
     color: white;

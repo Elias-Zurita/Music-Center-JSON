@@ -13,8 +13,6 @@
 
         <h1>NUESTROS PRODUCTOS</h1>
 
-        <div class="productosCarrito">
-
             <div class="listadoPadre">
                 <% productos.forEach(producto => { %>
                     <div class="cajaProducto">
@@ -37,24 +35,11 @@
                         <div class="precioProducto">
                             $ <%= producto.precio %>
                         </div>
-                        <button class="addCart" onclick='addtocart("+(i++)+")'>Agregar al carrito</button>
+                        <button class="addCart">Agregar al carrito</button>
                     </div>
                 <% }) %>
             </div>
-
-            <div class="cartTab">
-                <div class="sidebar">
-                    <div class="head"><p>My Cart</p></div>
-                    <div id="cartItem">Your cart is empty</div>
-                    <div class="foot">
-                        <h3>Total</h3>
-                        <h2 id="total">$ 0.00</h2>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <script src="../javascripts/addtocartHTML.js"></script>
+        
     </body>
   
     <footer>
