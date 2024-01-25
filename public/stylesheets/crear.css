@@ -1,4 +1,3 @@
-
 .formularioCreacionProducto{
     display:flex;
     flex-direction:column;
@@ -23,7 +22,6 @@
 }
 .botonCrear{
     text-align: center;
-    border:violet solid 2px;
 }
 @media (max-width:800px){ 
     .formularioCreacionProducto{
@@ -34,5 +32,6 @@
         width: 90%;
         flex-direction: column;
         align-items: center;
+        margin: 0 auto;
     }
 }

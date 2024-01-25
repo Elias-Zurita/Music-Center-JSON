@@ -48,6 +48,31 @@
         <% }) %>
       </table>
 
+      <br><br>
+
+      <div class="tarjetaProductoListado">
+        <% productos.forEach(producto => { %>
+        <div class="tarjetaProducto">
+          <p style="text-align:center;padding-left:0"><img src="/images/productos/<%= producto.imagen %>"></p>
+          <p><strong>ID:</strong> <%= producto.id %></p>
+          <p><strong>NOMBRE:</strong> <%= producto.nombre %></p>
+          <p><strong>MODELO:</strong> <%= producto.modelo %></p>
+          <p><strong>MARCA:</strong> <%= producto.marca %></p>
+          <p><strong>PRECIO:</strong> <%= producto.precio %></p>
+          <div class="botonesAdministrar">
+            <div><a href="/administrar/editar/<%= producto.id %>"><button>EDITAR</button></a></div>
+            <div>
+              <form action="/administrar/eliminar/<%= producto.id %>?_method=DELETE" method="POST">
+                <button type="submit">ELIMINAR</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    
+      <br><br>
+
   </body>
   
   <footer>

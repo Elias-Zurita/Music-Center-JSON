@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <%- include('../partials/head.ejs') %>  
+  </head>
+
+  <header>
+      <%- include('../partials/header.ejs') %>
+  </header>
+  
+  <body>
+ 
+    <h1>EDITAR PERFIL</h1>
+
+    <form action="/usuarios/editProfile/<%= userLogged.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+        <div class="imagenYEdicion">
+            <div class="avatarEdicion">
+                <img src="/images/avatars/<%= userLogged.avatar %>">
+            </div>
+            <div class="formularioEdicionProducto">
+                <div>NOMBRE:</div>
+                <input type="text" placeholder="NOMBRE NUEVO" name="nombre" value="<%= userLogged.nombre %>" required>
+                <div>APELLIDO:</div>
+                <input type="text" placeholder="APELLIDO NUEVO" name="apellido" value="<%= userLogged.apellido %>" required>
+                <div>PAIS:</div>
+                <select 
+                    name="country" 
+                    class="form-select <%= locals.errors && errors.country ? 'is-invalid' : null %>">
+                    <option value="">Elegí un país</option>
+                    <%  
+                        let countries = ['Argentina', 'Bolivia', 'Brasil', 'Colombia', 'Chile', 'Ecuador', 'Paraguay', 'Perú', 'Uruguay', 'Venezuela'];
+                    %>
+                    <% for (const oneCountry of countries) { %>
+                    <option 
+                        value="<%= oneCountry %>"
+                        <%= locals.oldData && (oneCountry === oldData.country) ? 'selected' : null %>> 
+                        <%= oneCountry %> 
+                    </option>
+                    <% } %>
+                </select>
+                <% if (locals.errors && errors.country) { %>
+                    <div class="text-danger">
+                        <%= errors.country.msg %>
+                    </div>
+                <% } %>
+                <div>AVATAR:</div>
+                <input type="file" placeholder="AVATAR NUEVO" name="avatar" id="avatar">
+            </div>
+        </div>
+
+        <div class="botonesEdicion">
+            <div>
+                <button class="loginButton" type="submit">GUARDAR</button>
+            </div>
+            <div>
+                <a href="/usuarios/profile"><button class="loginButton">VOLVER</button></a>
+            </div>
+        </div>
+    </form>
+
+    <br><br>
+
+  </body>
+    
+    <footer>
+        <%- include('../partials/footer.ejs') %>
+    </footer>
+
+</html>

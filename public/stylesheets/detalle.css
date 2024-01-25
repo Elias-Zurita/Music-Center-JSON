@@ -1,12 +1,10 @@
 .padreDetalle{
-    border: red solid 2px;
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 0 auto;
 }
 .imagenDetalle{
-    border: green solid 3px;
     width: 240px;
 }
 .imagenDetalle img{
@@ -31,7 +29,6 @@
     }
 }
 .infoDetalle{
-    border: blue solid 3px;
     width: 50%;
     padding: 50px;
     display: flex;
@@ -55,7 +52,6 @@
 }
 @media (max-width:600px){ 
     .imagenDetalle{
-        border: green solid 3px;
         width: 200px;
     }
     .infoDetalle {

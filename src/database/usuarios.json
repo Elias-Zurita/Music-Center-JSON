@@ -31,11 +31,41 @@
  {
   "id": 4,
   "category": "user",
-  "nombre": "PEDRO",
+  "nombre": "PEDROppp",
   "apellido": "eee",
   "email": "pedrito@gmail.com",
   "password": "$2a$10$rFpRVXx27sx2OQ5ZDX.OouhlLSdekPGu5RYw0fGWKDRiXlljuioVC",
-  "country": "Bolivia",
-  "avatar": "1701803646766_img.jpg"
+  "country": "Colombia",
+  "avatar": "1706194036059_img.jpg"
+ },
+ {
+  "id": 5,
+  "category": "user",
+  "nombre": "EEE",
+  "apellido": "ppp",
+  "email": "tt@gmail.com",
+  "password": "$2a$10$3KwYbAAOtBVRhYT.Op71Ses.rckycbMLJdj8PnpuT.f5zSG3K41ve",
+  "country": "Venezuela",
+  "avatar": "1706194161990_img.jpg"
+ },
+ {
+  "id": 6,
+  "category": "user",
+  "nombre": "yyy",
+  "apellido": "yyyyy",
+  "email": "yy@gmail.com",
+  "password": "$2a$10$eVL6qiCtJQdlA9BlhEHDouuapr9RUf0wMKSFvN4XSWD1RP/uf8c6e",
+  "country": "Perú",
+  "avatar": "1706195055890_img.jpg"
+ },
+ {
+  "id": 7,
+  "category": "Cliente",
+  "nombre": "uuu",
+  "apellido": "uuu",
+  "email": "uu@gmail.com",
+  "password": "$2a$10$tSDrPG9T4jxILjoR8uusN.yTdYLmU9mDwQKRnlR8SxNPwiENaMMzS",
+  "country": "Perú",
+  "avatar": "1706195096142_img.jpg"
  }
 ]

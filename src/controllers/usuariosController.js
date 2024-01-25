@@ -1,9 +1,22 @@
 const bcryptjs = require('bcryptjs');
+const path = require('path'); // Libreria path para usar put y delete
+const fs = require('fs');  // Libreria fileSync para leer archivos JSON
 const {
 	validationResult
 } = require('express-validator');
 
 const User = require('../models/User');
+
+function findAll() {
+    let usuariosJson =  fs.readFileSync(path.join(__dirname, "../database/usuarios.json"))   // Lee el archivo usuarios.json donde estan los usuarios
+    let data = JSON.parse(usuariosJson) // Declara data para "parsear" (consumir) la info del Json
+    return data 
+}
+
+function writeJson(array){   // Sobreescribe info al JSON data
+    let arrayJSON = JSON.stringify(array, null," ")  // Convierte el array en JSON  //  se agrega null y las comillas para que quede un espacio
+    return fs.writeFileSync(path.join(__dirname, "../database/usuarios.json"), arrayJSON);  
+}
 
 const controller = {
 	register: (req, res) => {
@@ -82,12 +95,35 @@ const controller = {
 			user: req.session.userLogged
 		});
 	},
-
 	logout: (req, res) => {
 		res.clearCookie('userEmail');
 		req.session.destroy();
 		return res.redirect('/');
-	}
+	},
+	editar: (req, res) => {
+		let usuarios = User.findAll();
+        let usuarioAEditar = usuarios.find(usuario => // Encuentro un usuario
+			usuario.id == req.params.id); // Renderiza el usuario que se pide por id
+
+        res.render("usuarios/editProfile", {usuario: usuarioAEditar})
+    },
+    editarProceso: (req, res) => {
+        let usuarios = User.findAll();
+        let usuariosActualizados = usuarios.map(usuario =>{ // busca en el array el elemento al que va a editar e itera sobre cada dato
+            if (usuario.id == req.params.id){ //si el producto es igual al parametro que nos llega por ruta actualiza los datos //
+                usuario.nombre = req.body.nombre
+                usuario.apellido = req.body.apellido
+                usuario.country = req.body.country
+                usuario.avatar = req.file ? req.file.filename : usuario.avatar
+            }
+            return usuario
+        }) 
+        writeJson(usuariosActualizados); // modifica el producto //
+
+		return res.render('usuarios/profile', {
+			user: req.session.userLogged
+		});
+    }
 }
 
 module.exports = controller;

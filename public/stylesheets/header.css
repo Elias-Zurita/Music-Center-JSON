@@ -9,16 +9,20 @@
 /* Boton Arriba */
 .back-to-top {
     position: fixed;
-    display: none;
     right: 60px;
     bottom: 100px;
     z-index: 11;
     cursor: pointer;
     animation: action 1s infinite alternate;
+    background: #F34E3A!important;
+    border: none!important;
+    transition: .3s ease-in-out!important;
 }
 .back-to-top:hover{
-    background-color: violet!important;
-    color: #9b1c43!important;
+    background-color: crimson!important;
+    color: black!important;
+    transform: scale(1.2);
+    border-radius: 50%;
 }
 .promoHeader{
     text-align:center;
@@ -33,7 +37,9 @@
 .navbar a {
     color: white;
 }
-
+.navbar-nav{
+    align-items: center;
+}
 .navbar-brand {
     height: 50px;
     border: blue solid 1px;
@@ -48,10 +54,10 @@
     font-family: "Poppins";
 }
 .nav-item a:hover{
-    color: var(--color-primario);
+    color: #F34E3A;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show { /* Despues de hacer click en el dropdownmenu */
-    color: var(--color-primario)!important;
+    color: #F34E3A!important;
 }
 .dropdown{
     display: flex;
@@ -61,7 +67,7 @@
     color: black!important;
 }
 .dropdown-item:hover{
-    background: var(--color-primario)!important;
+    background: #F34E3A!important;
 }
 
 /* Burger menu */
@@ -108,6 +114,9 @@
     }
 }
 @media (max-width: 1000px){
+    .navbar-nav{
+        align-items: normal;
+    }
     .navbar-nav .dropdown-menu {  /* Dropdown menu cuando es mobile */
         width: 250px;
     }

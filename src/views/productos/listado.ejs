@@ -18,17 +18,11 @@
                     <div class="cajaProducto">
                         <a href="/productos/detalle/<%= producto.id %>">
                             <div class="cajaImagenProducto">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
                                 <img src="/images/productos/<%= producto.imagen %>">
                                 <div class="textoConHover">
-                                    <%= producto.nombre %>
-                                    <br>
-                                    <%= producto.modelo %>
-                                    <br>
-                                    <%= producto.marca %>
+                                    <div style="font-family: 'Teko', sans-serif;"><%= producto.nombre %></div>
+                                    <div style="font-size:16px"><%= producto.modelo %></div>
+                                    <div style="font-style: italic; font-size:19px"><%= producto.marca %></div>
                                 </div>
                             </div>
                         </a>

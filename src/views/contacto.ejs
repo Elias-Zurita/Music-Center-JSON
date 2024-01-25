@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <%- include('partials/head.ejs') %>  
+  </head>
+
+  <header>
+      <%- include('partials/header.ejs') %>
+  </header>
+  
+  <body>
+
+      <div class="cajasFormulariosContacto" id="formularioContacto">
+        <div class="hijoFormularioContacto">
+          <div class="textoFormularioContacto">
+            <div class="tituloContacto">
+              ¡ENVIANOS TU CONSULTA!
+            </div>
+          </div>
+          <div class="formularioContacto">
+            <form action="" method="post">
+              <input type="text" placeholder="Nombre*" name="nombre" required>
+              <input type="text" placeholder="Teléfono*" name="telefono" required>
+              <input type="text" placeholder="E-mail*" name="email" required>
+              <textarea name="mensaje" cols="30" rows="8" placeholder="¡Dejá tu mensaje!" name="mensaje"></textarea>
+              <label class="aceptoBases">
+                <input type="checkbox" required> Acepto formar parte de la base de datos de Music Center
+              </label>
+              <button>Enviar <i class="fa-solid fa-paper-plane"></i>
+                <span class="relleno"></span>
+              </button> 
+            </form>
+          </div>
+          <br>
+        </div>
+        <div class="hijoFormularioContacto">
+          <div class="tituloContacto">
+            CONTACTÁ CON MUSIC CENTER
+          </div>
+          <div class="textoContacto">
+            Somos la empresa #1 en instrumentos musicales a nivel mundial. Nuestro compromiso es brindar a nuestros clientes productos de calidad, asesoramiento experto y que tu proceso de compra sea una experiencia excepcional. Dejanos ser parte de tu viaje musical.
+          </div>
+          <div class="cajaRedesContacto">
+            <div class="tituloRedesContacto">
+              CONTACTANOS!
+            </div>
+            <div class="textoRedesContacto" style="border-bottom: rgba(56, 56, 56, 0.575) solid 2px;padding-bottom: 10px;">
+              <p><i class="fa-solid fa-envelope"></i><a href="mailto:importainerr@gmail.com"> @musiccenter</a></p>
+              <p><i class="fa-brands fa-whatsapp"></i><a href="" target="_blank"> +54 911 1515 7878</a></p>
+              <p><i class="fa-solid fa-phone"></i><a href="" target="_blank"> +54 911 1515 4646</a></p>
+            </div>
+            <div class="tituloRedesContacto" style="margin-top:10px">
+              NUESTRAS REDES SOCIALES
+            </div>
+            <div class="textoRedesContacto">
+              <p><a href=""><i class="fa-brands fa-square-facebook"></i> musiccenter</a></p>
+              <p><a href=""><i class="fa-brands fa-youtube"></i> @musiccenter</a></p>
+              <p><a href=""><i class="fa-brands fa-instagram"></i> @musiccenter</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </body>
+  
+  <footer>
+    <%- include('partials/footer.ejs') %>
+  </footer>
+
+</html>

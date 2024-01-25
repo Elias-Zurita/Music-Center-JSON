@@ -1,11 +1,4 @@
-.productosCarrito{
-  border: violet solid 3px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 .listadoPadre{
-  border: blue solid 2px;
   margin: 30px auto;
   display: flex;
   flex-wrap: wrap;  
@@ -27,66 +20,32 @@
   flex-wrap: wrap;  
   justify-content: space-around; /*centra la imagen y el contenido */
   text-align: center;
-  box-shadow: 0 0 20px #f7ca47;
+  box-shadow: 0 0 20px var(--color-primario);
   cursor: pointer;
-  transition: 0.3s ease-in-out;
   padding: 5px;
   background-color: white;
+  transition: 0.3s ease-in-out;
+}
+.cajaImagenProducto:hover{
+  background-color: rgba(41,40,45,.85);
 }
 .cajaImagenProducto img{
   height: 100%;
-  
+  transition: .3s ease-in-out;
 }
 .cajaImagenProducto:hover img{
-  filter: blur(5px);
-}
-.cajaImagenProducto span{
-  position: absolute;
-  background: black; /* color de las rayas de recuadro */
-  transition: 0.3s ease-in-out;
-}
-.cajaImagenProducto span:nth-child(1){
-  width: 100%;
-  height: 3px;
-  top: 0;
-  left: -100%;
-}
-.cajaImagenProducto span:nth-child(2){
-  width: 100%;
-  height: 3px;
-  bottom: 0;
-  right: -100%;
-}
-.cajaImagenProducto span:nth-child(3){
-  width: 3px;
-  height: 100%;
-  bottom: -100%;
-  left: 0;
-}
-.cajaImagenProducto span:nth-child(4){
-  width: 3px;
-  height: 100%;
-  top: -100%;
-  right: 0;
-}
-.cajaImagenProducto:hover span:nth-child(1){
-  left: 0;
-}
-.cajaImagenProducto:hover span:nth-child(2){
-  right: 0;
-}
-.cajaImagenProducto:hover span:nth-child(3){
-  bottom: 0;
-}
-.cajaImagenProducto:hover span:nth-child(4){
-  top: 0;
+  /*filter: blur(5px);*/
+  opacity: 0.4;
+  transform: scale(1.1);
 }
 .cajaProducto button{
   border: none;
   border-radius: 5px;
-  background-color: goldenrod;
+  background-color: #F34E3A;
   padding: 10px;
   cursor: pointer;
+  font-weight: bold;
+  color: white;
 }
 .cajaProducto button:hover{
   background-color: #333;
@@ -98,6 +57,7 @@
   top: 0;
   width: 100%;
   height: 100%;
+  padding: 8px;
   text-align: center;
   color: black;
   display: flex;
@@ -108,9 +68,11 @@
   letter-spacing: 3px;
   transition: .2s;
   font-weight: bold;
+  font-family: "Poppins";
 }
 .textoConHover:hover{
   opacity: 1;
+  color: white;
 }
 .precioProducto{
   text-align: center;

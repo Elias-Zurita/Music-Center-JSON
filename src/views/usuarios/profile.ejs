@@ -11,7 +11,7 @@
   
   <body>
  
-    <h1>PERFIL</h1>
+    <h1>BIENVENIDO</h1>
 
     <div class="padrePerfil">
       <div class="imagenPefil">
@@ -22,10 +22,19 @@
         <p><strong>Apellido:</strong> <%= locals.userLogged.apellido %></p>
         <p><strong>Email:</strong> <%= locals.userLogged.email %></p>
         <p><strong>Pais:</strong> <%= locals.userLogged.country %></p>
-        <p><strong>Categoria:</strong> "<%= locals.userLogged.category %>"</p>
+        <p><strong>Categoria:</strong> <%= locals.userLogged.category %></p>
       </div>
     </div>
 
+    <div class="botonesEdicion" style="justify-content: center">
+      <a href="/usuarios/editProfile/<%= userLogged.id %>">
+        <button class="loginButton">EDITAR PERFIL</button>
+      </a>
+    </div>
+
+    <br>
+    <br>
+  
   </body>
     
     <footer>

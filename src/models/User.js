@@ -36,7 +36,7 @@ const User = {
 		let allUsers = this.findAll();
 		let newUser = {
 			id: this.generateId(),
-			category: 'user', // Creo por defecto la categoria de "user"
+			category: 'Cliente', // Creo por defecto la categoria de "Cliente"
 			...userData, 
 		}
 		allUsers.push(newUser);

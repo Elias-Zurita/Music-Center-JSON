@@ -51,7 +51,9 @@
                             </ul>
                         </li>
                         <% if (locals.userLogged.category == "admin") { %>
-                            <div style="color: white!important"><a href="/administrar">Administrar</a></div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/administrar"><i class="fa-solid fa-screwdriver-wrench"></i></a>
+                            </li>
                         <% } %>
                     <% } else { %>    <!-- Si no esta logueado muestra lo siguiente -->
                         <li class="nav-item dropdown">
@@ -59,11 +61,20 @@
                                 <i class="fa-solid fa-user"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/usuarios/login">Iniciar Sesión</a></li>
-                                <li><a class="dropdown-item" href="/usuarios/register">Registrarse</a></li>
+                                <li><a class="dropdown-item" href="/usuarios/login"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
+                                <li><a class="dropdown-item" href="/usuarios/register"><i class="fa-solid fa-user-plus"></i> Registrarse</a></li>
                             </ul>
                         </li>
                     <% } %>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-shop"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/ubicacion"><i class="fa-solid fa-location-dot"></i> Ubicación</a></li>
+                            <li><a class="dropdown-item" href="/contacto"><i class="fa-solid fa-message"></i> Contacto</a></li>
+                        </ul>
+                    </li>
                 </ul>
            
                 <form class="d-flex" role="search" method="GET" action="/productos/buscar">

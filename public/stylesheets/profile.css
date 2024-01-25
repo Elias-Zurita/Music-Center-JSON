@@ -1,22 +1,44 @@
 .padrePerfil{
-    border: violet solid 3px;
     display: flex;
-    width: 40%;
-    margin: 0 auto 70px auto;
+    width: 700px;
+    margin: 0 auto 10px auto;
 }
 .imagenPefil{
-    border: red solid 3px;
     width: 50%;
     text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .avatarProfile{
     width:300px;
     border-radius: 10px;
 }
 .infoPerfil{
-    border: blue solid 3px;
     padding-top: 30px;
     width: 50%;
     font-family: "Poppins";
     font-size: 20px;
+}
+@media (max-width: 800px){ 
+    .padrePerfil{
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
+    .imagenPefil{
+        width: 100%;
+
+    }
+    .avatarProfile{
+        width:350px;
+    }
+    .infoPerfil{
+        width: 100%;
+    }
+}
+@media (max-width: 500px){ 
+    .avatarProfile{
+        width:90%;
+    }
 }

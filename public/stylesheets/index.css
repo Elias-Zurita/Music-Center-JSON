@@ -35,7 +35,6 @@
     border: violet solid 2px;
 }
 .cajaCuentaRegresiva{
-    border: black solid 2px;
     text-align:center;
     margin-bottom: 80px;
 }
@@ -44,13 +43,14 @@
     font-weight:bold;
     margin-bottom: 30px;
     animation: colorChange 3s ease-in-out infinite;
+    font-style: italic;
 }
 @keyframes  colorChange {
-  0% { color: #fff71c; }
+  0% { color: var(--color-primario); }
   25% { color: #ff2912; }
-  50% { color: #127fec; }
+  50% { color: black; }
   75% { color: #ff2912; }
-  100% { color: #fff71c; }
+  100% { color: var(--color-primario); }
 }
 .countdown{
     display: flex;
@@ -67,14 +67,15 @@
 }
 .unidadDeMedida{
     font-size:40px;
-    color: crimson;
+    color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content:center;
     margin-left: auto;
     margin-right: auto;
-    border: crimson solid 2px;
+    border: none;
+    background: var(--color-primario);
     border-radius:5px
 }
 .unidadEscrita{
@@ -152,7 +153,6 @@
 }
 
 .iconosIndex{
-    border: black solid 3px;
     margin: 50px auto 80px auto;
     width: 1000px;
     display: flex;
@@ -161,7 +161,6 @@
     align-items: center;
 }
 .cajaIconoIndex{
-    border: violet solid 2px;
     width: 150px;
     height: 150px;
     text-align: center;
@@ -189,14 +188,15 @@
 }
 .cajaIconoIndex .front{
     transform: perspective(500px) rotateY(0deg);
-    border: blue solid 1px;
+    border: none;
+    background: var(--color-primario)
 }
   /* en la propiedad Transform si quiero modificar el giro (vertircal, horizontal, izq a der, der a izq tengo que modificar rotateY a rotateX y los grados + a - */
 .cajaIconoIndex .back{
     background-color: black;
     color: white;
     transform: perspective(500px) rotateY(180deg); 
-    border: goldenrod solid 1px;
+    border: goldenrod solid 3px;
 }
 .cajaIconoIndex:hover .front{
     transform: perspective(500px) rotateY(180deg);

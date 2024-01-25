@@ -6,6 +6,9 @@ const controller = {
     },
     ubicacion: (req, res) =>{
         res.render('ubicacion')   
+    },
+    contacto: (req, res) =>{
+        res.render('contacto')   
     }
  }
 

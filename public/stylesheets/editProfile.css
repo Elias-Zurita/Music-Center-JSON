@@ -1,0 +1,24 @@
+.avatarEdicion{
+    width: 50%;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatarEdicion img{
+    width:300px;
+    border-radius: 10px;
+}
+@media (max-width: 800px){ 
+    .avatarEdicion{
+        width: 100%;
+    }
+    .avatarEdicion img{
+        width:350px;
+    }
+}
+@media (max-width: 500px){ 
+    .avatarEdicion img{
+        width:90%;
+    }
+}
