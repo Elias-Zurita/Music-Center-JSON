@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  
+    <head>
+        <%- include('../partials/head.ejs') %>  
+    </head>
+
+    <header>
+        <%- include('../partials/header.ejs') %>
+    </header>
+  
+    <body>
+
+        <h1>USUARIOS</h1>
+
+        <div class="buscadorUsuarios">
+            <form class="d-flex" role="search" method="GET" action="/administrar/buscarUsuario">
+                <input class="form-control me-2" id="busqueda" type="search" name="buscar" placeholder="Ingresa el nombre del usuario" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+    
+        <div class="tarjetasUsuariosPadre">
+            <% usuarios.forEach(usuario => { %>
+                <div class="tarjetaUsuario">
+                    <p class="cajaAvatarListado"><img src="/images/avatars/<%= usuario.avatar %>" alt=""></p>
+                    <p><strong>NOMBRE:</strong> <%= usuario.nombre %></p>
+                    <p><strong>APELLIDO:</strong>  <%= usuario.apellido %></p>
+                    <p><strong>EMAIL:</strong>  <%= usuario.email %></p>
+                    <p><strong>CATEGORIA:</strong>  <%= usuario.category %></p>
+                    <p><strong>PAIS:</strong>  <%= usuario.country %></p>
+                    <div class="botonDeleteUser">
+                        <form action="/administrar/eliminarUsuario/<%= usuario.id %>?_method=DELETE" method="POST">
+                            <button type="submit"><i class="fa-solid fa-trash"></i></button>
+                        </form>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+
+        <br><br>
+
+    </body>
+  
+    <footer>
+        <%- include('../partials/footer.ejs') %>
+    </footer>
+
+</html>

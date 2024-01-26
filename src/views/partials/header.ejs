@@ -45,14 +45,20 @@
                                 Hi <%= locals.userLogged.fullName %> 
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/usuarios/profile">Mi perfil</a>
+                                <a class="dropdown-item" href="/usuarios/profile"><i class="fa-solid fa-address-card"></i> Mi perfil</a>
                                 <li><hr class="dropdown-divider"></li>
-                                <a class="dropdown-item" href="/usuarios/logout">Cerrar sesión</a>
+                                <a class="dropdown-item" href="/usuarios/logout"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i> Cerrar sesión</a>
                             </ul>
                         </li>
                         <% if (locals.userLogged.category == "admin") { %>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/administrar"><i class="fa-solid fa-screwdriver-wrench"></i></a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/administrar/productsList"><i class="fa-solid fa-guitar"></i> Productos</a></li>
+                                    <li><a class="dropdown-item" href="/administrar/userList"><i class="fa-solid fa-users"></i> Usuarios</a></li>
+                                </ul>
                             </li>
                         <% } %>
                     <% } else { %>    <!-- Si no esta logueado muestra lo siguiente -->

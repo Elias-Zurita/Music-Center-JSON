@@ -1,6 +1,7 @@
 const path = require('path'); // Libreria path para usar put y delete
 const fs = require('fs');  // Libreria fileSync para leer archivos JSON
 
+// PRODUCTOS JSON
 function findAll() {
     let productosJson =  fs.readFileSync(path.join(__dirname, "../database/productos.json"))   // Lee el archivo products.json donde estan los productos
     let data = JSON.parse(productosJson) // Declara data para "parsear" (consumir) la info del Json
@@ -9,6 +10,18 @@ function findAll() {
 function writeJson(array){   // Sobreescribe info al JSON data
     let arrayJSON = JSON.stringify(array, null," ")  // Convierte el array en JSON  //  se agrega null y las comillas para que quede un espacio
     return fs.writeFileSync(path.join(__dirname, "../database/productos.json"), arrayJSON);  
+}
+
+// USUARIOS JSON
+function findAllUsers() {
+    let usuariosJson =  fs.readFileSync(path.join(__dirname, "../database/usuarios.json"))   // Lee el archivo usuarios.json donde estan los usuarios
+    let dataUsers = JSON.parse(usuariosJson) // Declara data para "parsear" (consumir) la info del Json
+    return dataUsers 
+}
+
+function writeJsonUsers(array){   // Sobreescribe info al JSON data
+    let arrayJSON = JSON.stringify(array, null," ")  // Convierte el array en JSON  //  se agrega null y las comillas para que quede un espacio
+    return fs.writeFileSync(path.join(__dirname, "../database/usuarios.json"), arrayJSON);  
 }
 
 module.exports = {
@@ -71,6 +84,28 @@ module.exports = {
         writeJson(dataNueva)  // Escribo el nuevo conjunto de productos al archivo JSON sin el producto eliminado
 
         res.redirect("/administrar");
+    },
+    userList: (req, res) => {
+        let usuarios = findAllUsers();
+        res.render("administrador/userList", {usuarios}) 
+    },
+    userDelete: (req, res) => {
+        let usuarios = findAllUsers();
+        let dataNueva = usuarios.filter(function(usuarios){ // Filtro los productos para excluir el que se debe eliminar
+            return usuarios.id != req.params.id // Todos los productos distintos del seleccionado que vino por id
+        })
+
+        writeJsonUsers(dataNueva)  // Escribo el nuevo conjunto de productos al archivo JSON sin el producto eliminado
+
+        res.redirect("/administrar/userList");
+    },
+    buscarUsuario: (req, res) => {
+        let terminoDeBusqueda = req.query.buscar.toLowerCase(); // toma el texto ingresado al campo de busqueda y aplica toLowerCase asi la busqueda cubre mayusculas y minusculas
+        let usuarios = findAllUsers();
+        let usuariosFiltrados = usuarios.filter(usuario =>
+            usuario.nombre.toLowerCase().includes(terminoDeBusqueda) // filtro los usuarios que contengan en su nombre un match con el termino de busqueda ingresado
+        );
+        res.render("administrador/userList", { usuarios: usuariosFiltrados, terminoDeBusqueda });
     }
 }
 

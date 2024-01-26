@@ -11,61 +11,12 @@
  },
  {
   "id": 2,
-  "category": "user",
-  "fullName": "choto",
-  "email": "choto@gmail.com",
-  "password": "$2a$10$biX7h3DYppazYqn7qSn3re7FPQi/iybky4ZNnQ23pVoydFsworHLC",
-  "country": "Chile",
-  "avatar": "1701786827416_img.jpg"
- },
- {
-  "id": 3,
-  "category": "user",
-  "nombre": "anto",
-  "apellido": "perlotti",
-  "email": "anto@gmail.com",
-  "password": "$2a$10$biX7h3DYppazYqn7qSn3re7FPQi/iybky4ZNnQ23pVoydFsworHLC",
-  "country": "Perú",
-  "avatar": "1701789281724_img.jpg"
- },
- {
-  "id": 4,
-  "category": "user",
-  "nombre": "PEDROppp",
-  "apellido": "eee",
-  "email": "pedrito@gmail.com",
-  "password": "$2a$10$rFpRVXx27sx2OQ5ZDX.OouhlLSdekPGu5RYw0fGWKDRiXlljuioVC",
-  "country": "Colombia",
-  "avatar": "1706194036059_img.jpg"
- },
- {
-  "id": 5,
-  "category": "user",
-  "nombre": "EEE",
-  "apellido": "ppp",
-  "email": "tt@gmail.com",
-  "password": "$2a$10$3KwYbAAOtBVRhYT.Op71Ses.rckycbMLJdj8PnpuT.f5zSG3K41ve",
-  "country": "Venezuela",
-  "avatar": "1706194161990_img.jpg"
- },
- {
-  "id": 6,
-  "category": "user",
-  "nombre": "yyy",
-  "apellido": "yyyyy",
-  "email": "yy@gmail.com",
-  "password": "$2a$10$eVL6qiCtJQdlA9BlhEHDouuapr9RUf0wMKSFvN4XSWD1RP/uf8c6e",
-  "country": "Perú",
-  "avatar": "1706195055890_img.jpg"
- },
- {
-  "id": 7,
   "category": "Cliente",
-  "nombre": "uuu",
-  "apellido": "uuu",
-  "email": "uu@gmail.com",
-  "password": "$2a$10$tSDrPG9T4jxILjoR8uusN.yTdYLmU9mDwQKRnlR8SxNPwiENaMMzS",
-  "country": "Perú",
-  "avatar": "1706195096142_img.jpg"
+  "nombre": "Pedritopp",
+  "apellido": "Mayer",
+  "email": "pedrito@gmail.com",
+  "password": "$2a$10$zCQRkw3DAmN763mhLl56Eerv0NciMGOd5ZWrs5VmVG9doO/CrmmRi",
+  "country": "",
+  "avatar": "1706269542773_img.jpg"
  }
 ]

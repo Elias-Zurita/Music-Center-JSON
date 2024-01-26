@@ -34,9 +34,8 @@
   transition: .3s ease-in-out;
 }
 .cajaImagenProducto:hover img{
-  /*filter: blur(5px);*/
   opacity: 0.4;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .cajaProducto button{
   border: none;
