@@ -64,3 +64,8 @@
         font-size: 17px;
     }
 }
+@media (max-width:480px){ 
+    .infoDetalle p{
+        text-align: justify;
+    }
+}

@@ -1,10 +1,10 @@
-.bannerVideoIndex{
-    border: blue solid 3px;
-}
 .bannerVideoIndex video{
-    height: 200px;
+    height: 600px;
     width: 100%;
     object-fit: cover; /* no achica la imagen, sino que la pasa por arriba */
+}
+.bannerVideoIndexMobile{
+    display:none
 }
 .categoriasIndex{
     width: 100%;
@@ -246,6 +246,19 @@
         height: 170px;
         border: crimson solid 2px;
         border-radius: 5px;
+    }
+}
+@media (max-width:680px){
+    .bannerVideoIndex{
+        display: none;
+    }
+    .bannerVideoIndexMobile{
+        display: block;
+
+    }
+    .bannerVideoIndexMobile video{
+        object-fit: cover; /* no achica la imagen, sino que la pasa por arriba */
+        width: 100%;
     }
 }
 @media (max-width:480px){
