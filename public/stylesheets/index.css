@@ -29,6 +29,11 @@
     height: 170px;
     border: crimson solid 2px;
     border-radius: 5px;
+    overflow: hidden; 
+}
+.imagenCategoria img{
+    overflow: hidden; 
+    height: 170px;
 }
 .nombreCategoria{
     font-size: 13px;
