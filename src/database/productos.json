@@ -178,5 +178,275 @@
   "precio": "4600000",
   "descripcion": "Dave Mustaine es el legendario guitarrista, vocalista, compositor y fundador de la banda ganadora del premio Grammy® y multiplatino MEGADETH. Su nueva Gibson Dave Mustaine Flying V™ EXP Limited Edition ofrece el sonido potente y pesado y el rendimiento excepcional que él exige. El mástil de caoba con escala de 25,5” tiene un diapasón de ébano encuadernado con 24 trastes, incrustaciones de nácar, un clavijero estilo Explorer™ con afinadores Grover® Mini Rotomatic® y una cejilla Graph Tech® TUSQ®. La firma de Dave Mustaine se reproduce en la cubierta del alma y la silueta de Dave aparece en la parte posterior del clavijero. El cuerpo de caoba estilo Flying V tiene una tapa de arce (arce figurado en la versión Red Amber Burst) y está equipado con un puente Tune-O-Matic™, una cuerda. . .",
   "imagen": "imagen1702055441486.png"
+ },
+ {
+  "id": 19,
+  "nombre": "Custom Shop 000-18",
+  "modelo": "1937",
+  "marca": "Martin&Co",
+  "categoria": "Guitarras acusticas",
+  "precio": "500000",
+  "descripcion": "The all-new Custom Shop 000-18 1937 gives players the sonic qualities of the Authentic Series paired with the everyday value of a trusty workhorse guitar. Regarded as the cornerstone of performance and sound, Martin’s highly prized 1937 models set the bar for generations of instruments that followed. This guitar features a clear vintage gloss Adirondack spruce top, genuine mahogany back and sides, scalloped bracing, hide glue and cloth strip construction, and an adjustable truss rod, capturing the look, feel, and sound of some of the finest guitars ever made.  The Custom Shop 000-18 1937 is also available with light aging in either natural or ambertone finishes. Stage 1 aging lacks the heavy wear and tear of a well-worn instrument and instead features the light checking inspired by those rare guitars that were simply kept in a case and tucked away for decades. It bears the marks of time but not the heavy wear common on newly aged guitars.",
+  "imagen": "imagen1706663179289.jpg"
+ },
+ {
+  "id": 20,
+  "nombre": "D-CFM IV",
+  "modelo": "50th Anniversary",
+  "marca": "Martin&Co",
+  "categoria": "Guitarras acusticas",
+  "precio": "500000",
+  "descripcion": "Introducing the D-CFM IV 50th Anniversary—a timeless tribute to half a century of dedication, and a special acknowledgement of the company’s 35th year of quality craftsmanship by its talented family of coworkers in Navojoa, Sonora, Mexico. To celebrate, each of these beautiful anniversary instruments proudly displays a signed, numbered label commemorating both Chris Martin IV’s 50 years of service, and the rich lineup of innovations originating in Navojoa. It’s a testament to the artistry and skill that have defined Chris’ tenure. Crafted at Martin’s factory in Navojoa, the guitar features a gloss finish, pommele sapele back and sides, a bearclaw spruce top, and classic \"Tree of Life\" inlays on the fingerboard and headplate with a matching rosette presented in beautiful Paua pearl. It’s an instrument that promises to inspire and captivate musicians for generations to come, as Martin continues its quest to make quality and innovation as approachable as possible. This guitar is a true collector’s item, with only 50 available worldwide.",
+  "imagen": "imagen1706663285972.jpg"
+ },
+ {
+  "id": 21,
+  "nombre": "D-50 CFM IV",
+  "modelo": "50th Anniversary",
+  "marca": "Martin&Co",
+  "categoria": "Guitarras acusticas",
+  "precio": "450000",
+  "descripcion": "Introducing the D-50 CFM IV 50th Anniversary—a timeless tribute to half a century of dedication. For the past 50 years, Chris Martin IV has been the driving force behind Martin Guitar, carrying forward the legacy of excellence and innovation established by generations before him. To honor this milestone, his namesake company proudly presents a limited-edition guitar that embodies his unwavering commitment to crafting the finest acoustic guitars in the world. The D-50 CFM IV 50th Anniversary features Guatemalan rosewood back and sides, a stunning heavy bearclaw spruce top, European flamed maple binding, and intricate abalone and mother of pearl inlay throughout. Each of these beautiful anniversary instruments also proudly displays a signed, numbered label commemorating Chris’ 50 years of service. This guitar is a true collector’s item, with only 50 available worldwide.",
+  "imagen": "imagen1706663488791.jpg"
+ },
+ {
+  "id": 22,
+  "nombre": "AE440",
+  "modelo": "Platinum Collection",
+  "marca": "Ibanez",
+  "categoria": "Guitarras acusticas",
+  "precio": "250000",
+  "descripcion": "Born from a long lineage and musical heritage, the acoustic guitar is steeped in tradition. But music continues to evolve, and musicians demand inspiring new tools with which to carve out their own signature sound. In that spirit, we introduce Ibanez AE, our flagship series of acoustic-electric guitars, offer supreme tone and playability, and represent another great chapter in the acoustic guitar tradition.",
+  "imagen": "imagen1706664021233.png"
+ },
+ {
+  "id": 23,
+  "nombre": "TALMAN",
+  "modelo": "Series",
+  "marca": "Ibanez",
+  "categoria": "Guitarras acusticas",
+  "precio": "300000",
+  "descripcion": "You've noticed by now that we at Ibanez hold a studious respect for tradition. That said, every now and then you have to hang a right where everyone else is turning left. The double-cutaway Talman is our rebel with a cause. Electric players looking to add an acoustic-guitar dimension to their arsenal go headover- heels for this distinctive hybrid.",
+  "imagen": "imagen1706664079699.png"
+ },
+ {
+  "id": 24,
+  "nombre": "AEWC",
+  "modelo": "Series",
+  "marca": "Ibanez",
+  "categoria": "Guitarras acusticas",
+  "precio": "350000",
+  "descripcion": "Known the world over for shredding gear, Ibanez is also well-versed in the manufacture of acoustic guitars uniquely suited for electric guitar players: the AEWC. Inspired by the electric guitar’s fast playability and appearance, this is a sleek, modern acoustic guitar that shredders will have very little trouble adapting to.",
+  "imagen": "imagen1706664140720.png"
+ },
+ {
+  "id": 25,
+  "nombre": "Special Edition",
+  "modelo": "326ce Baritone",
+  "marca": "Taylor",
+  "categoria": "Guitarras acusticas",
+  "precio": "450000",
+  "descripcion": "Baritone | Neo-Tropical Mahogany Top | Tropical Mahogany Back and Sides | Neo-Tropical Mahogany Neck | West African Crelicam Ebony Fretboard | Expression System® 2 Electronics | Venetian Cutaway | Taylor Deluxe Hardshell Brown Case",
+  "imagen": "imagen1706664511744.png"
+ },
+ {
+  "id": 26,
+  "nombre": "12 Strings",
+  "modelo": "858e LTD",
+  "marca": "Taylor",
+  "categoria": "Guitarras acusticas",
+  "precio": "600000",
+  "descripcion": "12-String | Sitka Spruce Top | Indian Rosewood Back and Sides | Neo-Tropical Mahogany Neck | Crelicam Ebony, Smoky Fretboard | Expression System® 2 Electronics | Non-cutaway | Taylor Deluxe Hardshell-Western Floral Case",
+  "imagen": "imagen1706664573591.png"
+ },
+ {
+  "id": 27,
+  "nombre": "LTD 12 strings",
+  "modelo": "K68e LTD",
+  "marca": "Taylor",
+  "categoria": "Guitarras acusticas",
+  "precio": "650000",
+  "descripcion": "12-String | Hawaiian Koa Top | Hawaiian Koa Back and Sides | Neo-Tropical Mahogany Neck | West African Crelicam Ebony Fretboard | Expression System® 2 Electronics | Non-cutaway | Taylor Deluxe Hardshell-Western Floral Case",
+  "imagen": "imagen1706664868950.png"
+ },
+ {
+  "id": 28,
+  "nombre": "Collector's Edition",
+  "modelo": "Cat Stevens J-180",
+  "marca": "Gibson",
+  "categoria": "Guitarras acusticas",
+  "precio": "650000",
+  "descripcion": "With his long dark hair and beard, slender frame, and black Gibson J-180 Cat Stevens stood as the embodiment of the 1970s singer-songwriter, a modern troubadour on a quest for spiritual enlightenment through music. And it was on his J-180 that he wrote and recorded many of his most beloved hits including \"Wild World,\" \"Peace Train,\" \"Father and Son,\" and many more.  Bought in London’s famous Selmer's Music Shop in 1969, Cat was initially drawn to the J-180’s elegant style, however, its percussive quality soon became an essential component of the intimate sound of his seminal albums ‘Tea For The Tillerman’ and ‘Teaser And The Firecat.’ At the end of the 1970s, Cat sold all of his musical equipment, including his J-180, with the proceeds going to cha. . .",
+  "imagen": "imagen1706664949287.png"
+ },
+ {
+  "id": 29,
+  "nombre": "Original",
+  "modelo": "60s J-45",
+  "marca": "Gibson",
+  "categoria": "Guitarras acusticas",
+  "precio": "750000",
+  "descripcion": "When you listen to a Gibson round-shoulder acoustic, you will notice that it responds exactly to the player's style and technique - powerful one moment, soft and mellow the next. This 60s J-45 Original offers a period-correct 1 11/16’’ nut width, allowing for comfortable fingering in any position along the mahogany neck. The easily-adjustable saddle can be fine-tuned to players' unique string action preference. The new 60s J-45 Original features double antiqued binding, Grover strap cream button tuners, and our famous white pickguard with hot stamp logo.",
+  "imagen": "imagen1706668647260.jpg"
+ },
+ {
+  "id": 30,
+  "nombre": "Flat-tops",
+  "modelo": "SJ-200 Original",
+  "marca": "Gibson",
+  "categoria": "Guitarras acusticas",
+  "precio": "460000",
+  "descripcion": "The Gibson SJ-200 is the world's most famous acoustic guitar and earned its designation as the \"King of the Flat-Tops.\" Since its release in 1937, its wide use by American artists has made the Super Jumbo one of the most widely played acoustic guitars of our time. The most striking features of the new SJ-200 Original include the carved four bar Moustache bridge, an engraved tortoise pickguard, mother-of-pearl crown fretboard and headstock inlay, and exquisite flamed maple back and sides. The SJ-200 is an American original with its shape and elegant appearance",
+  "imagen": "imagen1706668725492.jpg"
+ },
+ {
+  "id": 31,
+  "nombre": "The Everly Brothers",
+  "modelo": " SJ-200",
+  "marca": "Gibson",
+  "categoria": "Guitarras acusticas",
+  "precio": "750000",
+  "descripcion": "Phil and Don Everly were music royalty. Members of the Rock and Roll Hall of Fame, the Everly Brothers enjoyed a long string of highly influential hit records driven by their soaring harmonies and propelled by their matching Gibson acoustic guitars. The Gibson Acoustic Custom Shop is proud to celebrate their musical legacy with the release of The Everly Brothers SJ-200. Featuring AA flame maple back and sides paired with a thermally aged Sitka spruce top, which is capped with the dual pickguards that the Everly Brothers made famous. The Everly Brothers SJ-200 also has essential SJ-200 cosmetic features, such as the classic mother of pearl graduated crown inlays on the rosewood fretboard, as well as a Moustache™ bridge with four bar mother of pearl inlays. The bridge saddle, nut, and bri. . .",
+  "imagen": "imagen1706668801364.png"
+ },
+ {
+  "id": 32,
+  "nombre": "AMERICAN PROFESSIONAL II",
+  "modelo": "JAZZ BASS",
+  "marca": "Fender",
+  "categoria": "Bajos",
+  "precio": "250000",
+  "descripcion": "\"El American Professional II Jazz Bass® se basa en más de sesenta años de innovación, inspiración y evolución para satisfacer las demandas del bajista actual. Nuestro popular mástil delgado en \"C\" ahora luce bordes de diapasón redondeados, un acabado satinado \"Super-Natural\" y un talón de mástil recién esculpido para una sensación sumamente cómoda y de fácil acceso al registro superior Las nuevas pastillas de bobina simple V-Mod II Jazz Bass son más articuladas que nunca al tiempo que brindan el golpe y la claridad por los que el Jazz Bass es conocido. El American Pro II Jazz Bass brinda familiaridad instantánea y versatilidad sónica que sentirás y escucharás de inmediato, con amplias mejoras que marcarán un nuevo estándar para los instrumentos profesionales \".",
+  "imagen": "imagen1706669168526.png"
+ },
+ {
+  "id": 33,
+  "nombre": "ADAM CLAYTON",
+  "modelo": "CLAYTON",
+  "marca": "Fender",
+  "categoria": "Bajos",
+  "precio": "350000",
+  "descripcion": "A lo largo de toda la fenomenal historia de la banda, la rompedora música de U2 ha contado con el sensacional sustento de Adam Clayton con sus musculosas líneas de bajo. Su impecable talento para el ritmo y su sonido expansivo, desde la fundación de una de las mayores bandas en la historia de la música, nunca ha tenido más potencia que en la actualidad. El Fender Adam Clayton Jazz Bass pone en tus manos su robusto sonido y estilo, con elegantes detalles y un excelente sonido base que proviene de las dos potentes pastillas Fender Custom Shop, además de un bonito acabado brillante Sherwood Green Metallic con pala a juego.",
+  "imagen": "imagen1706669196369.png"
+ },
+ {
+  "id": 34,
+  "nombre": "JAZZ BASS",
+  "modelo": "AMERICAN ULTRA",
+  "marca": "Fender",
+  "categoria": "Bajos",
+  "precio": "650000",
+  "descripcion": "La serie American Ultra de guitarras y bajos es la más avanzada para músicos exigentes que exigen lo último en precisión, rendimiento y tono. El American Ultra Jazz Bass presenta un exclusivo perfil de mástil de \" D moderna” con bordes de diapasón redondeados para horas de comodidad, y la forma del talón del mástil permite un fácil acceso al registro más alto. Un veloz diapasón de radio compuesto de 10 \"a 14\" con 21 trastes medium jumbo para solos precisos y sin esfuerzo, mientras que las pastillas Ultra Noiseless ™ y las opciones avanzadas de cableado brindan infinitas posibilidades de sonido: sin zumbidos. Este versátil instrumento de última generación te inspirará a llevar tu interpretación a nuevas alturas. Otras características incluyen clavijeros de palomilla vintage livianos con la \"F\" y ejes cónicos, herrajes de cromo y cejilla de hueso. Incluye estuche rígido moldeado de primera calidad.",
+  "imagen": "imagen1706669271432.png"
+ },
+ {
+  "id": 35,
+  "nombre": "Nord Grand 2",
+  "modelo": "Stage Piano",
+  "marca": "Nord",
+  "categoria": "Teclados",
+  "precio": "250000",
+  "descripcion": "From the legendary makers of the intuitive and instantly recognizable red keyboards seen in venues and studios around the world, the Nord Grand 2 digital piano builds off the original Nord Grand's success, adding dual layers of Piano and Synth for even greater flexibility. Performing tasks like creating layers and splits, adding effects or transposing can be done instantly with the Nord Grand 2's dedicated LED faders, buttons and knobs for all essential functions.",
+  "imagen": "imagen1706670276856.png"
+ },
+ {
+  "id": 36,
+  "nombre": "KORG Pa5X",
+  "modelo": "Professional Arranger 88 Key",
+  "marca": "Korg",
+  "categoria": "Teclados",
+  "precio": "700000",
+  "descripcion": "The Korg Pa5X Professional Arranger redefines arranger keyboards, featuring Korg's cutting-edge EDS-XP sound engine and an intuitive interface with unparalleled ease-of-use. The Pa5X inspires you to compose, perform, and produce with professional results. Available with 61, 76, or 88 fully weighted keys, the Pa5X's premium keybeds provide authentic grand piano feel for any playing style. Packed with thousands of premium sounds and hundreds of styles, the Pa5X puts a world of music at your fingertips. The Pa5X excels as both a powerful studio tool and a dynamic live instrument, ready to accompany you wherever your musical journey leads.",
+  "imagen": "imagen1706670433939.png"
+ },
+ {
+  "id": 37,
+  "nombre": "Yamaha MONTAGE",
+  "modelo": "M8x 88-Key Synthesizer",
+  "marca": "Yamaha",
+  "categoria": "Teclados",
+  "precio": "800000",
+  "descripcion": "The Yamaha MONTAGE synth workstation was conceived as Yamaha's flagship keyboard for synthesis and production. The MONTAGE M Series workstations might as well have been named the MONTAGE M(ore) Series, with more polyphony, more synthesis engines, more memory, more sounds, more control and more creative fun. Plus, expanded integration with virtual instrument plug-ins and a streamlined workflow, it's easier than ever to get the music that's in your head out into the world.",
+  "imagen": "imagen1706670514953.png"
+ },
+ {
+  "id": 38,
+  "nombre": "Gibson Falcon",
+  "modelo": "Cream Bronco",
+  "marca": "Gibson",
+  "categoria": "Amplificadores",
+  "precio": "300000",
+  "descripcion": "The Gibson Falcon 5 1x10 tube combo pays homage to the famed Skylark amps of the ’50s and ’60s—the iconic guitar company’s entry to becoming one of the world’s first manufacturers of amplifiers. Inspired by its legendary past, the Gibson Falcon incorporates a brand-new schematic by trailblazing designer Randall Smith and the formidable MESA/Boogie design team, bringing inimitable, handcrafted vintage tone to the 21st century. Featuring a single, no-nonsense channel with volume and tone controls, plus onboard reverb, the Falcon 5 serves soaring sounds from the moment you plug in. This powerfully simple amp best suits tone connoisseurs seeking the nuanced dynamic response of old-school classics, starting with lean cleans that overdrive into meaty rhythms and leads with ease. The ultraboutique Gibson Falcon 5 combo offers unparalleled retro magic in a thoroughly contemporary reimagining of a certified classic.",
+  "imagen": "imagen1706670845871.png"
+ },
+ {
+  "id": 39,
+  "nombre": "Amp Head Black",
+  "modelo": "Tremonti MT 100",
+  "marca": "PRS",
+  "categoria": "Amplificadores",
+  "precio": "800000",
+  "descripcion": "The result of many years of R&D and road-testing, the MT 100 guitar amp head from PRS is built with professional quality for serious musicians. Featuring a robust chassis, the MT 100 features custom transformers and three independent channels with identical controls but truly unique voices.  Each of the MT 100's three channels is built with a unique circuit and dedicated preamp tubes to ensure the voicing is exactly as intended. The Clean channel (like the MT 15) stays pristine and chimey—try it with split or single coils to hear it sing. The Gain channel (also like the MT 15) gets lush heavy tones with massive bass response that is never muddy. The added Overdrive channel (modeled after one of Tremonti’s favorite personal amps) brings an incredibly flexible gain structure and musical midrange response to this already versatile amp platform.  Select your channel on the amp face or via the included footswitch—both feature matching channel lights so you’ll never lose your place. All three channels share the same preamp tube type (12AX7s) for ease of servicing. At a powerful 100 watts, the MT 100 is a straightforward, powerful amp full of aggression and articulation.",
+  "imagen": "imagen1706670942765.png"
+ },
+ {
+  "id": 40,
+  "nombre": "Marshall DSL20CR",
+  "modelo": "20W 1x12 Tube",
+  "marca": "Marshall",
+  "categoria": "Amplificadores",
+  "precio": "700000",
+  "descripcion": "The Marshall DSL20CR combo amplifier delivers 20 watts of pure valve tone in a portable package. This all-tube, twin-channel amp offers Marshall's revered Classic Gain and Ultra Gain voicings, allowing guitarists to summon crisp clean tones, vintage overdrive, and modern high-gain saturation. With high and low power modes, the DSL20CR provides appropriate volume for any setting—from home practice to club gigs. The DSL20CR features an innovative emulated speaker output, which accurately reproduces the sound of Marshall's legendary 1960 cabinet for direct recording or silent practice.",
+  "imagen": "imagen1706671038264.png"
+ },
+ {
+  "id": 41,
+  "nombre": "Orange Amplifiers",
+  "modelo": "Super Crush 1x12 100W",
+  "marca": "Orange",
+  "categoria": "Amplificadores",
+  "precio": "500000",
+  "descripcion": "Building on the huge success of the Crush Pro solid state amplifiers, the Orange Super Crush 100 combo takes this now-classic recipe and goes a step further in the search for valve-like tone. While it's equipped with all the same features of the original model, the Super Crush 100 is a completely different build, proving that many small improvements can make a big difference. With its single-ended, 2-channel JFET preamp design and 100-watt class A/B power amp, the Super Crush 100 mimics the huge, rich and responsive tone of the Rockerverb amps in solid state. From clean to heavy gain, there's no shortage of Orange mojo with this amp delivering touch-sensitive dynamics and lush harmonic overtones. This compact 1x12 combo boasts a Celestion G12H-150 speaker, ensuring your tone leaves a big impression on the audience, and a tiny footprint on the stage.",
+  "imagen": "imagen1706671098225.png"
+ },
+ {
+  "id": 42,
+  "nombre": "Saturn Evolution",
+  "modelo": "Maple 5-Piece",
+  "marca": "Mapex",
+  "categoria": "Baterias",
+  "precio": "800000",
+  "descripcion": "Whether you like to go dry in a jazz gig, or sound huge in a packed arena, the Saturn Evolution Workhorse has the whole package for you. First introduced as a special edition in 2012, the birch/walnut hybrid shell has made its return to the Saturn Evolution line with Design Lab features. The new shell formula perfectly combines the sonic characteristics of walnut with articulate punch of birch, delivering a dark, punchy, dry sound. The birch toms deliver clear and punchy sounds in the high register while the maple kick produces a warm, round tone in the low end. The result is a redefined sonic identity that speaks to today's music scene. Plies get progressively thicker, depths graduate by 1/2\", and bearing edges change as the drums get larger in diameter. The combination of all of these details creates an amazing symphony in one kit.",
+  "imagen": "imagen1706671350312.png"
+ },
+ {
+  "id": 43,
+  "nombre": "TAMA 50th",
+  "modelo": "Mirage 5-Piece",
+  "marca": "DW",
+  "categoria": "Baterias",
+  "precio": "850000",
+  "descripcion": "DW's flagship line, the Collector's Series, are the original U.S.-made custom drums. For years, drum makers have preferred maple for its resonant tonal qualities. Maple is a traditional shell material that provides low-end punch, warmth and attack. This DW Shell Pack features North American Maple shells with 3-ply reinforcement hoops. Toms sized 8-13\" are 6-ply, while 14\" and bigger (bass drums included) are 7-ply.",
+  "imagen": "imagen1706671432931.png"
+ },
+ {
+  "id": 44,
+  "nombre": "Nitro Max",
+  "modelo": "8-Piece Electronic",
+  "marca": "Alesis ",
+  "categoria": "Baterias",
+  "precio": "700000",
+  "descripcion": "The Alesis Nitro Max is a complete e-kit that’s perfect for rehearsing, recording, songwriting, practicing, learning, jamming, or simply digging the versatile and propulsive sounds of the popular BFD drum sample library. The mesh drum heads on the Nitro Max not only allow you to play super quiet, they also provide an authentic feel that’s just like sitting on an acoustic drum kit. You can go from practicing silently at home to bashing it out on an acoustic stage kit without worrying about your attack or technique being hampered. In addition, the Bluetooth connectivity of the Alesis Nitro Max can help you upgrade your skills by serving up streaming music tracks and audio from video lessons for play-along practice and education. Alesis takes chops training even further by offering a three-month free tryout of Drumeo online lessons, as well as a 30-day free subscription to the educational desktop app Melodics Premium. Nitro Max provides all the inspiration you need to transform yourself into a virtuoso percussionist.",
+  "imagen": "imagen1706671512408.png"
+ },
+ {
+  "id": 45,
+  "nombre": "PROFESSIONAL SERIES",
+  "modelo": "EST. 1986",
+  "marca": "Pearl",
+  "categoria": "Baterias",
+  "precio": "900000",
+  "descripcion": "From local gigs to national tours, Pearl's updated Professional Series drums have a look and sound that fits in any live performance space. Beginning in 1985, Pearl introduced its legendary MLX drums under the Professional Series banner to bring the powerful Maple sound to the forefront. Today, Professional Series returns with the spirit of the original and a refreshed presence for the experienced drummer.",
+  "imagen": "imagen1706671833209.jpg"
  }
 ]

@@ -48,7 +48,7 @@ module.exports = {
         let productosActualizados = [...productos, nuevoProducto]  // Ingresa los datos de nuevoProducto en un producto 
 
         writeJson(productosActualizados);
-        res.redirect("/administrar");
+        res.redirect("/administrar/productsList");
     },
     editar: (req, res) => {
         let productos = findAll();
