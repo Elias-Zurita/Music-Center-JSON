@@ -14,12 +14,12 @@
     z-index: 11;
     cursor: pointer;
     animation: action 1s infinite alternate;
-    background: #F34E3A!important;
+    background: crimson!important;
     border: none!important;
     transition: .3s ease-in-out!important;
 }
 .back-to-top:hover{
-    background-color: crimson!important;
+    background-color: rgb(11, 181, 155)!important;
     color: black!important;
     transform: scale(1.2);
     border-radius: 50%;
@@ -41,11 +41,12 @@
     align-items: center;
 }
 .navbar-brand {
-    height: 50px;
-    border: blue solid 1px;
+    color: white;
+    font-family: 'Oleo Script', system-ui;
+    font-size: 35px;
 }
-.navbar-brand img{
-    height: 100%;
+.navbar-brand:hover{
+    color: #F34E3A!important;
 }
 .nav-item {
     margin-right: 26px;
@@ -111,6 +112,9 @@
 @media (max-width: 990px){
     .inicioHeader{
         display: block;
+    }
+    .navbar-brand {
+        display: none;
     }
 }
 @media (max-width: 1000px){

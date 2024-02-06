@@ -7,7 +7,7 @@ a{
 body{
     font-family: "Poppins", sans-serif!important;
     /* background-color: #212121!important; */
-    margin-top: 135px!important;
+    margin-top: 65px!important;
 }
 h1{
     text-align: center;
@@ -38,5 +38,13 @@ h3{
     }
     h3{
         text-align: justify;
+    }
+    body{
+        margin-top: 85px!important;
+    }
+}
+@media (max-width:460px){
+    body{
+        margin-top: 115px!important;
     }
 }

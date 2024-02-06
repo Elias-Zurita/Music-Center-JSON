@@ -10,7 +10,6 @@
 .logoFooter{
     color: #9b1c43;
     font-family: 'Oleo Script', system-ui;
-    
     text-shadow: -1px 4px 3px rgba(155, 28, 67, 0.48);
     font-size: 35px;
 }
@@ -22,6 +21,9 @@
     font-weight: bold;
     color: #9b1c43;
     font-size: 25px;
+}
+.cajaRedesFooter{
+    margin:10px 0;
 }
 .redesFooter{
     margin-right: 2px;
