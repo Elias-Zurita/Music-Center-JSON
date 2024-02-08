@@ -3,6 +3,7 @@ a{
 }
 :root{
     --color-primario: #394054!important;
+    --color-secundario: #F34E3A!important;
 }
 body{
     font-family: "Poppins", sans-serif!important;

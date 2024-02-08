@@ -99,13 +99,16 @@
 
 /* CAROUSEL flickity */
 .cajaCarouselFlickity{
-    width: 93%;
+    width: 80%;
     margin: 0 auto 120px auto;
     overflow: hidden;
-    position: relative;
+    position: relative;   
+}
+.flickity-enabled:focus {
+    outline: none; /* quita el recuadro que se hace al hacer click en el carrousel */
 }
 .guitarraCarouselFlickity {
-    width: 25%;  /* Determina la cantidad de cajas que se van a ver del carrousel */
+    width: 15%;  /* Determina la cantidad de cajas que se van a ver del carrousel */
     height: 450px;
     border-radius: 5px;
     counter-increment: carousel-cell;
@@ -161,8 +164,17 @@
     }
 }
 
+.porQueIndex{
+    background: var(--color-secundario);
+    padding-bottom: 80px;
+    padding-top: 80px;
+    color: white;
+}
+.porQueIndex h2{
+    color: white!important;
+}
 .iconosIndex{
-    margin: 50px auto 80px auto;
+    margin: 50px auto 0 auto;
     width: 1000px;
     display: flex;
     flex-wrap: wrap;
@@ -198,7 +210,7 @@
 .cajaIconoIndex .front{
     transform: perspective(500px) rotateY(0deg);
     border: none;
-    background: var(--color-primario);
+    background: white;
     border-radius: 10px;
 }
   /* en la propiedad Transform si quiero modificar el giro (vertircal, horizontal, izq a der, der a izq tengo que modificar rotateY a rotateX y los grados + a - */
@@ -206,7 +218,6 @@
     background-color: black;
     color: white;
     transform: perspective(500px) rotateY(180deg); 
-    border: goldenrod solid 3px;
     border-radius: 10px;
 }
 .cajaIconoIndex:hover .front{
@@ -216,7 +227,15 @@
     transform: perspective(500px) rotateY(360deg);
 }
 
+@media(max-width:1400px){
+    .guitarraCarouselFlickity {
+        width: 25%;
+    }
+}
 @media (max-width:1100px){
+    .cajaCarouselFlickity{
+        width: 100%;
+    }
     .iconosIndex{
         width: 90%;
     }

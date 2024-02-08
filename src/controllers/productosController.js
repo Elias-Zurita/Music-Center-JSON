@@ -27,7 +27,8 @@ module.exports = {
         let terminoDeBusqueda = req.query.buscar.toLowerCase(); // toma el texto ingresado al campo de busqueda y aplica toLowerCase asi la busqueda cubre mayusculas y minusculas
         let productos = findAll();
         let productosFiltrados = productos.filter(producto =>
-            producto.nombre.toLowerCase().includes(terminoDeBusqueda) // filtro los productos que contengan en su nombre un match con el termino de busqueda ingresado
+            producto.nombre.toLowerCase().includes(terminoDeBusqueda) || // filtro los productos que contengan en su nombre un match con el termino de busqueda ingresado
+            producto.marca.toLowerCase().includes(terminoDeBusqueda) // Busqueda por marca tambien
         );
         res.render('productos/listado', { productos: productosFiltrados, terminoDeBusqueda });
     },
