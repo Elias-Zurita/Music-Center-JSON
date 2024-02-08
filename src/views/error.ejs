@@ -1,3 +1,24 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
+<head>
+    <%- include('partials/head.ejs') %>  
+</head>
+
+<div class="bodyError">
+    <marquee 
+        class="imagenError"   
+        direction="up"
+        scrollamount="3"
+        height="100%"
+        behavior="alternate">
+        <img src="images/error.jpg" class="monstruo">
+    </marquee>
+
+    <div class="botonError">
+        <a href="/"><button><i class="fa-solid fa-backward"></i>&nbsp Music Center</button></a>
+    </div>
+</div>
+
+<br><br><br>
+
+<div><%= message %></div>
+<div><%= error.status %></div>
 <pre><%= error.stack %></pre>
