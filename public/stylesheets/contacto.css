@@ -2,7 +2,6 @@
     display: flex;
     font-family: "Poppins";
     justify-content: center;
-    margin-top: 100px;
     margin-bottom: 50px;
 }
 .hijoFormularioContacto{
@@ -113,9 +112,7 @@
     }
     .hijoFormularioContacto{
         width: 80%;
-        padding: 20px;
-        margin-top: 40px;
-    }
+        padding: 20px;    }
     .formularioContacto form{
         padding-right: 0px;
     }

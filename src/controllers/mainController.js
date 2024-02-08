@@ -5,10 +5,10 @@ const controller = {
         res.render('index')    // renderiza el index  //
     },
     ubicacion: (req, res) =>{
-        res.render('ubicacion')   
+        res.render('web/ubicacion')   
     },
     contacto: (req, res) =>{
-        res.render('contacto')   
+        res.render('web/contacto')   
     }
  }
 
