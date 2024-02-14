@@ -5,6 +5,7 @@
     height: 600px;
     width: 100%;
     object-fit: cover; /* no achica la imagen, sino que la pasa por arriba */
+    margin-bottom: -7px;
 }
 .bannerVideoIndexMobile{
     display:none
@@ -40,6 +41,10 @@
 .imagenCategoria img{
     overflow: hidden; 
     height: 170px;
+    filter: grayscale(100);
+}
+.categoria:hover .imagenCategoria img{
+    filter: grayscale(0) ;
 }
 .nombreCategoria{
     font-size: 16px;
@@ -106,6 +111,7 @@
 }
 .flickity-enabled:focus {
     outline: none; /* quita el recuadro que se hace al hacer click en el carrousel */
+    cursor: grab;
 }
 .guitarraCarouselFlickity {
     width: 15%;  /* Determina la cantidad de cajas que se van a ver del carrousel */
