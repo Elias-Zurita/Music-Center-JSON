@@ -288,9 +288,13 @@
         object-fit: cover; /* no achica la imagen, sino que la pasa por arriba */
         width: 100%;
     }
+    .categoria{
+        margin: 40px;
+    }
 }
 @media (max-width:480px){
     .guitarraCarouselFlickity {
         width: 50%;  /* Determina la cantidad de cajas que se van a ver del carrousel */
     }
+
 }
