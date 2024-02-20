@@ -27,6 +27,12 @@ Patrones de diseño MVC.
 - NOTA: Todos los usuarios creados tendran la categoria de cliente. 
   Desde la cuenta del administrador se puede acceder al formulario de Edicion de productos, Listado  y eliminacion de Usuarios (en el header).
 
+## Lenguajes utilizados :zap:
+- HTML
+- CSS
+- JavaScript
+- JSON
+
 ## DEMO :globe_with_meridians:
 - Para ver la aplicacion sin necesidad de clonar el repositorio puede acceder al siguiente enlace: 
 
