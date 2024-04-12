@@ -51,8 +51,10 @@
     cursor: pointer;
     z-index: 10;
     border: none;
-    background:red;
-    color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.34);
+    transform: skew(-21deg);
+    color: black;
+    background-color:white;
     font-weight: bold;
 }
 .formularioContacto button .relleno{
@@ -65,7 +67,7 @@
     color: black;
     transition: 0.3s;
     z-index: -1;
-    background: #25D366;
+    background: var(--color-secundario);
     color: black;
 }
 .formularioContacto button:hover .relleno{

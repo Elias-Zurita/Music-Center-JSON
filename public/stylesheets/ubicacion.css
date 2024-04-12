@@ -4,7 +4,7 @@
     font-weight: bold;
     font-family: "poppins";
     margin-top: 70px;
-    background: #229acd;
+    background: var(--color-secundario);
     color: white;
 }
 .cajaSucursales{
