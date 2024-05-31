@@ -1,0 +1,123 @@
+.iconoCarrito {
+    margin: 30px auto;
+    width: 300px;
+    border: violet solid 2px;
+    text-align: center;
+}
+.iconoCarrito i{
+    animation: tada;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    font-size: 70px;
+}
+@keyframes tada{
+  0%{
+    transform: scaleX(1);
+  }
+  10%, 20%{
+    transform: scale3d(.9, .9, .9) rotate(0deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+  }
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.carritoVacio{
+    border: blue solid 2px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    font-size: 20px;
+}
+.carritoVacio button{
+    background-color: violet;
+    border-radius: 10px;
+    padding: 7px;
+    transition: .3s ease-in-out;
+}
+.carritoVacio button:hover{
+    background-color: aqua;
+}
+.carritoConProductos{
+    border: red solid 2px;
+    
+}
+.productosCarrito{
+    display: flex;
+    
+    margin: 10px auto;
+}
+.productosCarrito div{
+    height:100px;
+    border: solid 1px black;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.imagenCarrito{
+    width: 70px;
+}
+.productosCarrito img{
+    height: 100%;
+}
+.nombreProductoCarrito{
+    width: 90px;
+}
+.cantidadCarrito{
+    width: 100px;
+}
+.cajitaCantidadCarrito{
+    background-color:red;
+    width: 95px;
+    border-radius: 15px;
+    height: 20px!important;
+    border: blue solid 2px;
+    padding: 8px;
+}
+.cajitaCantidadCarrito button{
+    width: 100%;
+}
+.cajitaCantidadCarrito input{
+    height: 20px;
+    width: 100%;
+}
+.precioProductoCarrito{
+    width: 65px;
+}
+.tachoCarrito{
+    width: 40px;
+}
+
+.totalCarrito{
+    border: #393939 solid 2px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size:20px;
+    margin: 30px;
+}
+.opcionesCarrito{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 20px
+}
+.opcionesCarrito div{
+    border-radius: 10px;
+    text-align: center;
+    border: solid 2px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}

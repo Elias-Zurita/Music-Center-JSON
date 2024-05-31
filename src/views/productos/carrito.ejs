@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  
+    <head>
+        <%- include('../partials/head.ejs') %>  
+    </head>
+
+    <header>
+        <%- include('../partials/header.ejs') %>
+    </header>
+  
+    <body>
+
+        <br>
+        <h1>TU PEDIDO</h1>
+
+        <div class="iconoCarrito">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        
+        <div class="carritoVacio">
+            <div>El carrito está vacio rata apestosa!</div>
+            
+            <div>
+                <button><a href="/productos">Ir a productos</a></button>
+            </div>
+        </div>
+
+        <div class="carritoConProductos">
+            <div class="productosCarrito">
+                <div class="imagenCarrito"><img src="/images/productos/imagen1701367288322.jpg" alt=""></div>
+                <div class="nombreProductoCarrito">guitarra</div>
+                <div class="cantidadCarrito">
+                    <div class="cajitaCantidadCarrito">
+                        <button type="button"></button>
+                        <div>
+                            <input>
+                        </div>
+                        <button type="button"></button>
+                    </div>
+                </div>
+                <div class="precioProductoCarrito">$5000</div>
+                <div class="tachoCarrito"><i class="fa-solid fa-trash-can"></i></div>
+            </div>
+
+            <div class="totalCarrito">
+                Total: $8218
+            </div>
+
+            <div class="opcionesCarrito">
+                <div class="continuarCarrito"><a href="/productos">Continuar comprando</a></div>
+                <div class="compraMP"><a>Comprar con Mercado Pago</a></div>
+                <div class="vaciarCarrito">Vaciar carrito</div>
+            </div>
+        </div>
+        
+    </body>
+  
+    <footer>
+        <%- include('../partials/footer.ejs') %>
+    </footer>
+
+</html>
+
