@@ -8,38 +8,41 @@
     <header>
         <%- include('../partials/header.ejs') %>
     </header>
-  
+    
     <body>
-
         <br>
         <h1>NUESTROS PRODUCTOS</h1>
 
-            <div class="listadoPadre">
-                <% productos.forEach(producto => { %>
-                    <div class="cajaProducto">
-                        <a href="/productos/detalle/<%= producto.id %>">
-                            <div class="cajaImagenProducto">
-                                <img src="/images/productos/<%= producto.imagen %>">
-                                <div class="textoConHover">
-                                    <div style="font-family: 'Teko', sans-serif;"><%= producto.nombre %></div>
-                                    <div style="font-size:16px"><%= producto.modelo %></div>
-                                    <div style="font-style: italic; font-size:19px"><%= producto.marca %></div>
-                                </div>
+        <div class="listadoPadre">
+            <% productos.forEach(producto => { %>
+                <div class="cajaProducto">
+                    <a href="/productos/detalle/<%= producto.id %>">
+                        <div class="cajaImagenProducto">
+                            <img src="/images/productos/<%= producto.imagen %>">
+                            <div class="textoConHover">
+                                <div style="font-family: 'Teko', sans-serif;"><%= producto.nombre %></div>
+                                <div style="font-size:16px"><%= producto.modelo %></div>
+                                <div style="font-style: italic; font-size:19px"><%= producto.marca %></div>
                             </div>
-                        </a>
-                        <div class="precioProducto">
-                            $ <%= producto.precio %>
                         </div>
-                        <button class="addCart">Agregar al carrito</button>
+                    </a>
+                    <div class="precioProducto">
+                        $ <%= producto.precio %>
                     </div>
-                <% }) %>
-            </div>
-        
+                    <form action="/carrito/agregar" method="POST">
+                        <input type="hidden" name="id" value="<%= producto.id %>">
+                        <input type="hidden" name="nombre" value="<%= producto.nombre %>">
+                        <input type="hidden" name="precio" value="<%= producto.precio %>">
+                        <input type="hidden" name="cantidad" value="1"> <!-- Puedes permitir al usuario seleccionar la cantidad -->
+                        <button type="submit" class="addCart">Agregar al carrito</button>
+                    </form>
+                </div>
+            <% }) %>
+        </div>
     </body>
-  
+    
     <footer>
         <%- include('../partials/footer.ejs') %>
     </footer>
 
 </html>
-

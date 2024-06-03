@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-  
     <head>
         <%- include('../partials/head.ejs') %>  
     </head>
@@ -8,59 +7,64 @@
     <header>
         <%- include('../partials/header.ejs') %>
     </header>
-  
+        
     <body>
-
         <br>
         <h1>TU PEDIDO</h1>
 
         <div class="iconoCarrito">
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
-        
-        <div class="carritoVacio">
-            <div>El carrito está vacio rata apestosa!</div>
-            
-            <div class="backProductos">
-                <button><a href="/productos">Ir a productos</a></button>
-            </div>
-        </div>
 
-        <div class="carritoConProductos">
-            <div class="productosCarrito">
-                <div class="imagenCarrito">
-                    <div>
-                        <img src="/images/productos/imagen1701367288322.jpg" alt="">
-                    </div>
+        <% if (carrito.length === 0) { %>
+            <div class="carritoVacio">
+                <div>El carrito está vacio rata apestosa!</div>
+                <div class="backProductos">
+                    <button><a href="/productos">Ir a productos</a></button>
                 </div>
-                <div class="nombreProductoCarrito">guitarra</div>
-                <div class="cantidadCarrito">
-                    <div class="cajitaCantidadCarrito">
-                        <button type="button">-</button>
-                        <input>
-                        <button type="button">+</button>
-                    </div>
+            </div>
+        <% } else { %>
+            <div class="carritoConProductos">
+                <div class="productosCarrito">
+                    <% carrito.forEach(item => { %>
+                        <div class="productoCarrito">
+                            <div class="imagenCarrito">
+                                <img src="<%= item.imagen %>" alt="<%= item.nombre %>">
+                            </div>
+                            <div class="nombreProductoCarrito"><%= item.nombre %></div>
+                            <div class="cantidadCarrito">
+                                <div class="cajitaCantidadCarrito">
+                                    <button type="button">-</button>
+                                    <input type="text" value="<%= item.cantidad %>">
+                                    <button type="button">+</button>
+                                </div>
+                            </div>
+                            <div class="precioProductoCarrito"><%= item.subtotal.toFixed(2) %></div>
+                            <form action="/carrito/eliminar" method="POST" class="tachoCarrito">
+                                <input type="hidden" name="id" value="<%= item.id %>">
+                                <button type="submit"><i class="fa-solid fa-trash-can"></i></button>
+                            </form>
+                        </div>
+                    <% }); %>
                 </div>
-                <div class="precioProductoCarrito">$5000</div>
-                <div class="tachoCarrito"><i class="fa-solid fa-trash-can"></i></div>
-            </div>
 
-            <div class="totalCarrito">
-                Total: $8218
-            </div>
+                <div class="totalCarrito">
+                    <h3>Total: $<%= precioTotal.toFixed(2) %></h3>
+                </div>
 
-            <div class="opcionesCarrito">
-                <div class="continuarCarrito"><a href="/productos">Continuar comprando</a></div>
-                <div class="compraMP"><a>Comprar con Mercado Pago</a></div>
-                <div class="vaciarCarrito">Vaciar carrito</div>
+                <div class="opcionesCarrito">
+                    <div class="continuarCarrito"><a href="/productos">Continuar comprando</a></div>
+                    <div class="compraMP"><a href="/checkout">Comprar con Mercado Pago</a></div>
+                    <form action="/carrito/vaciar" method="POST" class="vaciarCarrito">
+                        <button type="submit">Vaciar carrito</button>
+                    </form>
+                </div>
             </div>
-        </div>
-        
+        <% } %>
     </body>
-  
+
     <footer>
         <%- include('../partials/footer.ejs') %>
     </footer>
 
 </html>
-
