@@ -39,76 +39,109 @@
 .carritoVacio button{
     background-color: violet;
     border-radius: 10px;
-    padding: 7px;
+    padding: 7px, 10px;
     transition: .3s ease-in-out;
+    margin: 20px auto;
 }
 .carritoVacio button:hover{
     background-color: aqua;
 }
 .carritoConProductos{
     border: red solid 2px;
-    
 }
 .productosCarrito{
     display: flex;
-    
     margin: 10px auto;
+    border: violet solid 2px;
+    justify-content: center;
+    width: 70%;
+    background-color: rgba(117, 116, 116, 0.1);
+    font-size: 20px;
 }
 .productosCarrito div{
     height:100px;
-    border: solid 1px black;
     display: flex;
     align-items:center;
     justify-content:center;
 }
 .imagenCarrito{
-    width: 70px;
+    width: 20%;
+    border: black solid 2px;
+}
+.imagenCarrito div{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: white;
+    padding: 2px;
 }
 .productosCarrito img{
     height: 100%;
 }
 .nombreProductoCarrito{
-    width: 90px;
+    width: 20%;
+    border: black solid 2px;
 }
 .cantidadCarrito{
-    width: 100px;
+    background-color: orange;
+    width: 250px;
+    border: black solid 2px;
 }
 .cajitaCantidadCarrito{
-    background-color:red;
-    width: 95px;
+    width: 90%;
+    border: green solid 2px;
+    background-color: white;
     border-radius: 15px;
-    height: 20px!important;
-    border: blue solid 2px;
-    padding: 8px;
+    height: 40px!important;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between!important;
 }
 .cajitaCantidadCarrito button{
-    width: 100%;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin: 10px;
 }
 .cajitaCantidadCarrito input{
-    height: 20px;
-    width: 100%;
+    height: 35px;
+    width:40px;
+    border: salmon solid 5px;
+    text-align: center;
 }
 .precioProductoCarrito{
-    width: 65px;
+    width: 20%;
+    border: black solid 2px;
 }
 .tachoCarrito{
-    width: 40px;
+    width: 20%;
+    font-size: 25px;
+    border: black solid 2px;
+    
 }
-
+.tachoCarrito i:hover{
+    color:red
+}
 .totalCarrito{
-    border: #393939 solid 2px;
     padding: 5px 20px;
     border-radius: 10px;
-    font-size:20px;
-    margin: 30px;
+    font-size:25px;
+    margin: 30px auto;
+    width: 250px;
+    text-align: center;
+    background-color: rgba(117, 116, 116, 0.1);
 }
 .opcionesCarrito{
     display: flex;
     align-items:center;
     justify-content:space-around;
     width: 80%;
-    flex-wrap: wrap;
-    margin: 20px
+    margin: 20px auto;
+    border: blue solid 2px;
+    font-size: 20px;
 }
 .opcionesCarrito div{
     border-radius: 10px;
@@ -120,4 +153,81 @@
     flex-direction: column;
     align-items:center;
     justify-content:center;
+    color: white;
+    margin: 5px;
+}
+.opcionesCarrito div:hover{
+    box-shadow: 0px 8px 10px -6px #191919;
+    border: none;
+}
+.continuarCarrito{
+    background-color: #89c4ad;
+}
+.compraMP{
+    background-color: #53A8E2;
+}
+.vaciarCarrito{
+    background-color: red;
+}
+
+@media (max-width: 900px){
+    .iconoCarrito i{
+        font-size: 50px;
+    }
+    .carritoVacio{
+        font-size: 17px;
+    }
+    .carritoVacio button{
+        font-size: 17px;
+    }
+    .productosCarrito{
+        width: 95%;
+        font-size: 17px;
+    }
+    .cantidadCarrito{
+        width: 200px;
+    }
+    .opcionesCarrito{
+        width: 95%;
+        font-size: 17px;
+    }
+}
+@media (max-width: 480px){
+    .carritoVacio{
+        font-size: 15px;
+    }
+    .carritoVacio button{
+        font-size: 15px;
+    }
+    .productosCarrito{
+        width: 100%;
+        font-size: 15px
+    }
+    .tachoCarrito{
+        font-size: 20px
+    }
+    .cajitaCantidadCarrito{
+        width: 95%;
+        padding: 0;
+    }
+    .imagenCarrito div{
+        width: 60px;
+        height: 60px;
+    }
+    .cajitaCantidadCarrito button {
+        margin: 4px;
+        width: 23px;
+        height: 23px;
+    }
+    .tachoCarrito {
+        width: 12%
+    }
+    .totalCarrito{
+        font-size: 18px;
+        width: 150px;
+    }
+    .opcionesCarrito{
+        width: 100%;
+        font-size: 13px;
+    }
 }
