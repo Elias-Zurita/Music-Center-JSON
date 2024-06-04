@@ -2,14 +2,6 @@ const path = require("path");
 const fs = require("fs");
 const User = require("../models/User");
 
-function findAll() {
-  let productosJson = fs.readFileSync(
-    path.join(__dirname, "../database/productos.json")
-  );
-  let data = JSON.parse(productosJson);
-  return data;
-}
-
 module.exports = {
     carrito: (req, res) => {
         let carrito = req.session.carrito || [];
@@ -24,7 +16,7 @@ module.exports = {
         return res.redirect("/usuarios/login");
         }
 
-        let { id, nombre, precio, cantidad } = req.body;
+        let { id, nombre, precio, cantidad, imagen } = req.body;
         cantidad = parseInt(cantidad);
         precio = parseFloat(precio);
 
@@ -40,6 +32,7 @@ module.exports = {
             nombre,
             precio,
             cantidad,
+            imagen,
             subtotal: cantidad * precio,
         });
         }

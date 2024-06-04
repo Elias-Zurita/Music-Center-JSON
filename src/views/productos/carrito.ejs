@@ -20,7 +20,7 @@
             <div class="carritoVacio">
                 <div>El carrito está vacio rata apestosa!</div>
                 <div class="backProductos">
-                    <button><a href="/productos">Ir a productos</a></button>
+                    <button><a href="/productos">Ver los productos</a></button>
                 </div>
             </div>
         <% } else { %>
@@ -29,27 +29,29 @@
                     <% carrito.forEach(item => { %>
                         <div class="productoCarrito">
                             <div class="imagenCarrito">
-                                <img src="<%= item.imagen %>" alt="<%= item.nombre %>">
+                                <img src="/images/productos/<%= item.imagen %>" alt="<%= item.nombre %>">
                             </div>
                             <div class="nombreProductoCarrito"><%= item.nombre %></div>
                             <div class="cantidadCarrito">
                                 <div class="cajitaCantidadCarrito">
-                                    <button type="button">-</button>
-                                    <input type="text" value="<%= item.cantidad %>">
-                                    <button type="button">+</button>
+                                    <button type="button" class="decrementar" data-id="<%= item.id %>">-</button>
+                                    <input type="text" value="<%= item.cantidad %>" readonly data-id="<%= item.id %>">
+                                    <button type="button" class="incrementar" data-id="<%= item.id %>">+</button>
                                 </div>
                             </div>
-                            <div class="precioProductoCarrito"><%= item.subtotal.toFixed(2) %></div>
-                            <form action="/carrito/eliminar" method="POST" class="tachoCarrito">
-                                <input type="hidden" name="id" value="<%= item.id %>">
-                                <button type="submit"><i class="fa-solid fa-trash-can"></i></button>
+                            <div class="precioProductoCarrito" data-precio="<%= item.precio %>" data-id="<%= item.id %>"><%= item.subtotal %></div>
+                            <form action="/carrito/eliminar" method="POST">
+                                <div class="tachoCarrito">
+                                    <input type="hidden" name="id" value="<%= item.id %>">
+                                    <button type="submit"><i class="fa-solid fa-trash-can"></i></button>
+                                </div>
                             </form>
                         </div>
                     <% }); %>
                 </div>
 
                 <div class="totalCarrito">
-                    <h3>Total: $<%= precioTotal.toFixed(2) %></h3>
+                    Total: $<span id="precioTotal"><%= precioTotal %></span>
                 </div>
 
                 <div class="opcionesCarrito">
@@ -61,10 +63,53 @@
                 </div>
             </div>
         <% } %>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const updatePrices = (id) => {
+                    const input = document.querySelector(`input[data-id="${id}"]`);
+                    const priceElement = document.querySelector(`.precioProductoCarrito[data-id="${id}"]`);
+                    const unitPrice = parseFloat(priceElement.dataset.precio);
+                    const quantity = parseInt(input.value);
+                    const newSubtotal = (unitPrice * quantity);
+                    priceElement.innerText = newSubtotal;
+
+                    // Update total price
+                    let totalPrice = 0;
+                    document.querySelectorAll('.precioProductoCarrito').forEach(item => {
+                        totalPrice += parseFloat(item.innerText);
+                    });
+                    document.getElementById('precioTotal').innerText = totalPrice;
+                };
+
+                document.querySelectorAll('.incrementar').forEach(button => {
+                    button.addEventListener('click', (event) => {
+                        const id = event.target.dataset.id;
+                        const input = document.querySelector(`input[data-id="${id}"]`);
+                        if (parseInt(input.value) < 10) {
+                            input.value = parseInt(input.value) + 1;
+                            updatePrices(id);
+                            // Aquí puedes hacer una llamada AJAX para actualizar el carrito en el servidor
+                        }
+                    });
+                });
+
+                document.querySelectorAll('.decrementar').forEach(button => {
+                    button.addEventListener('click', (event) => {
+                        const id = event.target.dataset.id;
+                        const input = document.querySelector(`input[data-id="${id}"]`);
+                        if (parseInt(input.value) > 1) {
+                            input.value = parseInt(input.value) - 1;
+                            updatePrices(id);
+                            // Aquí puedes hacer una llamada AJAX para actualizar el carrito en el servidor
+                        }
+                    });
+                });
+            });
+        </script>
     </body>
 
     <footer>
         <%- include('../partials/footer.ejs') %>
     </footer>
-
 </html>
