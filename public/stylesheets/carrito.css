@@ -49,7 +49,6 @@
     display: flex;
     flex-direction: column; /* Apila los productos que se agregan en el carrito */
     margin: 10px auto;
-    border: violet solid 2px;
     width: 70%;
     font-size: 20px;
 }
@@ -163,35 +162,74 @@
     align-items:center;
     justify-content:space-around;
     width: 80%;
-    margin: 20px auto;
-    border: blue solid 2px;
+    margin: 50px auto;
     font-size: 20px;
 }
-.opcionesCarrito div{
-    border-radius: 10px;
+.opcionesCarrito div, .vaciarCarrito{
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
     text-align: center;
-    border: solid 2px;
+    transition: .3s;
+    z-index: 1;
     width: 200px;
     height: 100px;
     display: flex;
-    flex-direction: column;
     align-items:center;
-    justify-content:center;
-    color: white;
-    margin: 5px;
+    justify-content: center;
+}
+.opcionesCarrito div::before{
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+.opcionesCarrito div:hover::before{
+    width: 115%;
 }
 .opcionesCarrito div:hover{
-    box-shadow: 0px 8px 10px -6px #191919;
-    border: none;
+    color: white;
 }
 .continuarCarrito{
-    background-color: #89c4ad;
+    border: 3px solid #17C3B2;
+    color: #17C3B2;
+}
+.continuarCarrito::before{
+    background: #17C3B2;
 }
 .compraMP{
-    background-color: #53A8E2;
+    border: 3px solid #53A8E2;;
+    color: #53A8E2;;
+}
+.compraMP::before{
+    background: #53A8E2;
 }
 .vaciarCarrito{
-    background-color: red;
+    border: 3px solid crimson;
+    color: crimson;
+}
+.vaciarCarrito::before{
+    background: crimson;
+}
+.vaciarCarrito button{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    color:crimson
+}
+.vaciarCarrito:hover button{
+    color:white
+}
+.vaciarCarrito form{
+    width: 100%;
 }
 @media(max-width:1100px){
     .productosCarrito {
@@ -222,6 +260,9 @@
     }
     .imagenCarrito{
         max-width: 20%;
+    }
+    .opcionesCarrito div{
+        width: 30%;
     }
 }
 @media(max-width:600px){

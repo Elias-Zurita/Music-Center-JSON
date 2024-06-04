@@ -56,10 +56,12 @@
 
                 <div class="opcionesCarrito">
                     <div class="continuarCarrito"><a href="/productos">Continuar comprando</a></div>
-                    <div class="compraMP"><a href="/checkout">Comprar con Mercado Pago</a></div>
-                    <form action="/carrito/vaciar" method="POST" class="vaciarCarrito">
-                        <button type="submit">Vaciar carrito</button>
-                    </form>
+                    <div class="compraMP"><a>Comprar con Mercado Pago</a></div>
+                    <div class="vaciarCarrito">
+                        <form action="/carrito/vaciar" method="POST">
+                            <button type="submit">Vaciar carrito</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         <% } %>
