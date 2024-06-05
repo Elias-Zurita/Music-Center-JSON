@@ -10,6 +10,7 @@
   flex-direction: column;
   width: 250px;
   margin: 15px;
+  align-items: center;
 }
 .cajaImagenProducto{
   position: relative;
@@ -18,13 +19,14 @@
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;  
-  justify-content: space-around; /*centra la imagen y el contenido */
   text-align: center;
   box-shadow: 0 0 20px var(--color-primario);
   cursor: pointer;
   padding: 5px;
   background-color: white;
   transition: 0.3s ease-in-out;
+  align-items: center;
+  justify-content: center;
 }
 .cajaImagenProducto:hover{
   background-color: rgba(41,40,45,.85);

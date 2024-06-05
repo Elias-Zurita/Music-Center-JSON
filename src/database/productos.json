@@ -7,7 +7,7 @@
   "categoria": "Guitarras electricas",
   "precio": "4000000",
   "descripcion": "Jimi Hendrix pasó a la historia por su increíble actuación en el Monterey Pop Festival, que concluyó con la quema de su ahora icónica Stratocaster pintada a mano. Destruida al final de su concierto, esta guitarra única sobrevivió solamente en fotos y película. Para celebrar el 50 aniversario de este hito en la historia de la música, hemos recreado la Jimi Hendrix Monterey Stratocaster en una edición limitada.",
-  "imagen": "imagen1702051523389.jpg"
+  "imagen": "imagen1702051523389.png"
  },
  {
   "id": 2,
@@ -187,7 +187,7 @@
   "categoria": "Guitarras acusticas",
   "precio": "500000",
   "descripcion": "The all-new Custom Shop 000-18 1937 gives players the sonic qualities of the Authentic Series paired with the everyday value of a trusty workhorse guitar. Regarded as the cornerstone of performance and sound, Martin’s highly prized 1937 models set the bar for generations of instruments that followed. This guitar features a clear vintage gloss Adirondack spruce top, genuine mahogany back and sides, scalloped bracing, hide glue and cloth strip construction, and an adjustable truss rod, capturing the look, feel, and sound of some of the finest guitars ever made.  The Custom Shop 000-18 1937 is also available with light aging in either natural or ambertone finishes. Stage 1 aging lacks the heavy wear and tear of a well-worn instrument and instead features the light checking inspired by those rare guitars that were simply kept in a case and tucked away for decades. It bears the marks of time but not the heavy wear common on newly aged guitars.",
-  "imagen": "imagen1706663179289.jpg"
+  "imagen": "imagen1706663179289.png"
  },
  {
   "id": 20,
@@ -197,7 +197,7 @@
   "categoria": "Guitarras acusticas",
   "precio": "500000",
   "descripcion": "Introducing the D-CFM IV 50th Anniversary—a timeless tribute to half a century of dedication, and a special acknowledgement of the company’s 35th year of quality craftsmanship by its talented family of coworkers in Navojoa, Sonora, Mexico. To celebrate, each of these beautiful anniversary instruments proudly displays a signed, numbered label commemorating both Chris Martin IV’s 50 years of service, and the rich lineup of innovations originating in Navojoa. It’s a testament to the artistry and skill that have defined Chris’ tenure. Crafted at Martin’s factory in Navojoa, the guitar features a gloss finish, pommele sapele back and sides, a bearclaw spruce top, and classic \"Tree of Life\" inlays on the fingerboard and headplate with a matching rosette presented in beautiful Paua pearl. It’s an instrument that promises to inspire and captivate musicians for generations to come, as Martin continues its quest to make quality and innovation as approachable as possible. This guitar is a true collector’s item, with only 50 available worldwide.",
-  "imagen": "imagen1706663285972.jpg"
+  "imagen": "imagen1706663285972.png"
  },
  {
   "id": 21,
@@ -207,7 +207,7 @@
   "categoria": "Guitarras acusticas",
   "precio": "450000",
   "descripcion": "Introducing the D-50 CFM IV 50th Anniversary—a timeless tribute to half a century of dedication. For the past 50 years, Chris Martin IV has been the driving force behind Martin Guitar, carrying forward the legacy of excellence and innovation established by generations before him. To honor this milestone, his namesake company proudly presents a limited-edition guitar that embodies his unwavering commitment to crafting the finest acoustic guitars in the world. The D-50 CFM IV 50th Anniversary features Guatemalan rosewood back and sides, a stunning heavy bearclaw spruce top, European flamed maple binding, and intricate abalone and mother of pearl inlay throughout. Each of these beautiful anniversary instruments also proudly displays a signed, numbered label commemorating Chris’ 50 years of service. This guitar is a true collector’s item, with only 50 available worldwide.",
-  "imagen": "imagen1706663488791.jpg"
+  "imagen": "imagen1706663488791.png"
  },
  {
   "id": 22,
@@ -287,7 +287,7 @@
   "categoria": "Guitarras acusticas",
   "precio": "750000",
   "descripcion": "When you listen to a Gibson round-shoulder acoustic, you will notice that it responds exactly to the player's style and technique - powerful one moment, soft and mellow the next. This 60s J-45 Original offers a period-correct 1 11/16’’ nut width, allowing for comfortable fingering in any position along the mahogany neck. The easily-adjustable saddle can be fine-tuned to players' unique string action preference. The new 60s J-45 Original features double antiqued binding, Grover strap cream button tuners, and our famous white pickguard with hot stamp logo.",
-  "imagen": "imagen1706668647260.jpg"
+  "imagen": "imagen1706668647260.png"
  },
  {
   "id": 30,
@@ -297,7 +297,7 @@
   "categoria": "Guitarras acusticas",
   "precio": "460000",
   "descripcion": "The Gibson SJ-200 is the world's most famous acoustic guitar and earned its designation as the \"King of the Flat-Tops.\" Since its release in 1937, its wide use by American artists has made the Super Jumbo one of the most widely played acoustic guitars of our time. The most striking features of the new SJ-200 Original include the carved four bar Moustache bridge, an engraved tortoise pickguard, mother-of-pearl crown fretboard and headstock inlay, and exquisite flamed maple back and sides. The SJ-200 is an American original with its shape and elegant appearance",
-  "imagen": "imagen1706668725492.jpg"
+  "imagen": "imagen1706668725492.png"
  },
  {
   "id": 31,
@@ -447,6 +447,6 @@
   "categoria": "Baterias",
   "precio": "900000",
   "descripcion": "From local gigs to national tours, Pearl's updated Professional Series drums have a look and sound that fits in any live performance space. Beginning in 1985, Pearl introduced its legendary MLX drums under the Professional Series banner to bring the powerful Maple sound to the forefront. Today, Professional Series returns with the spirit of the original and a refreshed presence for the experienced drummer.",
-  "imagen": "imagen1706671833209.jpg"
+  "imagen": "imagen1706671833209.png"
  }
 ]
