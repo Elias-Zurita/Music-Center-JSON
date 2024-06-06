@@ -448,5 +448,175 @@
   "precio": "900000",
   "descripcion": "From local gigs to national tours, Pearl's updated Professional Series drums have a look and sound that fits in any live performance space. Beginning in 1985, Pearl introduced its legendary MLX drums under the Professional Series banner to bring the powerful Maple sound to the forefront. Today, Professional Series returns with the spirit of the original and a refreshed presence for the experienced drummer.",
   "imagen": "imagen1706671833209.png"
+ },
+ {
+  "id": 46,
+  "nombre": "Lucille BB King",
+  "modelo": "ES-355",
+  "marca": "Gibson",
+  "categoria": "Guitarras electricas",
+  "precio": "5000",
+  "descripcion": "B.B. King bautizó su guitarra así después de un incidente en un club en Arkansas en 1949. Durante un show, dos hombres comenzaron a pelear y derribaron un barril encendido que se usaba para calentar el lugar. El edificio se incendió y, tras salir a salvo, King se dio cuenta de que había dejado su guitarra dentro. Arriesgando su vida, volvió a entrar para recuperarla. Más tarde, se enteró de que la pelea fue por una mujer llamada Lucille, y desde entonces llamó a todas sus guitarras por ese nombre como recordatorio de no hacer cosas imprudentes.",
+  "imagen": "imagen1717679181796.png"
+ },
+ {
+  "id": 47,
+  "nombre": "Black Strat David Guilmour",
+  "modelo": "Stratocaster ",
+  "marca": "Fender",
+  "categoria": "Guitarras electricas",
+  "precio": "2000",
+  "descripcion": "Fender Stratocaster negra de 1969 que Gilmour ha utilizado en muchos de los álbumes más famosos de Pink Floyd, como \"The Dark Side of the Moon\", \"Wish You Were Here\", \"Animals\" y \"The Wall\". Esta guitarra es probablemente la más famosa de su colección y ha sido modificada varias veces a lo largo de los años.",
+  "imagen": "imagen1717679304830.png"
+ },
+ {
+  "id": 48,
+  "nombre": "Red Special Brian May",
+  "modelo": "Personalizada",
+  "marca": "Luthier",
+  "categoria": "Guitarras electricas",
+  "precio": "6000",
+  "descripcion": "Brian May construyó la \"Red Special\" junto con su padre, Harold May, en la década de 1960. La guitarra fue hecha a mano utilizando materiales inusuales y reciclados. El cuerpo de la guitarra está hecho de madera de roble de una vieja chimenea, mientras que el mástil está hecho de caoba. La guitarra fue construida con mucha atención al detalle y personalizada para las necesidades de Brian May. La \"Red Special\" tiene un diseño único con un cuerpo semi-hueco y un mástil de 24 trastes. Las pastillas originales eran pastillas Burns Tri-Sonic, que May modificó personalmente para adaptarlas a su estilo y sonido. El puente y el sistema de trémolo también fueron diseñados y fabricados a mano por May y su padre, incluyendo un sistema de trémolo flotante que permite un control suave y preciso de la afinación.",
+  "imagen": "imagen1717692968056.png"
+ },
+ {
+  "id": 49,
+  "nombre": "Dean From Hell Dimebag Darrell",
+  "modelo": "Dean ML",
+  "marca": "Dean Guitars",
+  "categoria": "Guitarras electricas",
+  "precio": "5000",
+  "descripcion": "La \"Dean From Hell\" es la guitarra icónica de Dimebag Darrell, diseñada y personalizada específicamente para él por Dean Guitars. Su aspecto llamativo y su tono agresivo son sinónimo del estilo único y la influencia duradera de Dimebag en la música metal. Pastillas: La \"Dean From Hell\" originalmente tenía una configuración de pastillas humbucker, generalmente Seymour Duncan SH-13 Dimebucker en el puente y una humbucker en el mástil. Puente: Dimebag prefería un puente fijo tune-o-matic. Mástil: El mástil era de arce con diapasón de ébano y un perfil delgado y rápido para facilitar el juego rápido y técnico.",
+  "imagen": "imagen1717693157734.png"
+ },
+ {
+  "id": 50,
+  "nombre": "Chuck Berry",
+  "modelo": "Gibson ES-335",
+  "marca": "Gibson",
+  "categoria": "Guitarras electricas",
+  "precio": "800",
+  "descripcion": " La Gibson ES-335 es una guitarra eléctrica semi-hueca con un diseño clásico de cuerpo de arce laminado y un bloque central sólido que reduce la retroalimentación no deseada y proporciona mayor sustain. Tiene dos pastillas humbucker, lo que le da un sonido cálido y versátil. John Mayer ha sido visto tocando una versión de color rojo de la Gibson ES-335 en algunas de sus actuaciones. Esta guitarra es conocida por su tono vintage y su capacidad para adaptarse a una amplia variedad de estilos musicales, desde el blues hasta el rock y el jazz.",
+  "imagen": "imagen1717693513251.png"
+ },
+ {
+  "id": 51,
+  "nombre": "Zakk Wylde Signature",
+  "modelo": "Les Paul",
+  "marca": "Gibson",
+  "categoria": "Guitarras electricas",
+  "precio": "600",
+  "descripcion": "La Gibson Les Paul Zakk Wylde Signature es una variante personalizada de la clásica Les Paul diseñada para las preferencias y el estilo de Zakk Wylde. Suele tener características como pastillas activas EMG, un acabado de color negro y detalles estéticos personalizados, como incrustaciones de calaveras en el diapasón y una apariencia más agresiva en comparación con las Les Paul estándar. Esta guitarra se asocia con el sonido pesado y agresivo de Zakk Wylde, que es conocido por su trabajo con Ozzy Osbourne y su propia banda, Black Label Society.",
+  "imagen": "imagen1717693625868.png"
+ },
+ {
+  "id": 52,
+  "nombre": "Duoble neck Jimmy Page",
+  "modelo": "EDS-1275",
+  "marca": "Gibson",
+  "categoria": "Guitarras electricas",
+  "precio": "900",
+  "descripcion": "La Gibson EDS-1275, comúnmente conocida como Double Neck, es una guitarra eléctrica única que tiene dos mástiles, uno con seis cuerdas (mástil estándar de guitarra) y otro con doce cuerdas (mástil de guitarra de doce cuerdas). Esta guitarra es famosa por su asociación con Jimmy Page, quien la popularizó durante su tiempo con Led Zeppelin. La guitarra de doble mástil le permitió a Page cambiar rápidamente entre sonidos de guitarra estándar y de doce cuerdas durante las actuaciones en vivo, lo que contribuyó a la riqueza y variedad de los arreglos musicales de Led Zeppelin. La Gibson EDS-1275 es una pieza icónica de la historia del rock y sigue siendo una de las guitarras más reconocibles y codiciadas.",
+  "imagen": "imagen1717693692114.png"
+ },
+ {
+  "id": 53,
+  "nombre": "Gustavo Cerati Signature",
+  "modelo": "Soloist",
+  "marca": "Jackson",
+  "categoria": "Guitarras electricas",
+  "precio": "400",
+  "descripcion": "La Jackson Soloist es una guitarra eléctrica de cuerpo sólido que se caracteriza por su diseño elegante y sus características de alto rendimiento. Suele tener un cuerpo de aliso o caoba, un mástil atornillado de arce con diapasón de palisandro o ébano, y pastillas humbucker de alta ganancia, lo que la hace ideal para estilos de música como el rock y el metal. La guitarra Jackson azul asociada con Gustavo Cerati es una versión personalizada de la Soloist, con un acabado en azul distintivo que se ha convertido en parte de la imagen icónica de Cerati en el escenario. Esta guitarra ha sido utilizada en numerosas actuaciones y grabaciones de Cerati a lo largo de su carrera, y es apreciada tanto por su estética llamativa como por su versatilidad tonal.",
+  "imagen": "imagen1717693774160.png"
+ },
+ {
+  "id": 54,
+  "nombre": "Joe Satriani Signature",
+  "modelo": "Ibanez JS",
+  "marca": "Ibanez",
+  "categoria": "Guitarras electricas",
+  "precio": "700",
+  "descripcion": "La serie Ibanez JS es la línea de guitarras signature de Joe Satriani, diseñada en colaboración con el legendario guitarrista. La guitarra suele tener un cuerpo de aliso o caoba, mástil de arce atornillado, diapasón de palisandro o ébano, y pastillas humbucker diseñadas específicamente para capturar el sonido distintivo de Satriani. La versión personalizada con dibujos de caritas es una variante única de su modelo signature, que presenta diseños de caritas en el cuerpo de la guitarra, lo que le da un aspecto distintivo y lúdico. Esta guitarra ha sido utilizada por Satriani en varias grabaciones y actuaciones en vivo, y es apreciada tanto por su estética llamativa como por su versatilidad tonal y su capacidad para expresar el estilo único de Satriani.",
+  "imagen": "imagen1717693850087.png"
+ },
+ {
+  "id": 55,
+  "nombre": "Kirk Hammett Signature",
+  "modelo": "ESP KH-2",
+  "marca": "ESP",
+  "categoria": "Guitarras electricas",
+  "precio": "900",
+  "descripcion": "La serie ESP KH-2 es la línea de guitarras signature de Kirk Hammett, el guitarrista principal de Metallica. Esta guitarra está basada en el diseño clásico de la ESP Eclipse, pero con especificaciones personalizadas para satisfacer las preferencias de Hammett. Suele tener un cuerpo de aliso o caoba, mástil de arce atornillado, diapasón de palisandro o ébano, y pastillas activas EMG diseñadas específicamente para capturar el tono agresivo y potente de Metallica. La versión personalizada con la cara de Frankenstein es una variante única de su modelo signature, que presenta un gráfico de la cara de Frankenstein en el cuerpo de la guitarra, inspirado en la película clásica de terror. Esta guitarra ha sido utilizada por Hammett en numerosas grabaciones y actuaciones en vivo con Metallica, y es apreciada tanto por su estética llamativa como por su potencia tonal y su capacidad para expresar el estilo único de Hammett.",
+  "imagen": "imagen1717694316034.png"
+ },
+ {
+  "id": 56,
+  "nombre": "Myles Kennedy Signature",
+  "modelo": "PRS SE Mira",
+  "marca": "PRS",
+  "categoria": "Guitarras electricas",
+  "precio": "400",
+  "descripcion": "La PRS SE Mira es una guitarra eléctrica de cuerpo sólido que combina un diseño clásico con características modernas. Suele tener un cuerpo de caoba, mástil de arce atornillado, diapasón de palisandro o ébano, y pastillas de estilo P-90 que proporcionan un tono cálido y resonante. La versión verde asociada a Myles Kennedy es una variante personalizada de la PRS SE Mira, que presenta un acabado en verde distintivo que se ha convertido en parte de la imagen icónica de Kennedy en el escenario. Esta guitarra ha sido utilizada en numerosas actuaciones y grabaciones de Kennedy a lo largo de su carrera, y es apreciada tanto por su estética llamativa como por su versatilidad tonal.",
+  "imagen": "imagen1717694408077.png"
+ },
+ {
+  "id": 57,
+  "nombre": "Cloud Guitar Prince",
+  "modelo": "Cloud",
+  "marca": "Luthier",
+  "categoria": "Guitarras electricas",
+  "precio": "700",
+  "descripcion": "La Cloud Guitar es una creación única diseñada por Prince y fabricada por Dave Rusan. La guitarra originalmente comenzó como un prototipo de guitarra eléctrica acústica y fue personalizada por Prince para crear su distintivo instrumento en forma de nube. La guitarra tiene una forma asimétrica única y un acabado en violeta, que se convirtió en parte de la icónica imagen de Prince. Aunque la Cloud Guitar es un modelo altamente personalizado y no se fabrica en masa, su impacto cultural y su asociación con Prince la han convertido en una de las guitarras más reconocibles e icónicas de la historia de la música.",
+  "imagen": "imagen1717694494908.png"
+ },
+ {
+  "id": 58,
+  "nombre": "Santana Signature",
+  "modelo": "Les Paul",
+  "marca": "PRS",
+  "categoria": "Guitarras electricas",
+  "precio": "800",
+  "descripcion": "La PRS Santana Signature es una guitarra eléctrica diseñada en colaboración con el legendario guitarrista Carlos Santana. Suele tener un cuerpo de caoba o maple con un top de arce flameado, mástil de arce o caoba, diapasón de palisandro o ébano, y pastillas humbucker diseñadas específicamente para capturar el tono cálido y expresivo de Santana. La versión dorada asociada a Santana es una variante personalizada de la PRS Santana Signature, que presenta un acabado dorado distintivo que se ha convertido en parte de la imagen icónica de Santana en el escenario. Esta guitarra ha sido utilizada en numerosas actuaciones y grabaciones de Santana a lo largo de su carrera, y es apreciada tanto por su estética llamativa como por su tono rico y versátil.",
+  "imagen": "imagen1717694540445.png"
+ },
+ {
+  "id": 59,
+  "nombre": "Joe Satriani SWTA",
+  "modelo": "Ibanez JS2400",
+  "marca": "Ibanez",
+  "categoria": "Guitarras electricas",
+  "precio": "900",
+  "descripcion": "La Ibanez JS2400 es una guitarra eléctrica diseñada en colaboración con Joe Satriani. Suele tener un cuerpo de aliso o caoba, mástil de arce atornillado con refuerzo de titanio, diapasón de palisandro o ébano, y pastillas humbucker diseñadas específicamente para capturar el tono distintivo y versátil de Satriani. La versión \"Surfing with the Alien\" es una variante personalizada de la Ibanez JS2400, que presenta un acabado gráfico inspirado en la portada del álbum de Satriani del mismo nombre, \"Surfing with the Alien\". Esta guitarra ha sido utilizada por Satriani en numerosas grabaciones y actuaciones en vivo, y es apreciada tanto por su estética llamativa como por su tono potente y expresivo.",
+  "imagen": "imagen1717694612230.png"
+ },
+ {
+  "id": 60,
+  "nombre": "Tom Morelo Signature",
+  "modelo": "Soul Power",
+  "marca": "Fender",
+  "categoria": "Guitarras electricas",
+  "precio": "600",
+  "descripcion": "La guitarra de Tom Morello es famosa por su versatilidad y su capacidad para producir una amplia gama de sonidos, desde tonos de guitarra estándar hasta sonidos de sintetizador y efectos únicos. Originalmente una Fender Stratocaster, la guitarra ha sido modificada con varias adiciones, incluyendo pastillas activas, killswitches (interruptores de apagado), un toggle switch para seleccionar diferentes configuraciones de pastillas, y una palanca de tremolo bloqueada para mantener la afinación estable. La guitarra ha sido apodada \"Arm The Homeless\" por Morello, y también ha sido conocida como \"Soul Power\". Esta guitarra ha sido fundamental en el sonido característico de Morello con Rage Against the Machine y Audioslave, y es un elemento icónico de su estilo de interpretación y su sonido distintivo.",
+  "imagen": "imagen1717694664852.png"
+ },
+ {
+  "id": 61,
+  "nombre": "Yngwie Malmsteen Signature",
+  "modelo": "Stratocaster",
+  "marca": "Fender",
+  "categoria": "Guitarras electricas",
+  "precio": "900",
+  "descripcion": "La Fender Yngwie Malmsteen Signature Stratocaster es una guitarra eléctrica diseñada en colaboración con Yngwie Malmsteen, uno de los guitarristas más influyentes en el ámbito del heavy metal y la música neoclásica. Basada en el icónico diseño de la Fender Stratocaster, esta guitarra presenta varias características personalizadas para adaptarse al estilo y las preferencias de Malmsteen. Suele tener un cuerpo de aliso o fresno, mástil de arce con perfil en \"V\" y diapasón de arce o palisandro, pastillas Seymour Duncan YJM Fury, y un sistema de trémolo estilo vintage con bloqueo para mantener la estabilidad de la afinación durante el uso intensivo del tremolo. Esta guitarra es conocida por su tono brillante y claro, su facilidad de ejecución y su capacidad para alcanzar velocidades extremas en solos de guitarra. Es un instrumento icónico en el arsenal de Yngwie Malmsteen y ha sido utilizado en innumerables grabaciones y actuaciones en vivo a lo largo de su carrera.",
+  "imagen": "imagen1717694719155.png"
+ },
+ {
+  "id": 62,
+  "nombre": "Steve Vai Signature",
+  "modelo": "JEM EVO Triple",
+  "marca": "Ibanez",
+  "categoria": "Guitarras electricas",
+  "precio": "800000",
+  "descripcion": "La Ibanez JEM EVO, conocida como \"EVO\", es una guitarra eléctrica altamente personalizada diseñada en colaboración con Steve Vai, uno de los guitarristas más innovadores y técnicamente dotados de la historia del rock. La guitarra presenta un diseño único con tres mástiles, cada uno con sus propias configuraciones de pastillas y controles. El mástil principal estándar tiene un diapasón de palisandro o ébano, mientras que los otros dos mástiles suelen tener un diapasón de arce o ébano. La guitarra suele estar equipada con pastillas DiMarzio Evolution, un sistema de trémolo flotante y otras características de alta gama para satisfacer las exigencias del estilo de tocar de Vai. El acabado de la guitarra es blanco, y a lo largo de los años ha adquirido una apariencia característica debido al uso intensivo y a los numerosos retoques y modificaciones realizados por Vai. La EVO es una pieza icónica en el arsenal de Steve Vai y ha sido utilizada en innumerables grabaciones y actuaciones en vivo a lo largo de su carrera.",
+  "imagen": "imagen1717694985942.png"
  }
 ]

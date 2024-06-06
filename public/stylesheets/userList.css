@@ -32,7 +32,7 @@
     color: white;
     font-family: "Poppins";
     font-size:18px;
-    width: 300px;
+    width: 320px;
     transition: .3s ease-in-out;
 }
 .tarjetaUsuario:hover{
@@ -45,6 +45,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 15px;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 0 auto 15px auto;
 }
 .cajaAvatarListado img{
     height: 150px;

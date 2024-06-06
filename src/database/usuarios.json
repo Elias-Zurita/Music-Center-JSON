@@ -5,7 +5,7 @@
   "apellido": "Zurita",
   "email": "elias@dev.com",
   "password": "$2a$10$biX7h3DYppazYqn7qSn3re7FPQi/iybky4ZNnQ23pVoydFsworHLC",
-  "country": "",
+  "country": "Argentina",
   "avatar": "avatar1701704207693.jpg",
   "category": "admin"
  },
@@ -18,5 +18,15 @@
   "password": "$2a$10$zCQRkw3DAmN763mhLl56Eerv0NciMGOd5ZWrs5VmVG9doO/CrmmRi",
   "country": "",
   "avatar": "1706269542773_img.jpg"
+ },
+ {
+  "id": 3,
+  "category": "Cliente",
+  "nombre": "eee",
+  "apellido": "Eeee",
+  "email": "pruebamail@gmail.com",
+  "password": "$2a$10$DR2bnpu.aP9m5UzQQMyHwe2bHnDoURMhhwnN2sQF/KoNuXEq07Foa",
+  "country": "",
+  "avatar": "1717677689356_img.jpg"
  }
 ]
