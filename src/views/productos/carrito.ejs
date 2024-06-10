@@ -18,9 +18,11 @@
 
         <% if (carrito.length === 0) { %>
             <div class="carritoVacio">
-                <div>El carrito está vacio rata apestosa!</div>
+                <div class="vacioTexto">El carrito está vacio</div>
                 <div class="backProductos">
-                    <button><a href="/productos">Ver los productos</a></button>
+                    <button><a href="/productos">Ver los productos</a>
+                        <span class="relleno"></span>
+                    </button> 
                 </div>
             </div>
         <% } else { %>

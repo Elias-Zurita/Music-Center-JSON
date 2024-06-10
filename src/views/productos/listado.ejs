@@ -40,6 +40,24 @@
                 </div>
             <% }) %>
         </div>
+
+        <div class="pagination">
+            <div class="numerosPagina">
+                <% for (let i = 1; i <= totalPages; i++) { %>
+                    <a href="?page=<%= i %>" class="<%= currentPage === i ? 'active' : '' %> numerito"><%= i %></a>
+                <% } %>
+            </div>
+            <div class="navegacionPagina">
+                <% if (currentPage > 1) { %>
+                    <a href="?page=<%= currentPage - 1 %>" class="prevnext">&laquo; Anterior</a>
+                <% } %>
+
+                <% if (currentPage < totalPages) { %>
+                    <a href="?page=<%= currentPage + 1 %>" class="prevnext">Siguiente &raquo;</a>
+                <% } %>
+            </div>
+        </div>
+
     </body>
     
     <footer>

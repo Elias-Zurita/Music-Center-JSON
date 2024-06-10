@@ -14,7 +14,19 @@ function writeJson(array){   // Sobreescribe info al JSON data
 module.exports = {
     listado: (req, res) => {
         let productos = findAll();
-        res.render("productos/listado", {productos}) 
+        const itemsPerPage = 15; // Declaro la cantidad de productos que quiero visualizar por pagina
+        const page = parseInt(req.query.page) || 1; // Por default la pagina es la 1
+
+        const startIndex = (page - 1) * itemsPerPage; // Indice del primer producto por pagina
+        const endIndex = startIndex + itemsPerPage; // Indice el ultimo producto por pagina
+
+        const paginatedProducts = productos.slice(startIndex, endIndex); // El metodo slice obtiene solo los productos de la pagina actual
+
+        res.render("productos/listado", {
+            productos: paginatedProducts,
+            currentPage: page,
+            totalPages: Math.ceil(productos.length / itemsPerPage),
+        });
     },
     detalle: (req, res) => {
         let productos = findAll();
@@ -30,13 +42,41 @@ module.exports = {
             producto.nombre.toLowerCase().includes(terminoDeBusqueda) || // filtro los productos que contengan en su nombre un match con el termino de busqueda ingresado
             producto.marca.toLowerCase().includes(terminoDeBusqueda) // Busqueda por marca tambien
         );
-        res.render('productos/listado', { productos: productosFiltrados, terminoDeBusqueda });
+        const itemsPerPage = 15;
+        const page = parseInt(req.query.page) || 1; // Default page is 1 if not specified
+
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+
+        const paginatedProducts = productosFiltrados.slice(
+        startIndex,
+        endIndex
+        );
+
+        res.render("productos/listado", {
+        productos: paginatedProducts,
+        currentPage: page,
+        totalPages: Math.ceil(productosFiltrados.length / itemsPerPage),
+        terminoDeBusqueda,
+        });
     },
     categoria: (req, res) => {
         let productos = findAll();
         let categoriaSeleccionada = productos.filter(function(productos){ // filtra las categorias de los productos
             return productos.categoria == req.params.categoria // devuelve la categoria del producto pedida por params(seleccionada en el navegador)
         })
-        res.render("productos/listado", {productos: categoriaSeleccionada}) 
+        const itemsPerPage = 15;
+        const page = parseInt(req.query.page) || 1; // Default page is 1 if not specified
+
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+
+        const paginatedProducts = categoriaSeleccionada.slice(startIndex, endIndex);
+
+        res.render("productos/listado", {
+            productos: paginatedProducts,
+            currentPage: page,
+            totalPages: Math.ceil(categoriaSeleccionada.length / itemsPerPage)
+        });
     }
 }

@@ -1,7 +1,15 @@
+footer{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .padreColumnasFooter{
     background: black;
-    padding: 3% 5% 2% 8%;
+    padding: 3% 5% 2% 5%;
     display: flex;
+    max-width: 1700px;
+    margin: 0 auto;
 }
 .columnaFooter{
     width: 30%;
