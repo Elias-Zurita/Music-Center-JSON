@@ -33,6 +33,11 @@ Patrones de diseño MVC.
 - CSS
 - JavaScript
 - JSON
+- Node Js
+
+## Frameworks utilizados 🏗️
+- Express JS
+- Bootstrap
 
 ## DEMO :globe_with_meridians:
 - Para ver la aplicacion sin necesidad de clonar el repositorio puede acceder al siguiente enlace: 
