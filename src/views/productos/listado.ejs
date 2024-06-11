@@ -22,7 +22,7 @@
                             <div class="textoConHover">
                                 <div style="font-family: 'Teko', sans-serif;"><%= producto.nombre %></div>
                                 <div style="font-size:16px"><%= producto.modelo %></div>
-                                <div style="font-style: italic; font-size:19px"><%= producto.marca %></div>
+                                <div style="font-style: italic; font-size:19px;"><%= producto.marca %></div>
                             </div>
                         </div>
                     </a>
@@ -44,16 +44,16 @@
         <div class="pagination">
             <div class="numerosPagina">
                 <% for (let i = 1; i <= totalPages; i++) { %>
-                    <a href="?page=<%= i %>" class="<%= currentPage === i ? 'active' : '' %> numerito"><%= i %></a>
+                    <a href="?page=<%= i %>&buscar=<%= terminoDeBusqueda %>" class="<%= currentPage === i ? 'active' : '' %> numerito"><%= i %></a>
                 <% } %>
             </div>
             <div class="navegacionPagina">
                 <% if (currentPage > 1) { %>
-                    <a href="?page=<%= currentPage - 1 %>" class="prevnext">&laquo; Anterior</a>
+                    <a href="?page=<%= currentPage - 1 %>&buscar=<%= terminoDeBusqueda %>" class="prevnext">&laquo; Anterior</a>
                 <% } %>
 
                 <% if (currentPage < totalPages) { %>
-                    <a href="?page=<%= currentPage + 1 %>" class="prevnext">Siguiente &raquo;</a>
+                    <a href="?page=<%= currentPage + 1 %>&buscar=<%= terminoDeBusqueda %>" class="prevnext">Siguiente &raquo;</a>
                 <% } %>
             </div>
         </div>
