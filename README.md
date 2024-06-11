@@ -11,6 +11,7 @@ Desarrollo de buenas prácticas (responsive, UX).
 Registro-login del usuario, uso de Session y Cookies para el almacenamiento de la información.
 Implementación de validaciones en formularios del lado del Back-end y del Front-end.
 CRUD de productos.
+Carrito de compras funcional.
 Base de datos tipo JSON.
 Patrones de diseño MVC.
 
