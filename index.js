@@ -23,6 +23,12 @@ app.use(session({                 // Inicializacion de sesion
   saveUninitialized: false,       // Propiedades de session que se deben setear como false
 }))
 
+// Si cartTotal en la sesion del usuario es undefined es cero. 
+app.use((req, res, next) => {
+  res.locals.cartTotal = req.session.carritoTotal || 0;
+  next();
+});
+
 app.use(cookies());
 app.use(userLoggedMiddleware) // Es importante que vaya despues de la inicializacion de la sesion
 

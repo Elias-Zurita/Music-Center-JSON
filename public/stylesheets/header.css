@@ -111,12 +111,29 @@
 #busqueda{
     width: 280px;
 }
+.changuito{
+    position: relative;
+}
+.badge {
+    padding: 0.5em;
+    font-size: 0.8em;
+    line-height: 1em;
+    vertical-align: middle;
+}
+.changuito span{
+    position: absolute; 
+    top: 18px;
+    left: -9px;
+}
 @media (max-width: 990px){
     .inicioHeader{
         display: block;
     }
     .navbar-brand {
         display: none;
+    }
+    .changuito span{
+        left: 18px;
     }
 }
 @media (max-width: 1000px){

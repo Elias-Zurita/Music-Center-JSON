@@ -81,7 +81,14 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <div class="changuito">
+                            <a class="nav-link" href="/carrito">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <% if (locals.cartTotal > 0) { %> <!-- Si cartTotal es mayor a 0 muestra la cantidad de items en carrito -->
+                                    <span class="badge bg-danger rounded-circle"><%= locals.cartTotal %></span>
+                                <% } %>
+                            </a>
+                        </div>
                     </li>
                 </ul>
            
